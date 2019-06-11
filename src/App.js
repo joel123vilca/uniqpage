@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav as="ul" style={{backgroundColor: '#155799', color:'white'}}>
+        <Nav as="ul" style={{backgroundColor: '#155799', color:'white',display: 'none'}}>
   <Nav.Item as="li">
     <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
   </Nav.Item>
