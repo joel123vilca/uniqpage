@@ -4,6 +4,7 @@
   background: linear-gradient(to right,#bbd2c5,
   #536976,
   #292e49); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: auto;
 }
 .landing-grid{
   background-image: url('https://i.pinimg.com/564x/c9/89/a0/c989a0dc7eb64c294e6628a663453f5f.jpg');
@@ -106,3 +107,42 @@ padding: 1em;
   width: 100%;
 } 
 
+.pri-nav{
+  background-color: #155799;
+  color: white;
+  display: flex;
+}
+.page-content{
+  background-color: #155799;
+    color: white;
+    display: none;
+    height: 300px;
+    align-content: center;
+}
+.logo{
+  margin-left : 5px; 
+margin-right : 5px; 
+width: 100px;
+align-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .pri-nav{
+    background-color: #155799;
+    color: white;
+    display: none;
+    
+  }
+  .page-content{
+    background-color: #155799;
+      color: white;
+      display: flex;
+      height: 45px;
+      align-content: center;
+  }
+  .logo{
+    margin-left :35%; 
+margin-right : 5px; 
+width: 100px;
+align-content: center;
+  }
+} 
