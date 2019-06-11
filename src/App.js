@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Layout, Header ,Navigation,Drawer,Content} from 'react-mdl';
-import  Slider  from './Slider';
+import Nav from 'react-bootstrap/Nav'
 import Main from './main';
 import {Link} from 'react-router-dom';
 import Contact from './Contact';
@@ -11,6 +11,23 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Nav as="ul" style={{backgroundColor: '#155799', color:'white'}}>
+  <Nav.Item as="li">
+    <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
+  </Nav.Item>
+  <Nav.Item as="li">
+    <Nav.Link  style={{ color:'white'}} href="/resoluciones">Resoluciones</Nav.Link>
+  </Nav.Item>
+  <Nav.Item as="li">
+    <Nav.Link  style={{ color:'white'}} href="/biblioteca">Biblioteca</Nav.Link>
+  </Nav.Item>
+  <Nav.Item as="li">
+    <Nav.Link  style={{ color:'white'}} href="/trabajo">Bolsa de Trabajo</Nav.Link>
+  </Nav.Item>
+  <Nav.Item as="li">
+    <Nav.Link  style={{ color:'white'}} href="/galeria">Galeria de fotos</Nav.Link>
+  </Nav.Item>
+</Nav>
         <Layout>
           <Header className="header-color" title="UNIVERSIDAD" scroll>
               <Navigation>
@@ -38,6 +55,7 @@ class App extends Component {
           </Drawer>
           <Content>
               <Main />
+              <Contact></Contact>
           </Content>
       </Layout>
       </div>

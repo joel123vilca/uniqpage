@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import  Carousel from 'react-bootstrap/Carousel'
+import Button from 'react-bootstrap/Button'
 
 class Slider extends Component {
     constructor(props, context) {
@@ -38,6 +39,7 @@ class Slider extends Component {
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <Button className="primari">Test</Button>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
