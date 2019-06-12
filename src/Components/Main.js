@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import LandingPage from './LandingPage';
 import Careeres from './Careers';
 import Investigation from './Investigation';
-import Resume from './resume';
+import Admission from './Admission';
 
 const Main = () => (
     <Switch>
@@ -11,7 +11,7 @@ const Main = () => (
         <Route  path="/carreras" component={Careeres} />
         <Route  path="/interculturalidad" component={Culture} />
         <Route  path="/investigacion" component={Investigation} />
-        <Route  path="/resume" component={Resume} />
+        <Route  path="/admision" component={Admission} />
     </Switch>
 )
 export default Main;
