@@ -45,7 +45,7 @@ class Slider extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://www.usm.cl/assets/img/carreras/fotos/vina-del-mar-tecnico-universitario-en-informatica.w700.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC1R-aAuuPKO0jL9rNLFiiN-u41s6OP6sum7nUFi3a73bwy5J"
               alt="Third slide"
             />
   

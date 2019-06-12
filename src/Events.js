@@ -24,7 +24,7 @@ class Events extends Component{
                     </CardActions>
                 </Card>
                 <Card shadow={0} style={{width: '320px', height: '320px', marginTop: '1%', marginLeft:'5%',padding:'10px'}}>
-                    <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>
+                    <CardTitle expand style={{color: '#fff', background: 'url(http://www.maluenda.es/public/noticias/99_cursos_informatica.png) bottom right 15% no-repeat #46B6AC'}}>
                         <span style={{height: '78px', width:'78px',padding:'10px', background: '#2c3e50',color: '#fff', fontSize: '24px', fontWeight: '500', textAlign:'center'}}>
                             Junio
                             12
@@ -40,7 +40,7 @@ class Events extends Component{
                     </CardActions>
                 </Card>
                 <Card shadow={0} style={{width: '320px', height: '320px', marginTop: '1%', marginLeft:'5%',padding:'10px'}}>
-                    <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>
+                    <CardTitle expand style={{color: '#fff', background: 'url(http://www.alegsa.com.ar/Imagen/informatica.png) bottom right 15% no-repeat #46B6AC'}}>
                         <span style={{height: '78px', width:'78px',padding:'10px', background: '#2c3e50',color: '#fff', fontSize: '24px', fontWeight: '500', textAlign:'center'}}>
                             Junio
                             12
