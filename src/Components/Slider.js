@@ -27,11 +27,24 @@ class Slider extends Component {
         direction: e.direction,
       });
     }
-  
+    
+    renderBannersList() {
+      return this.props.banners.map((banner) => {
+        return (
+          <div key={banner.id}>
+            <h3>{banner.title_es}</h3>
+          </div>
+        )
+      })
+    }
+
     render() {
       const { index, direction } = this.state;
   
       return (
+        <div>
+         
+          
         <Carousel
           activeIndex={index}
           direction={direction}
@@ -44,6 +57,7 @@ class Slider extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
+            { this.renderBannersList() }
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
               <Button className="primari">Test</Button>
@@ -70,12 +84,10 @@ class Slider extends Component {
   
             <Carousel.Caption>
               <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption>
-          </Carousel.Item>
+          </Carousel.Item>       
         </Carousel>
+        </div>
       );
     }
 }
