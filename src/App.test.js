@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Contact from './Contact';
+import Culture from './Components/Culture';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+it('test of footer', () => {
+  const footer = document.createElement('Footer');
+  ReactDOM.render(<Contact />, footer);
+});
+
+it('test of culture', () => {
+  const grid = document.createElement('Grid');
+  ReactDOM.render(<Culture />, grid);
 });

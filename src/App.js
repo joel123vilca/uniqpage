@@ -43,7 +43,7 @@ class App extends Component {
                 </Menu>
                 </Link>
                 <Link to="/Interculturalidad">Interculturalidad</Link>
-                <Link to="/Escuelas">Escuelas</Link>
+                <Link to="/Carreras">Escuelas</Link>
                 <Link to="/Investigación">Investigación</Link>
                 <Link to="/Servicios">Servicios</Link>
                 <Link to="/Adminsión">Admisión</Link>
@@ -55,7 +55,7 @@ class App extends Component {
                 <Link to="/Inicio">Inicio</Link>
                 <Link to="/Nosotros">Nosotros</Link>
                 <Link to="/Interculturalidad">Interculturalidad</Link>
-                <Link to="/Escuelas">Escuelas</Link>
+                <Link to="/Carreras">Escuelas</Link>
                 <Link to="/Investigación">Investigación</Link>
                 <Link to="/Servicios">Servicios</Link>
                 <Link to="/Adminsión">Admisión</Link>
