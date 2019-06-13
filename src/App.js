@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {Layout, Header ,Navigation,Drawer,Content, Menu, MenuItem} from 'react-mdl';
 import Nav from 'react-bootstrap/Nav'
-import Main from './Components/Main';
+import Main from './components/Main';
 import {Link} from 'react-router-dom';
 import Contact from './Contact';
 import logo from './image/logo.jpeg';

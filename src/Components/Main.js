@@ -5,7 +5,7 @@ import Careers from './Careers';
 import Culture from './Culture';
 import Investigation from './Investigation';
 import Admission from './Admission';
-import Alliances from './ Alliances';
+import Alliances from './Alliances';
 
 const Main = () => (
     <Switch>

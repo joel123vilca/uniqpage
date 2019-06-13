@@ -1,6 +1,9 @@
-import React, { Component } from 'react'
-import  Carousel from 'react-bootstrap/Carousel'
-import Button from 'react-bootstrap/Button'
+import React, { Component } from 'react';
+import  Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
+import { connect } from 'react-redux'
+import { showBanners } from '../actions'
+
 
 class Slider extends Component {
     constructor(props, context) {
@@ -12,6 +15,10 @@ class Slider extends Component {
         index: 0,
         direction: null,
       };
+    }
+  
+    componentWillMount() {
+      this.props.showBanners()
     }
   
     handleSelect(selectedIndex, e) {
@@ -33,7 +40,7 @@ class Slider extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://www.usm.cl/assets/img/carreras/fotos/vina-del-mar-tecnico-universitario-en-informatica.w700.jpg"
+              src="http://uniq.edu.pe/public/img/imagenes/banner/elarenal.jpg"
               alt="First slide"
             />
             <Carousel.Caption>
@@ -45,7 +52,7 @@ class Slider extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC1R-aAuuPKO0jL9rNLFiiN-u41s6OP6sum7nUFi3a73bwy5J"
+              src="http://uniq.edu.pe/public/img/imagenes/banner/carreras.jpg"
               alt="Third slide"
             />
   
@@ -57,7 +64,7 @@ class Slider extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://www.usm.cl/assets/img/carreras/fotos/vina-del-mar-tecnico-universitario-en-informatica.w700.jpg"
+              src="http://uniq.edu.pe/public/img/imagenes/banner/encabezado.png"
               alt="Third slide"
             />
   
@@ -72,4 +79,11 @@ class Slider extends Component {
       );
     }
 }
-export default Slider;
+
+function mapStateToProps(state) {
+  return {
+    banners: state.banner.list
+  }
+}
+
+export default connect(mapStateToProps, { showBanners })(Slider)

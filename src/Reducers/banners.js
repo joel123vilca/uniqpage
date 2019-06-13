@@ -1,7 +1,7 @@
 import { SHOW_BANNERS } from '../actions'
 
 const initialState = {
-    banners: []
+    list: []
 }
 
 export function showBanners(state = [], action) {
