@@ -11,7 +11,7 @@ import logo from './image/logo.jpeg'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <Nav as="ul" className="pri-nav justify-content-end" >
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
