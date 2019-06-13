@@ -56,7 +56,9 @@ class Events extends Component{
                     </CardActions>
                 </Card>
               </Grid>
-              <Button colored style={{marginTop:'20px', textAlign:'center'}}>Mas Eventos de la UNIQ</Button>
+              <Button raised ripple>
+                Block level button
+                </Button>
             </div>
         );
     }
