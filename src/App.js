@@ -6,12 +6,12 @@ import Nav from 'react-bootstrap/Nav'
 import Main from './Components/Main';
 import {Link} from 'react-router-dom';
 import Contact from './Contact';
-import logo from './image/logo.jpeg'
+import logo from './image/logo.jpeg';
 
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div>
         <Nav as="ul" className="pri-nav justify-content-end" >
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
