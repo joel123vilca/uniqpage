@@ -33,20 +33,13 @@ class App extends Component {
           <Header className="header-color" title="UNIVERSIDAD" scroll>
               <Navigation>
                 <Link to="/inicio">Inicio</Link>
-                <Link id="demo-menu-lower-left" >
+                <Link to="" id="demo-menu-lower-left" >
                   Nosotros
                   <Menu target="demo-menu-lower-left">
-                  <ul style={{ listStyleType: "none", padding: 0 }}>
-                  <li>
-                    <Link to="/">universidad</Link>
-                    </li>
-                    <li>
-                    <Link to="/alianzas">Alianzas</Link>
-                    </li>
-                    <li>
-                    <Link to="/docentes">Docentes</Link>
-                    </li>
-                  </ul>
+                    <MenuItem>Universidad</MenuItem>
+                    <MenuItem>mision</MenuItem>
+                    <MenuItem>Docentes</MenuItem>
+                    <MenuItem>Alianzas</MenuItem>
                   </Menu>
                 </Link>
                 <Link to="/Interculturalidad">Interculturalidad</Link>

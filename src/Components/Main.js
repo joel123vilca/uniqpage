@@ -17,6 +17,6 @@ const Main = () => (
         <Route  path="/admision" component={Admission} />
         <Route  path="/alianzas" component={Alliances} />
         <Route path="*" component={Culture}/>
-    </Switch>    
+    </Switch>  
 )
 export default Main;

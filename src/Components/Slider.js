@@ -31,63 +31,32 @@ class Slider extends Component {
     renderBannersList() {
       return this.props.banners.map((banner) => {
         return (
-          <div key={banner.id}>
+          <Carousel.Item key={banner.id}>
+          <img
+            className="d-block w-100"
+            src={banner.image}
+            alt="First slide"
+          />
+          <Carousel.Caption>
             <h3>{banner.title_es}</h3>
-          </div>
+            <p>{banner.description_es}</p>
+            <Button className="primari">Test</Button>
+          </Carousel.Caption>
+        </Carousel.Item>
         )
       })
     }
 
     render() {
       const { index, direction } = this.state;
-  
-      return (
-        <div>
-         
-          
+      return (   
         <Carousel
           activeIndex={index}
           direction={direction}
           onSelect={this.handleSelect}
         >
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://uniq.edu.pe/public/img/imagenes/banner/elarenal.jpg"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-            { this.renderBannersList() }
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              <Button className="primari">Test</Button>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://uniq.edu.pe/public/img/imagenes/banner/carreras.jpg"
-              alt="Third slide"
-            />
-  
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="http://uniq.edu.pe/public/img/imagenes/banner/encabezado.png"
-              alt="Third slide"
-            />
-  
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-            </Carousel.Caption>
-          </Carousel.Item>       
+          { this.renderBannersList() } 
         </Carousel>
-        </div>
       );
     }
 }
