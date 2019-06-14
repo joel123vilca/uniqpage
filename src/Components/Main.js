@@ -6,6 +6,7 @@ import Culture from './Culture';
 import Investigation from './Investigation';
 import Admission from './Admission';
 import Alliances from './Alliances';
+import Notfound from './Notfound';
 
 const Main = () => (
     <Switch>
@@ -16,7 +17,7 @@ const Main = () => (
         <Route  path="/investigacion" component={Investigation} />
         <Route  path="/admision" component={Admission} />
         <Route  path="/alianzas" component={Alliances} />
-        <Route path="*" component={Culture}/>
+        <Route path="*" component={Notfound}/>
     </Switch>  
 )
 export default Main;
