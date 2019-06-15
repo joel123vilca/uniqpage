@@ -294,6 +294,39 @@ a.more-link {
   letter-spacing: 1px;
 }
 
+/* scroll boletin*/
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+.horizontal-scroll-wrapper{
+  position: relative;
+  top:0;
+  left:0;
+  width:250px;
+  height:1200px;
+  margin:0;
+  background:#abc;
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:rotate(-90deg)   translateY(-80px);
+  transform-origin:right top;
+}
+.horizontal-scroll-wrapper > div{
+  top: 0;
+  padding:5px;
+  background:#cab;
+  transform:rotate(90deg);
+  transform-origin: right top;
+}
+
+.squares{
+  padding:20px 0 0 0;
+}
+
+.squares > div{
+  width:200px;
+  height:200px;
+  margin:10px;
+}
 
 @media only screen and (max-width: 600px) {
   .pri-nav{
@@ -311,8 +344,8 @@ a.more-link {
   }
   .logo{
     margin-left :35%; 
-margin-right : 5px; 
-width: 100px;
-align-content: center;
+    margin-right : 5px; 
+    width: 100px;
+    align-content: center;
   }
 } 
