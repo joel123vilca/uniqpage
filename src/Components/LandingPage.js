@@ -18,7 +18,7 @@ class LandingPage extends Component {
                     alt="joel vilca"
                     className="perfil-img"
                 />
-                <p>HTML/CSS | Javascript | React | React-Native | Redux | Php | Mysql | Laravel</p>
+                <p>HTML/CSS | Javascript | React | React-Native | Redux </p>
                 </Cell>
             </Grid>
         </div>

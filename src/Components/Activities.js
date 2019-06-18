@@ -1,8 +1,9 @@
 import React from "react";
 import moment from "moment";
-import { range } from "moment-range";
 import "./calendar.css";
 import { Grid } from 'react-mdl';
+
+
 export default class Calendar extends React.Component {
   weekdayshort = moment.weekdaysShort();
 
@@ -250,7 +251,7 @@ export default class Calendar extends React.Component {
     });
 
     return (
-        <Grid style={{height: '400px'}}>
+        <Grid style={{height: '400px', textAlign: 'center'}}>
         <div className="tail-datetime-calendar">
         <div className="calendar-navi">
           <span
@@ -287,16 +288,6 @@ export default class Calendar extends React.Component {
           )}
         </div>
 
-        {this.state.showDateTable && (
-          <div className="calendar-date">
-            <table className="calendar-day">
-              <thead>
-                <tr>{weekdayshortname}</tr>
-              </thead>
-              <tbody>{daysinmonth}</tbody>
-            </table>
-          </div>
-        )}
       </div>
         </Grid>
     );
