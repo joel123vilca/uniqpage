@@ -59,7 +59,7 @@ class Events extends Component{
               <Button raised ripple>
                 Block level button
                 </Button>
-            </div>
+                </div>
         );
     }
 }

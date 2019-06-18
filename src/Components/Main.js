@@ -7,7 +7,8 @@ import Investigation from './Investigation';
 import Admission from './Admission';
 import Alliances from './Alliances';
 import Notfound from './Notfound';
-import  Bulletin from './Bulletin';
+import Bulletin from './Bulletin';
+import Activities from './Activities';
 
 const Main = () => (
     <Switch>
@@ -18,7 +19,7 @@ const Main = () => (
         <Route  path="/investigacion" component={Investigation} />
         <Route  path="/admision" component={Admission} />
         <Route  path="/alianzas" component={Alliances} />
-        <Route  path="/boletin"  component={Bulletin}/>
+        <Route  path="/boletin"  component={Activities}/>
         <Route path="*" component={Notfound}/>
     </Switch>  
 )
