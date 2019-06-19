@@ -262,15 +262,12 @@ export default class Calendar extends React.Component {
           />
           {!this.state.showMonthTable && (
             <span
-              onClick={e => {
-                this.showMonth();
-              }}
               class="calendar-label"
             >
               {this.month()}
             </span>
           )}
-          <span className="calendar-label" onClick={e => this.showYearTable()}>
+          <span className="calendar-label">
             {this.year()}
           </span>
            <span
@@ -280,13 +277,7 @@ export default class Calendar extends React.Component {
           className="calendar-button button-next"
         />
         </div>
-       
-        <div className="calendar-date">
-          {this.state.showYearTable && <this.YearTable props={this.year()} />}
-          {this.state.showMonthTable && (
-            <this.MonthList data={moment.months()} />
-          )}
-        </div>
+        
 
       </div>
         </Grid>
