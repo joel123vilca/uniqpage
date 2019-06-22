@@ -69,7 +69,7 @@ export default class Calendar extends React.Component {
     let cells = [];
 
     months.forEach((row, i) => {
-      if (i % 3 !== 0 || i == 0) {
+      if (i % 3 !== 0 || i === 0) {
         cells.push(row);
       } else {
         rows.push(cells);
@@ -171,7 +171,7 @@ export default class Calendar extends React.Component {
     let cells = [];
 
     months.forEach((row, i) => {
-      if (i % 3 !== 0 || i == 0) {
+      if (i % 3 !== 0 || i === 0) {
         cells.push(row);
       } else {
         rows.push(cells);
@@ -215,7 +215,7 @@ export default class Calendar extends React.Component {
     }
     let daysInMonth = [];
     for (let d = 1; d <= this.daysInMonth(); d++) {
-      let currentDay = d == this.currentDay() ? "today" : "";
+      let currentDay = d === this.currentDay() ? "today" : "";
       daysInMonth.push(
         <td key={d} className={`calendar-day ${currentDay}`}>
           <span

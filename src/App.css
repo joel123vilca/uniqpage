@@ -314,8 +314,21 @@ a.more-link {
 }
 
 .bulletin--image {
-  width: 100%;
-  height: 100%;
+  width:100%;
+	height:100%;
+	position:relative;
+}
+.bulletin--fecha{
+  position: relative;
+  height: 20px;
+  width: 20px;
+  padding:20px;
+  margin-top: 0px;
+  background: #2c3e50;
+  color: #fff;
+  font-Size: 24px;
+  font-Weight: 500;
+  text-Align:center;
 }
 
 @media only screen and (max-width: 600px) {
