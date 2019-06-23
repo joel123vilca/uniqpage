@@ -4,6 +4,9 @@ import { CardText, Card, CardTitle, CardActions, Button } from 'react-mdl';
 class Bulletin extends Component {
     render(){
         return (
+            <div>
+                <h1>titulo</h1>
+            
             <section className="bulletin">
                 <div className="bulletin--content">
                 <Card shadow={0} style={{width: '300px', height: '320px'}}>
@@ -96,6 +99,7 @@ class Bulletin extends Component {
                 </Card>
                 </div>
             </section>
+            </div>
         );
     }
 }
