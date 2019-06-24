@@ -1,9 +1,13 @@
 
 .header-color{
-  background: #17a2b8; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,#17a2b8, #17a2b8,#17a2b8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,#17a2b8, #17a2b8,#17a2b8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #376970; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#376970, #376970,#376970); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#376970, #376970,#376970); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: auto;
+}
+.header--letter{
+  font-family: 'Open Sans','Bold';
+  font-size: 35px; 
 }
 .landing-grid{
   background-image: url('https://i.pinimg.com/564x/c9/89/a0/c989a0dc7eb64c294e6628a663453f5f.jpg');
@@ -107,8 +111,9 @@ padding: 1em;
 } 
 
 .pri-nav{
-  background-color:#155799;
+  background-color:#30393A;
   color: white;
+  font-size: 11px;
 }
 .page-content{
   background-color: #155799;
@@ -118,10 +123,9 @@ padding: 1em;
     align-content: center;
 }
 .logo{
-  margin-left : 5px; 
-margin-right : 5px; 
-width: 100px;
-align-content: center;
+  left : 10px;  
+  width: 300px;
+  height: 70px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
