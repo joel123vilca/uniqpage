@@ -33,7 +33,7 @@ class Slider extends Component {
         return (
           <Carousel.Item key={banner.id}>
           <img
-            className="d-block w-100"
+            className="d-block w-100 slider"
             src={banner.image}
             alt="First slide"
           />

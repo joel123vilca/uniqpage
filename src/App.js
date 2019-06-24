@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav as="ul" className="pri-nav justify-content-end" >
+        <Nav as="ul" className="pri-nav justify-content-end  menu" >
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
           </Nav.Item>

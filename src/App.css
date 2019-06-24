@@ -1,10 +1,8 @@
 
 .header-color{
-  background: #833ab4; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right,#bbd2c5, #536976, #292e49); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,#bbd2c5,
-  #536976,
-  #292e49); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #17a2b8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#17a2b8, #17a2b8,#17a2b8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#17a2b8, #17a2b8,#17a2b8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: auto;
 }
 .landing-grid{
@@ -103,15 +101,14 @@ padding: 1em;
   display: flex;
 }
 .slider{
-  margin-top:1%;
+  top: 64px;
   height: 300px;
   width: 100%;
 } 
 
 .pri-nav{
-  background-color: #155799;
+  background-color:#155799;
   color: white;
-  display: flex;
 }
 .page-content{
   background-color: #155799;
@@ -341,13 +338,13 @@ a.more-link {
 }
 @media only screen and (max-width: 600px) {
   .pri-nav{
-    background-color: #155799;
+    background-color:#17a2b8;
     color: white;
     display: none;
     
   }
   .page-content{
-    background-color: #155799;
+    background-color:#17a2b8;
       color: white;
       display: flex;
       height: 45px;
@@ -359,4 +356,8 @@ a.more-link {
     width: 100px;
     align-content: center;
   }
+  .slider{
+    height: 255px;
+    width: 100%;
+  } 
 } 
