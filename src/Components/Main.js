@@ -7,7 +7,6 @@ import Investigation from './Investigation';
 import Admission from './Admission';
 import Alliances from './Alliances';
 import Notfound from './Notfound';
-import Bulletin from './Bulletin';
 import Activities from './Activities';
 
 const Main = () => (

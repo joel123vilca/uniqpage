@@ -33,8 +33,8 @@ class App extends Component {
           <Header className="header-color"   scroll>
           <img src={logo}  alt="logo"  className="logo"/>
               <Navigation>
-                <Link to="/inicio" className="font-weight-bold">Inicio</Link>
-                <Link to=""  className="font-weight-bold" id="demo-menu-lower-left" >
+                <Link to="/inicio" className="font-weight-bold" >Inicio</Link>
+                <Link to="" className="font-weight-bold" id="demo-menu-lower-left" >
                   Nosotros
                   <Menu target="demo-menu-lower-left">
                     <MenuItem>Universidad</MenuItem>
@@ -51,10 +51,17 @@ class App extends Component {
                 <Link to="/Boletin" className="font-weight-bold">Boletin</Link>
               </Navigation>
           </Header>
-          <Drawer title="UNIQ" className="drawer">
+          <Drawer title="U N I Q" className="drawer">
               <Navigation>
-                <Link to="/Inicio">Inicio</Link>
-                <Link to="/Nosotros">Nosotros</Link>
+              <Link to=""  className="font-weight-bold" id="demo-menu-lower-left" >
+                  Nosotros
+                  <Menu target="demo-menu-lower-left">
+                    <MenuItem>Universidad</MenuItem>
+                    <MenuItem>mision</MenuItem>
+                    <MenuItem>Docentes</MenuItem>
+                    <MenuItem>Alianzas</MenuItem>
+                  </Menu>
+                </Link>
                 <Link to="/Interculturalidad">Interculturalidad</Link>
                 <Link to="/Carreras">Escuelas</Link>
                 <Link to="/Investigación">Investigación</Link>

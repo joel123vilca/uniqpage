@@ -17,13 +17,6 @@ class Contact extends Component {
             </FooterLinkList>
         </FooterDropDownSection>
         <FooterDropDownSection title="Enlaces">
-            <FooterLinkList>
-                <a href="#">Ministerio de educación</a>
-                <a href="#">Concitec</a>
-                <a href="#">DINA</a>
-            </FooterLinkList>
-        </FooterDropDownSection>
-        <FooterDropDownSection title="Enlaces">
         <FooterLinkList>
         <div className="social-links">
 

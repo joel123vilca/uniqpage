@@ -23,38 +23,6 @@ class Events extends Component{
                         <Button  colored>View Updates</Button>
                     </CardActions>
                 </Card>
-                <Card shadow={0} style={{width: '320px', height: '320px', marginTop: '1%', marginLeft:'5%',padding:'10px'}}>
-                    <CardTitle expand style={{color: '#fff', background: 'url(http://www.maluenda.es/public/noticias/99_cursos_informatica.png) bottom right 15% no-repeat #46B6AC'}}>
-                        <span style={{height: '78px', width:'78px',padding:'10px', background: '#2c3e50',color: '#fff', fontSize: '24px', fontWeight: '500', textAlign:'center'}}>
-                            Junio
-                            12
-                        </span>
-                    </CardTitle>
-                        <CardText style={{ color:'black'}}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.<br/><br/>
-                        <time>through May 14, 2020</time>
-                        </CardText>
-                    <CardActions border>
-                        <Button  colored>View Updates</Button>
-                    </CardActions>
-                </Card>
-                <Card shadow={0} style={{width: '320px', height: '320px', marginTop: '1%', marginLeft:'5%',padding:'10px'}}>
-                    <CardTitle expand style={{color: '#fff', background: 'url(http://www.alegsa.com.ar/Imagen/informatica.png) bottom right 15% no-repeat #46B6AC'}}>
-                        <span style={{height: '78px', width:'78px',padding:'10px', background: '#2c3e50',color: '#fff', fontSize: '24px', fontWeight: '500', textAlign:'center'}}>
-                            Junio
-                            12
-                        </span>
-                    </CardTitle>
-                        <CardText style={{ color:'black'}}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.<br/><br/>
-                        <time>through May 14, 2020</time>
-                        </CardText>
-                    <CardActions border>
-                        <Button  colored>View Updates</Button>
-                    </CardActions>
-                </Card>
               </Grid>
               <Button raised ripple>
                 Block level button
