@@ -10,7 +10,7 @@ class Bulletin extends Component {
                 <div className="bulletin--content">
                 <Card shadow={0} style={{width: '300px', height: '320px'}}>
                     <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"></img>
+                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen uno" />
                         <span className="bulletin--fecha">
                             Junio
                             12
@@ -28,7 +28,7 @@ class Bulletin extends Component {
                 <div className="bulletin--content">
                 <Card shadow={0} style={{width: '300px', height: '320px'}}>
                     <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"></img>
+                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"  alt="imagen dos"/>
                         <span className="bulletin--fecha">
                             Junio
                             12
@@ -46,7 +46,7 @@ class Bulletin extends Component {
                 <div className="bulletin--content">
                 <Card shadow={0} style={{width: '300px', height: '320px'}}>
                     <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"></img>
+                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen tres" />
                         <span className="bulletin--fecha">
                             Junio
                             12
@@ -64,7 +64,7 @@ class Bulletin extends Component {
                 <div className="bulletin--content">
                 <Card shadow={0} style={{width: '300px', height: '320px'}}>
                     <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"></img>
+                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen cuatro" />
                         <span className="bulletin--fecha">
                             Junio
                             12
@@ -82,7 +82,7 @@ class Bulletin extends Component {
                 <div className="bulletin--content">
                 <Card shadow={0} style={{width: '300px', height: '320px'}}>
                     <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"></img>
+                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen cinco" />
                         <span className="bulletin--fecha">
                             Junio
                             12

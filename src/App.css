@@ -6,6 +6,10 @@
   height: auto;
 
 }
+/* navbar */
+.bg-dark {
+  background-color: #376970!important;
+}
 .header--letter{
   font-family: 'Open Sans', bold;
   font-weight: 700;
