@@ -8,6 +8,9 @@ import Admission from './Admission';
 import Alliances from './Alliances';
 import Notfound from './Notfound';
 import Activities from './Activities';
+import ViewUniq from './ViewUniq';
+import Teachers from './Teachers';
+import Mision from './Mision';
 
 const Main = () => (
     <Switch>
@@ -19,6 +22,9 @@ const Main = () => (
         <Route  path="/admision" component={Admission} />
         <Route  path="/alianzas" component={Alliances} />
         <Route  path="/boletin"  component={Activities}/>
+        <Route  path="/universidad" component={ViewUniq}/>
+        <Route  path="/docentes" component={Teachers}/>
+        <Route  path="/mision" component={Mision}/>
         <Route path="*" component={Notfound}/>
     </Switch>  
 )

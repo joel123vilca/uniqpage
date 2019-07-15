@@ -14,7 +14,7 @@ class Careers extends Component {
         return(
             <div>
               <center>
-              <h2>Misión</h2>
+              <h2 className="career-title">Misión</h2>
                 <p>
                   “Brindar formación profesional universitaria de calidad al estudiante universitario, 
                   en base a la generación de conocimiento humanístico, científico, 
@@ -27,7 +27,7 @@ class Careers extends Component {
         return(
             <div>
               <center>
-              <h2>Perfil Profesional del Ingeniero Agrónomo Tropical</h2>
+              <h2 className="career-title">Perfil Profesional del Ingeniero Agrónomo Tropical</h2>
                 <p>
                 El graduado de la Universidad Nacional Intercultural de Quillabamba, independientemente de sus competencias específicas, adquieren las siguientes competencias generales:
                 </p>
@@ -37,21 +37,29 @@ class Careers extends Component {
     } else if(this.state.activeTab === 2){
         return(
             <div>
-              <h2>Grado Académico</h2>
-              <h2>Título Profesional</h2>
-              <h2>Semestres Académicos</h2>
-              <h2>Número de Créditos</h2>
-              <h2>Modalidad</h2>
+              <center>
+              <h2 className="career-title" >Grado Académico</h2>
+              <h2 className="career-title">Título Profesional</h2>
+              <h2 className="career-title" >Semestres Académicos</h2>
+              <h2 className="career-title">Número de Créditos</h2>
+              <h2 className="career-title">Modalidad</h2>
+              </center>
             </div>
         )
     } else if(this.state.activeTab === 3){
         return(
-            <div><h2>Semestres Academico</h2></div>
+            <div>
+              <center>
+              <h2 className="career-title">Semestres Academico</h2>
+              </center>
+            </div>
         )
     } else if(this.state.activeTab === 4){
       return(
           <div>
-            <h2>Malla Curricular</h2>
+            <center>
+              <h2 className="career-title">Malla Curricular</h2>
+            </center>
             <img
             className="d-block w-100 slider"
             src={malla_ing_agronimica}
@@ -71,7 +79,7 @@ class Careers extends Component {
           />
           <br></br>
         <div className="demo-tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+                <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab>Mision</Tab>
                     <Tab>Perfil Profesional</Tab>
                     <Tab>Grado - Titulo - Modalidad</Tab>
@@ -79,9 +87,7 @@ class Careers extends Component {
                     <Tab>Malla Curricular</Tab>
                 </Tabs>
                 <section>
-                    <div className="content">
-                      <div className="content">{this.toggleCategories()}</div>
-                    </div>
+                      <div className="career-content">{this.toggleCategories()}</div>
                 </section>
         </div>
       </div>

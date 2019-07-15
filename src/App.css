@@ -331,7 +331,6 @@ a.more-link {
   margin: 5px;
   box-shadow: 3px 5px rgba(255,255,255,0.05);
 }
-
 .bulletin--card {
 	position:relative;
 }
@@ -358,6 +357,17 @@ a.more-link {
 }
 .bulletin--action{
   margin-top: 2px;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,800');
+.career-content{
+  background-color: #1c3643;
+  color: #F8FAFF;
+}
+.career-title{
+  font-size: 35px;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 800;
 }
 @media only screen and (max-width: 600px) {
   .pri-nav{

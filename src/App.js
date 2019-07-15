@@ -37,18 +37,75 @@ class App extends Component {
                 <Link to="" className="font-weight-bold" id="demo-menu-lower-left" >
                   Nosotros
                   <Menu target="demo-menu-lower-left">
-                    <MenuItem>Universidad</MenuItem>
-                    <MenuItem>mision</MenuItem>
-                    <MenuItem>Docentes</MenuItem>
-                    <MenuItem>Alianzas</MenuItem>
+                  <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Universidad
+                      </MenuItem>
+                  </Link>
+                  <Link to="/mision" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Misión
+                      </MenuItem>
+                  </Link>
+                  <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Docentes
+                      </MenuItem>
+                  </Link>
+                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Alianzas
+                      </MenuItem>
+                  </Link>
                   </Menu>
                 </Link>
                 <Link to="/Interculturalidad" className="font-weight-bold" >Interculturalidad</Link>
-                <Link to="/Carreras" className="font-weight-bold" >Escuelas</Link>
-                <Link to="/Investigación" className="font-weight-bold" >Investigación</Link>
+                <Link to="/Carreras" className="font-weight-bold" id="esc">Escuelas
+                  <Menu target="esc">
+                  <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Economia Agraria
+                      </MenuItem>
+                  </Link>
+                  </Menu>
+                </Link>
+                <Link to="" className="font-weight-bold" id="inv" >
+                  Investigación
+                  <Menu target="inv">
+                  <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Lineas de Investigación
+                      </MenuItem>
+                  </Link>
+                  <Link to="/mision" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Reglamento del Docente
+                      </MenuItem>
+                  </Link>
+                  <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Reglamento de propiedad Intelectual
+                      </MenuItem>
+                  </Link>
+                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Codigo de Etica
+                      </MenuItem>
+                  </Link>
+                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Docentes Investigadores
+                      </MenuItem>
+                  </Link>
+                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Repositorio Institucional
+                      </MenuItem>
+                  </Link>
+                  </Menu>
+                </Link>
                 <Link to="/Servicios" className="font-weight-bold" >Servicios</Link>
                 <Link to="/Adminsión" className="font-weight-bold">Admisión</Link>
-                <Link to="/Boletin" className="font-weight-bold">Boletin</Link>
               </Navigation>
           </Header>
           <Drawer title="U N I Q" className="drawer">
@@ -56,7 +113,7 @@ class App extends Component {
               <Link to=""  className="font-weight-bold" id="demo-menu-lower-left" >
                   Nosotros
                   <Menu target="demo-menu-lower-left">
-                    <MenuItem>Universidad</MenuItem>
+                    <MenuItem as={Link} to='/home'>Universidad</MenuItem>
                     <MenuItem>mision</MenuItem>
                     <MenuItem>Docentes</MenuItem>
                     <MenuItem>Alianzas</MenuItem>
@@ -67,7 +124,6 @@ class App extends Component {
                 <Link to="/Investigación">Investigación</Link>
                 <Link to="/Servicios">Servicios</Link>
                 <Link to="/Adminsión">Admisión</Link>
-                <Link to="/Boletin">Boletin</Link>
               </Navigation>
           </Drawer>
           <Content>

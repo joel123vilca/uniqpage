@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import universidad from '../image/universidad.jpg';
-class ViewUniq extends Component {
+import mision from '../image/mision.jpg';
+class Mision extends Component {
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}}>
       <img
           className="d-block w-100 slider"
-          src={universidad}
-          alt="banner universidad"
+          src={mision}
+          alt="banner mision"
         />
     </div>
     )
   }
 }
 
-export default ViewUniq;
+export default Mision;
