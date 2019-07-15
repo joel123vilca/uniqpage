@@ -5,7 +5,7 @@ class Events extends Component{
     render() {
         return (
             <div>
-              <h2 style={{lineHeight: '1.25em', fontSize:'3.0517578125em', fontFamily:'Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif',fontWeight: '900',textAlign:'center'}}>BOLETIN INFORMATIVO</h2>
+                <h2 className="bulletin-title">Actividades Oficiales</h2>
               <Grid style={{backgroundColor: 'white', height:'400px'}}>
                 <Card shadow={0} style={{width: '320px', height: '320px', marginTop: '1%', marginLeft:'5%',padding:'10px'}}>
                     <CardTitle expand style={{color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC'}}>
@@ -24,10 +24,7 @@ class Events extends Component{
                     </CardActions>
                 </Card>
               </Grid>
-              <Button raised ripple>
-                Block level button
-                </Button>
-                </div>
+            </div>
         );
     }
 }
