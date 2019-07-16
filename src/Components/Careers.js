@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./careers.css";
 import { Tab, Tabs} from 'react-mdl';
 import bannerAgronomia from '../image/banner-agronomia.jpg'; 
 import malla_ing_agronimica from '../image/malla_ing_agronomica.png';

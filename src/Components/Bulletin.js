@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./bulletin.css";
 import { CardText, Card, CardActions, Button } from 'react-mdl'; 
 
 class Bulletin extends Component {

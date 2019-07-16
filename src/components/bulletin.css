@@ -1,0 +1,55 @@
+.bulletin-title{
+    background-color:#F8FAFF;
+    color:#376970;
+    font-size: 30px;
+    font-family: 'Open Sans', bold;
+    font-weight: 700;
+    text-align: center;
+  }
+  .bulletin--div{
+    background-color:#F8FAFF;
+    height: 450px;
+  }
+  .bulletin {
+    background-color:#F8FAFF;
+    display: flex;
+    min-width: 100%;
+    min-height: 200px;
+    overflow-x: auto;
+  }
+  .bulletin::-webkit-scrollbar {
+    display: none;
+  }
+  .bulletin--content {
+    background-color: #e74c3c;
+    min-width: 300px;
+    margin: 5px;
+    box-shadow: 3px 5px rgba(255,255,255,0.05);
+  }
+  .bulletin--card {
+      position:relative;
+  }
+  .bulletin--image{
+    width: 300px;
+    height: 200px;
+  }
+  .bulletin--fecha{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+    margin-top: 130px;
+    left:0px;
+    background: #2c3e50;
+    color: #fff;
+    font-Size: 24px;
+    font-Weight: 500;
+    text-Align:center;
+  }
+  .bulletin--detail{
+    margin-top: -1px;
+    height: 70px;
+  }
+  .bulletin--action{
+    margin-top: 2px;
+  }

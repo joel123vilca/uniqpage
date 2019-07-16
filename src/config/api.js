@@ -1,0 +1,1 @@
+export const  HOST = 'http://api3.uniq.edu.pe/public/api'
