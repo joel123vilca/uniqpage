@@ -11,6 +11,7 @@ import Activities from './Activities';
 import ViewUniq from './ViewUniq';
 import Teachers from './Teachers';
 import Mision from './Mision';
+import Authorities from './Authorities';
 
 const Main = () => (
     <Switch>
@@ -25,6 +26,7 @@ const Main = () => (
         <Route  path="/universidad" component={ViewUniq}/>
         <Route  path="/docentes" component={Teachers}/>
         <Route  path="/mision" component={Mision}/>
+        <Route  path="/autoridades" component={Authorities} />
         <Route path="*" component={Notfound}/>
     </Switch>  
 )

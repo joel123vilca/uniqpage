@@ -34,7 +34,7 @@ class Slider extends Component {
           <Carousel.Item key={banner.id}>
           <img
             className="d-block w-100 slider"
-            src={banner.image}
+            src={banner.image_path}
             alt="First slide"
           />
           <Carousel.Caption>

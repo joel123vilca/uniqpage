@@ -1,44 +1,62 @@
 import React, { Component } from 'react';
-import {Footer, FooterDropDownSection, FooterLinkList, FooterSection} from 'react-mdl';
-
+import contact from './image/contact.png';
+import telefono from './image/telefono.png';
+import institucional from './image/institucional.png';
+import ubicacion from './image/ubicacion.png';
+import youtube from './image/youtube-ico.png';
+import directorio from './image/directorio.png';
+import facebook from './image/face-ico.png';
+import flickr from './image/flickr-ico.png';
 
 class Contact extends Component {
   render() {
     return(
-        <Footer size="mega" style={{color: 'white', backgroundColor:'#48b1bf'}}>
-    <FooterSection type="middle">
-        <FooterDropDownSection title="U N I Q ">
-            <FooterLinkList>
-                <a>info@uniq.edu.pe</a>
-                <a>084-282728</a>
-                <a>El Arenal S/N-Quillabamba</a>
-                <a>Directorio Electrónico</a>
-                <a>Correo Institucional</a>
-            </FooterLinkList>
-        </FooterDropDownSection>
-        <FooterDropDownSection title="Enlaces">
-        <FooterLinkList>
-        <div className="social-links">
-
-            {/* LinkedIn */}
-            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-facebook-square" aria-hidden="true" />
-            </a>
-
-            {/* Github */}
-            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-             <i className="fa fa-linkedin-square" aria-hidden="true" />
-            </a>
-
-            {/* Youtube */}
-            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
-            </a>
+        <div className="footer">
+        <div className="container-footer-all">
+            <div className="container-body">
+                <div className="colum1">
+                    <h1>Universidad Nacional Intercultural de Quillabamba</h1>
+                    <div className="row2">
+                        <img src={contact}  alt="contact"/>
+                        <label>info@uniq.edu.pe</label>
+                    </div>
+                    <div className="row2">
+                        <img src={telefono} alt="telefono"/>
+                        <label>084 - 282728</label>
+                    </div>
+                    <div className="row2">
+                        <img src={ubicacion} alt="ubicacion"/>
+                         <label>El Arenal S/N - Quillabamba</label>
+                    </div>
+                    <div className="row2">
+                        <img src={directorio} alt="directorio"/>
+                         <a className="referencia" href="http://www.uniq.edu.pe/directorioelectronico" target="_bank"><label>Directorio Electrónico</label></a>
+                    </div>
+                    <div className="row2">
+                        <img src={institucional} alt="institucional"/>
+                        <a className="referencia" target="_bank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=uniq.edu.pe&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession"><label>Correo Institucional</label></a>
+                    </div>
+                </div>
+                <div className="colum2">
+                </div>
+                <div className="colum3">
+                    <h1>Redes sociales</h1>
+                    <div className="row">
+                        <img src={facebook} alt="facebook"/>
+                        <a className="referencia" target="_bank" href="https://www.facebook.com/uniqquillabamba"><label>Siguenos en Facebook</label></a>
+                    </div>
+                    <div className="row">
+                        <img src={youtube} alt="youtube"/>
+                        <label>Siguenos en Youtube</label>
+                    </div>
+                    <div className="row">
+                        <img src={flickr} alt="photos"/>
+                        <a className="referencia" target="_bank" href="https://www.flickr.com/photos/155194300@N05/albums"><label>Siguenos en Flicker</label></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </FooterLinkList>
-    </FooterDropDownSection>
-    </FooterSection>
-</Footer>
+    </div>
     );
   }
 }
