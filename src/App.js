@@ -47,6 +47,11 @@ class App extends Component {
                         Misión
                       </MenuItem>
                   </Link>
+                  <Link to="/autoridades" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Nuestras Autoridades
+                      </MenuItem>
+                  </Link>
                   <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Docentes
@@ -114,7 +119,8 @@ class App extends Component {
                   Nosotros
                   <Menu target="demo-menu-lower-left">
                     <MenuItem as={Link} to='/home'>Universidad</MenuItem>
-                    <MenuItem>mision</MenuItem>
+                    <MenuItem>mision y vision</MenuItem>
+                    <MenuItem as={Link} to="/autoridades">Nuestras Autoridades</MenuItem>
                     <MenuItem>Docentes</MenuItem>
                     <MenuItem>Alianzas</MenuItem>
                   </Menu>
