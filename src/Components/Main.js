@@ -12,7 +12,7 @@ import ViewUniq from './ViewUniq';
 import Teachers from './Teachers';
 import Mision from './Mision';
 import Authorities from './Authorities';
-
+import ViewBulletin from './Viewbulletin';
 const Main = () => (
     <Switch>
         <Route exact path="/" component={LandingPage} />
@@ -27,7 +27,8 @@ const Main = () => (
         <Route  path="/docentes" component={Teachers}/>
         <Route  path="/mision" component={Mision}/>
         <Route  path="/autoridades" component={Authorities} />
-        <Route path="*" component={Notfound}/>
-    </Switch>  
+        <Route  path="/actividad/:id" component={ViewBulletin} />
+        <Route  path="*" component={Notfound}/>
+    </Switch>
 )
 export default Main;

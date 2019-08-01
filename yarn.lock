@@ -9,6 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@mobiscroll/react@https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-4.7.3.tgz":
+  version "4.7.3"
+  resolved "https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-4.7.3.tgz#a13c928c72baecb03047a991dd0111b6acc76e6b"
+
 "@react-bootstrap/react-popper@1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@react-bootstrap/react-popper/-/react-popper-1.2.1.tgz#4edf4851d5b4dcf2eb6b264ebbed1a7b7654177b"
@@ -2295,9 +2299,9 @@ es6-set@~0.1.5:
     es6-symbol "3.1.1"
     event-emitter "~0.3.5"
 
-es6-symbol@3.1.1, es6-symbol@^3.1.1, es6-symbol@~3.1.1:
+es6-symbol@3.1.1, es6-symbol@^3.1.0, es6-symbol@^3.1.1, es6-symbol@~3.1.1:
   version "3.1.1"
-  resolved "https://registry.yarnpkg.com/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
+  resolved "https://npm.mobiscroll.com/es6-symbol/-/es6-symbol-3.1.1.tgz#bf00ef4fdab6ba1b46ecb7b629b4c7ed5715cc77"
   integrity sha1-vwDvT9q2uhtG7Le2KbTH7VcVzHc=
   dependencies:
     d "1"
@@ -4596,6 +4600,18 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
+moment-range@4.0.1:
+  version "4.0.1"
+  resolved "https://npm.mobiscroll.com/moment-range/-/moment-range-4.0.1.tgz#1ae8cf209dded0a5ce5e16603146265b3906a86f"
+  integrity sha1-GujPIJ3e0KXOXhZgMUYmWzkGqG8=
+  dependencies:
+    es6-symbol "^3.1.0"
+
+moment@2.22.2:
+  version "2.22.2"
+  resolved "https://npm.mobiscroll.com/moment/-/moment-2.22.2.tgz#3c257f9839fc0e93ff53149632239eb90783ff66"
+  integrity sha1-PCV/mDn8DpP/UxSWMiOeuQeD/2Y=
+
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -5539,7 +5555,7 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^3.0.0"
 
-prop-types@^15.5.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.0, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -5739,6 +5755,13 @@ react-mdl@^1.11.0:
     classnames "^2.2.3"
     lodash.isequal "^4.4.0"
     prop-types "^15.5.0"
+
+react-messenger-customer-chat@^0.7.2:
+  version "0.7.2"
+  resolved "https://npm.mobiscroll.com/react-messenger-customer-chat/-/react-messenger-customer-chat-0.7.2.tgz#922aad45de0d6798dc549cfaf7aac2d907dbb395"
+  integrity sha512-loib6j9HHIx7XO4SrygYMSVFmXnbf47nqOBORC2+RRSU6Oj7OLNlsVYm3Bp286mRs8r4beLCB76RNoQXqiZpYQ==
+  dependencies:
+    prop-types "^15.6.0"
 
 react-overlays@^1.2.0:
   version "1.2.0"

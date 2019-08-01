@@ -1,107 +1,54 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import {Link} from 'react-router-dom';
+
+import { showStories } from '../actions';
 import "./bulletin.css";
-import { CardText, Card, CardActions, Button } from 'react-mdl'; 
+import { CardText, Card, CardActions, Button} from 'react-mdl'; 
 
 class Bulletin extends Component {
+    componentWillMount() {
+        this.props.showStories()
+    }
+    renderStoriesList() {
+        return this.props.stories.map((storie) => {
+          return (
+          <div className="bulletin--content" key={storie.id}>
+          <Card shadow={0} style={{width: '300px', height: '450px'}}>
+              <div className="bulletin--card">
+                  <img src="http://api3.uniq.edu.pe/public/storage/stories/7cO11qeUq5WtQOxZR59kMBtNXSIuJTIhHqoqZiF6.jpeg" className="bulletin--image" alt="imagen uno" />
+                  <span className="bulletin--fecha">
+                      {storie.publication_date}
+                  </span>
+              </div>
+              <CardText className="bulletin--detail">
+                  {storie.title}
+              </CardText>
+              <CardActions border className="bulletin--action">
+                  <Link className="btn btn-info" to={`/actividad/${storie.id}`}><Button
+                  colored
+                  >Ver más</Button></Link>
+              </CardActions>
+          </Card>
+          </div>
+          )
+        })
+      }
     render(){
         return (
             <div className="bulletin--div">
                 <h2 className="bulletin-title">Boletín Informativo</h2>
             <section className="bulletin">
-                <div className="bulletin--content">
-                <Card shadow={0} style={{width: '300px', height: '320px'}}>
-                    <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen uno" />
-                        <span className="bulletin--fecha">
-                            Junio
-                            12
-                        </span>
-                    </div>
-                    <CardText className="bulletin--detail">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.
-                    </CardText>
-                    <CardActions border className="bulletin--action">
-                        <Button colored>Ver más</Button>
-                    </CardActions>
-                </Card>
-                </div>
-                <div className="bulletin--content">
-                <Card shadow={0} style={{width: '300px', height: '320px'}}>
-                    <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image"  alt="imagen dos"/>
-                        <span className="bulletin--fecha">
-                            Junio
-                            12
-                        </span>
-                    </div>
-                    <CardText className="bulletin--detail">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.
-                    </CardText>
-                    <CardActions border className="bulletin--action">
-                        <Button colored>Ver más</Button>
-                    </CardActions>
-                </Card>
-                </div>
-                <div className="bulletin--content">
-                <Card shadow={0} style={{width: '300px', height: '320px'}}>
-                    <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen tres" />
-                        <span className="bulletin--fecha">
-                            Junio
-                            12
-                        </span>
-                    </div>
-                    <CardText className="bulletin--detail">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.
-                    </CardText>
-                    <CardActions border className="bulletin--action">
-                        <Button colored>Ver más</Button>
-                    </CardActions>
-                </Card>
-                </div>
-                <div className="bulletin--content">
-                <Card shadow={0} style={{width: '300px', height: '320px'}}>
-                    <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen cuatro" />
-                        <span className="bulletin--fecha">
-                            Junio
-                            12
-                        </span>
-                    </div>
-                    <CardText className="bulletin--detail">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.
-                    </CardText>
-                    <CardActions border className="bulletin--action">
-                        <Button colored>Ver más</Button>
-                    </CardActions>
-                </Card>
-                </div>
-                <div className="bulletin--content">
-                <Card shadow={0} style={{width: '300px', height: '320px'}}>
-                    <div className="bulletin--card">
-                        <img src="http://www.maluenda.es/public/noticias/99_cursos_informatica.png" className="bulletin--image" alt="imagen cinco" />
-                        <span className="bulletin--fecha">
-                            Junio
-                            12
-                        </span>
-                    </div>
-                    <CardText className="bulletin--detail">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.
-                    </CardText>
-                    <CardActions border className="bulletin--action">
-                        <Button colored>Ver más</Button>
-                    </CardActions>
-                </Card>
-                </div>
+                { this.renderStoriesList() } 
             </section>
             </div>
         );
     }
 }
+function mapStateToProps(state) {
+    return {
+      stories: state.storie.lista
+    }
+}
 
-export default Bulletin;
+export default connect(mapStateToProps, { showStories })(Bulletin);

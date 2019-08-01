@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import  Carousel from 'react-bootstrap/Carousel';
-import Button from 'react-bootstrap/Button';
 import { connect } from 'react-redux'
 import { showBanners } from '../actions'
 
@@ -37,11 +36,6 @@ class Slider extends Component {
             src={banner.image_path}
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>{banner.title_es}</h3>
-            <p>{banner.description_es}</p>
-            <Button className="primari">Test</Button>
-          </Carousel.Caption>
         </Carousel.Item>
         )
       })

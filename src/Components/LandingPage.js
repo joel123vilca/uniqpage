@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from './Slider'
-import Events from './Events';
+import Activities from './Activities';
 import Bulletin from './Bulletin';
 class LandingPage extends Component {
   render() {
@@ -8,7 +8,7 @@ class LandingPage extends Component {
         <div>
           <Slider></Slider>
           <Bulletin/> 
-          <Events/>
+          <Activities/>
         </div>
     )
   }
