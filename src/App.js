@@ -33,8 +33,8 @@ class App extends Component {
           <Header className="header-color"   scroll>
           <img src={logo}  alt="logo"  className="logo"/>
               <Navigation>
-                <Link to="/inicio" className="font-weight-bold" >Inicio</Link>
-                <Link to="" className="font-weight-bold" id="demo-menu-lower-left" >
+                <Link to="/inicio" className="font-weight-bold" style={{ textDecoration: 'none' }} >Inicio</Link>
+                <Link to="" className="font-weight-bold" id="demo-menu-lower-left"  style={{ textDecoration: 'none' }}>
                   Nosotros
                   <Menu target="demo-menu-lower-left">
                   <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
@@ -64,13 +64,16 @@ class App extends Component {
                   </Link>
                   </Menu>
                 </Link>
-                <Link to="/Interculturalidad" className="font-weight-bold" >Interculturalidad</Link>
-                <Link to="/Carreras" className="font-weight-bold" id="esc">Escuelas
+                <Link to="/Interculturalidad" className="font-weight-bold" style={{ textDecoration: 'none' }}>Interculturalidad</Link>
+                <Link to="/Carreras" className="font-weight-bold" id="esc" style={{ textDecoration: 'none' }}>Escuelas
                   <Menu target="esc">
                   <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Economia Agraria
                       </MenuItem>
+                  </Link>
+                  <Link to="/civil" style={{ textDecoration: 'none', display: 'block' }}>
+                    Ingeniería Civil
                   </Link>
                   </Menu>
                 </Link>
@@ -109,8 +112,8 @@ class App extends Component {
                   </Link>
                   </Menu>
                 </Link>
-                <Link to="/Servicios" className="font-weight-bold" >Servicios</Link>
-                <Link to="/Adminsión" className="font-weight-bold">Admisión</Link>
+                <Link to="/Servicios" className="font-weight-bold" style={{ textDecoration: 'none' }}>Servicios</Link>
+                <Link to="/Adminsión" className="font-weight-bold" style={{ textDecoration: 'none' }}>Admisión</Link>
               </Navigation>
           </Header>
           <Drawer title="U N I Q" className="drawer">

@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,800');
-.career-content{
+
+.career-content {
   background-color: #1c3643;
   color: #F8FAFF;
 }
-.career-title{
+
+.career-title {
   font-size: 35px;
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: 800;
+}
+
+.text p {
+  margin-bottom: 8px
 }

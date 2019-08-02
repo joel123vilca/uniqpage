@@ -13,10 +13,19 @@ import Teachers from './Teachers';
 import Mision from './Mision';
 import Authorities from './Authorities';
 import ViewBulletin from './Viewbulletin';
+import Civil from './Civil';
+import Ecoturismo from './Ecoturismo';
+import Alimentaria from './Alimentaria';
+import Tropical from './Tropical';
+
 const Main = () => (
     <Switch>
         <Route exact path="/" component={LandingPage} />
         <Route  path="/carreras" component={Careers} />
+        <Route  path="/civil" component={Civil} />    
+        <Route  path="/ecoturismo" component={Ecoturismo} /> 
+        <Route  path="/alimentarias" component={Alimentaria} /> 
+        <Route  path="/tropical" component={Tropical} /> 
         <Route  path="/inicio" component={LandingPage} />
         <Route  path="/Interculturalidad" component={Culture} />
         <Route  path="/investigacion" component={Investigation} />
