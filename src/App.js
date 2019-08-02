@@ -65,15 +65,27 @@ class App extends Component {
                   </Menu>
                 </Link>
                 <Link to="/Interculturalidad" className="font-weight-bold" style={{ textDecoration: 'none' }}>Interculturalidad</Link>
-                <Link to="/Carreras" className="font-weight-bold" id="esc" style={{ textDecoration: 'none' }}>Escuelas
+                <Link className="font-weight-bold" id="esc" style={{ textDecoration: 'none' }}>Escuelas
                   <Menu target="esc">
-                  <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/ecoturismo" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
-                        Economia Agraria
+                        Ecoturismo
+                      </MenuItem>
+                  </Link>
+                  <Link to="/tropical" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                      Ingeniería Agronómica Tropical
                       </MenuItem>
                   </Link>
                   <Link to="/civil" style={{ textDecoration: 'none', display: 'block' }}>
-                    Ingeniería Civil
+                      <MenuItem>
+                      Ingeniería civil
+                      </MenuItem>
+                  </Link>
+                  <Link to="/alimentarias" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                      Ingeniería de Alimentos
+                      </MenuItem>
                   </Link>
                   </Menu>
                 </Link>

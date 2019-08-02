@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {  Grid, Cell, Card, CardTitle, CardActions, Button,CardText } from 'react-mdl';
 import docentes from '../image/docentes.jpg';
 import "./teacher.css";
+
 class Teachers extends Component {
   render() {
     return(
@@ -16,12 +16,6 @@ class Teachers extends Component {
             src={docentes}
             alt="banner docentes"
           />
-        <Grid className="demo-grid-1">
-          {/* <Cell col={3}></Cell>
-          <Cell col={3}></Cell>
-          <Cell col={3}></Cell>
-          <Cell col={3}></Cell> */}
-        </Grid>
     </div>
     )
   }
