@@ -80,16 +80,16 @@ class Careers extends Component {
           />
           <br></br>
         <div className="demo-tabs">
-                <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab>Mision</Tab>
-                    <Tab>Perfil Profesional</Tab>
-                    <Tab>Grado - Titulo - Modalidad</Tab>
-                    <Tab>Semestres Academico</Tab>
-                    <Tab>Malla Curricular</Tab>
-                </Tabs>
-                <section>
-                      <div className="career-content">{this.toggleCategories()}</div>
-                </section>
+          <Tabs  activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+              <Tab>Mision</Tab>
+              <Tab>Perfil Profesional</Tab>
+              <Tab>Grado - Titulo - Modalidad</Tab>
+              <Tab>Semestres Academico</Tab>
+              <Tab>Malla Curricular</Tab>
+          </Tabs>
+          <section>
+                <div className="career-content">{this.toggleCategories()}</div>
+          </section>
         </div>
       </div>
     )
