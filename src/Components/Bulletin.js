@@ -16,7 +16,18 @@ class Bulletin extends Component {
           <div className="bulletin--content" key={storie.id}>
           <Card shadow={0} style={{width: '300px', height: '450px'}}>
               <div className="bulletin--card">
-                  <img src="http://api3.uniq.edu.pe/public/storage/stories/7cO11qeUq5WtQOxZR59kMBtNXSIuJTIhHqoqZiF6.jpeg" className="bulletin--image" alt="imagen uno" />
+                  { storie.images.map((image,i) => {
+                      if(i === 0){
+                        return (
+                            <img 
+                            key={image.id}
+                            src={image.image_path}
+                            className="bulletin--image"
+                            alt="imagen uno" 
+                            />
+                        )
+                      }
+                  })}
                   <span className="bulletin--fecha">
                       {storie.month}
                       <br></br>
