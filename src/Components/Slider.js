@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import  Carousel from 'react-bootstrap/Carousel';
-import { connect } from 'react-redux'
-import { showBanners } from '../actions'
-
+import { connect } from 'react-redux';
+import { showBanners } from '../actions';
 
 class Slider extends Component {
     constructor(props, context) {
       super(props, context);
-  
       this.handleSelect = this.handleSelect.bind(this);
-  
       this.state = {
         index: 0,
         direction: null,

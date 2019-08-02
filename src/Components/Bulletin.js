@@ -18,14 +18,17 @@ class Bulletin extends Component {
               <div className="bulletin--card">
                   <img src="http://api3.uniq.edu.pe/public/storage/stories/7cO11qeUq5WtQOxZR59kMBtNXSIuJTIhHqoqZiF6.jpeg" className="bulletin--image" alt="imagen uno" />
                   <span className="bulletin--fecha">
-                      {storie.publication_date}
+                      {storie.month}
+                      <br></br>
+                      <br></br>
+                      {storie.day}
                   </span>
               </div>
               <CardText className="bulletin--detail">
                   {storie.title}
               </CardText>
               <CardActions border className="bulletin--action">
-                  <Link className="btn btn-info" to={`/actividad/${storie.id}`}><Button
+                  <Link  to={`/actividad/${storie.id}`}><Button
                   colored
                   >Ver más</Button></Link>
               </CardActions>

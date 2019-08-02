@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Slider from './Slider'
 import Activities from './Activities';
 import Bulletin from './Bulletin';
+import Linking from './Linking';
+
 class LandingPage extends Component {
   render() {
     return(
@@ -9,6 +11,7 @@ class LandingPage extends Component {
           <Slider></Slider>
           <Bulletin/> 
           <Activities/>
+          <Linking></Linking>
         </div>
     )
   }

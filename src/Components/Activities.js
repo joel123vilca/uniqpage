@@ -22,7 +22,6 @@ class Activities extends Component {
                 lang="es"
                 theme="ios"
                 display="inline"
-                data={this.state.myEvents}
                 view={{
                     calendar: { type: 'week' },
                     eventList: { type: 'day' }

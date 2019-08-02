@@ -15,7 +15,7 @@ export function showStories(state = initialState, action) {
 export function viewStorie(state = initialState, action) {
     switch (action.type) {
         case VIEW_STORIE:
-            return Object.assign({Id: action.payload.id,}, state, {uno: action.payload})
+            return Object.assign({Id: action.payload.id}, state, {uno: action.payload})
         default:
           return state 
     }
