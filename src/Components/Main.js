@@ -14,9 +14,11 @@ import Mision from './Mision';
 import Authorities from './Authorities';
 import ViewBulletin from './Viewbulletin';
 import Civil from './Civil';
+import Calls from './Calls';
 import Ecoturismo from './Ecoturismo';
 import Alimentaria from './Alimentaria';
 import Tropical from './Tropical';
+import Documents from './Documents';
 
 const Main = () => (
     <Switch>
@@ -35,8 +37,11 @@ const Main = () => (
         <Route  path="/universidad" component={ViewUniq}/>
         <Route  path="/docentes" component={Teachers}/>
         <Route  path="/mision" component={Mision}/>
+        <Route  path="/lineas-investigacion" component={Investigation}/>
         <Route  path="/autoridades" component={Authorities} />
         <Route  path="/actividad/:id" component={ViewBulletin} />
+        <Route  path='/convocatorias' component={Calls}/>
+        <Route  path='/documentos'  component={Documents}/> 
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

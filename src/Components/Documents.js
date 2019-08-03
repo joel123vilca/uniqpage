@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import documents from '../image/docuemntos.jpg';
+import documents from '../image/documentos-v2.jpg';
+import ListDocuments from './ListDocuments';
 class Documents extends Component {
   render() {
     return(
@@ -9,6 +10,8 @@ class Documents extends Component {
           src={documents}
           alt="banner documentos"
         />
+        <br></br>
+        <ListDocuments></ListDocuments>
     </div>
     )
   }

@@ -34,7 +34,7 @@ class App extends Component {
           <img src={logo}  alt="logo"  className="logo"/>
               <Navigation>
                 <Link to="/inicio" className="font-weight-bold" style={{ textDecoration: 'none' }} >Inicio</Link>
-                <Link to="" className="font-weight-bold" id="demo-menu-lower-left"  style={{ textDecoration: 'none' }}>
+                <Link  className="font-weight-bold" id="demo-menu-lower-left"  style={{ textDecoration: 'none' }}>
                   Nosotros
                   <Menu target="demo-menu-lower-left">
                   <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
@@ -60,6 +60,11 @@ class App extends Component {
                   <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Alianzas
+                      </MenuItem>
+                  </Link>
+                  <Link to="/convocatorias" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Convocatorias
                       </MenuItem>
                   </Link>
                   </Menu>
@@ -89,10 +94,10 @@ class App extends Component {
                   </Link>
                   </Menu>
                 </Link>
-                <Link to="" className="font-weight-bold" id="inv" >
+                <Link  className="font-weight-bold" id="inv" >
                   Investigación
                   <Menu target="inv">
-                  <Link to="/universidad" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/lineas-investigacion" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Lineas de Investigación
                       </MenuItem>
@@ -125,12 +130,12 @@ class App extends Component {
                   </Menu>
                 </Link>
                 <Link to="/Servicios" className="font-weight-bold" style={{ textDecoration: 'none' }}>Servicios</Link>
-                <Link to="/Adminsión" className="font-weight-bold" style={{ textDecoration: 'none' }}>Admisión</Link>
+                <Link href="http://admision.uniq.edu.pe" className="font-weight-bold" style={{ textDecoration: 'none' }}>Admisión</Link>
               </Navigation>
           </Header>
           <Drawer title="U N I Q" className="drawer">
               <Navigation>
-              <Link to=""  className="font-weight-bold" id="demo-menu-lower-left" >
+              <Link  className="font-weight-bold" id="demo-menu-lower-left" >
                   Nosotros
                   <Menu target="demo-menu-lower-left">
                     <MenuItem as={Link} to='/home'>Universidad</MenuItem>
