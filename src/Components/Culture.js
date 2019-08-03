@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import interculturalidad from '../image/interculturalidad.jpg'; 
-import { Card, CardText, List, ListItem, ListItemAction, ListItemContent, Icon} from 'react-mdl';
+import { Card, CardText, List, ListItem, ListItemContent} from 'react-mdl';
 
 class Culture extends Component {
   render() {
@@ -45,8 +45,9 @@ class Culture extends Component {
           <ListItem threeLine>
             <ListItemContent subtitle="La experiencia de la EIC-UNIQ tiene que ser documentada, sistematizada, publicada y difundida a través de diversos mecanismos como un logro institucional y un aporte a la región y el país. Es un sistema de devolución de la información (Dar cuenta pública) de un proceso basado en consultas.">6.	Se sistematiza y difunde la Estrategia de Interculturalidad (EIC-UNIQ) a nivel regional, nacional e internacional.</ListItemContent>
           </ListItem>
-          <ListItem threeLine>
-            <ListItemContent subtitle="La construcción de experiencias como la EIC-UNIQ por la movilización de recursos públicos y por la importancia temática del enfoque de interculturalidad a nivel universitario, debe trascender para aportar a las políticas nacionales. Por tanto, tiene que estar alineada y en armonía con las políticas de Estado sobre este tema, desde donde se está intentando la construcción de una ciudadanía intercultural. ">7. La EIC-UNIQ aporta a las políticas de la SUNEDU y el Viceministerio de Interculturalidad, respecto del enfoque de interculturalidad en la universidad peruana.</ListItemContent>
+          <ListItem >
+            <ListItemContent subtitle="La construcción de experiencias como la EIC-UNIQ por la movilización de recursos públicos y por la importancia temática del enfoque de interculturalidad a nivel universitario, debe trascender para aportar a las políticas nacionales.">7. La EIC-UNIQ aporta a las políticas de la SUNEDU y el Viceministerio de Interculturalidad, respecto del enfoque de interculturalidad en la universidad peruana.</ListItemContent>
+            <ListItemContent subtitle="Por tanto, tiene que estar alineada y en armonía con las políticas de Estado sobre este tema, desde donde se está intentando la construcción de una ciudadanía intercultural."></ListItemContent>
           </ListItem>
         </List>
       </div>

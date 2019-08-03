@@ -1,5 +1,4 @@
 .bulletin-title{
-    background-color:#F8FAFF;
     color:#376970;
     font-size: 30px;
     font-family: 'Open Sans', bold;
@@ -7,8 +6,9 @@
     text-align: center;
   }
   .bulletin--div{
-    background-color:#F8FAFF;
+    background-image:url('../image/background.jpg');
     height: 500px;
+    margin: 15px;
   }
   .bulletin {
     background-color:#F8FAFF;

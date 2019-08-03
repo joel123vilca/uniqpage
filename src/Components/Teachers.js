@@ -11,11 +11,6 @@ class Teachers extends Component {
             src={docentes}
             alt="banner docentes"
           />
-        <img
-            className="d-block w-100 slider"
-            src={docentes}
-            alt="banner docentes"
-          />
     </div>
     )
   }

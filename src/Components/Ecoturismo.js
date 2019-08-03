@@ -8,7 +8,7 @@ import malla_ing_agronimica from '../image/malla_ing_agronomica.png';
 class Careers extends Component {
   constructor(props) {
     super(props)
-    this.state = { activeTab: 2 };
+    this.state = { activeTab: 0 };
   }
   toggleCategories(){
     if(this.state.activeTab === 0){
