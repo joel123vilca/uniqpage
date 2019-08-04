@@ -44,7 +44,7 @@ class App extends Component {
                   </Link>
                   <Link to="/mision" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
-                        Misión
+                        Misión y Visión
                       </MenuItem>
                   </Link>
                   <Link to="/autoridades" style={{ textDecoration: 'none', display: 'block' }}>

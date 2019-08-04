@@ -19,6 +19,7 @@ import Ecoturismo from './Ecoturismo';
 import Alimentaria from './Alimentaria';
 import Tropical from './Tropical';
 import Documents from './Documents';
+import Services from './Services';
 
 const Main = () => (
     <Switch>
@@ -41,7 +42,8 @@ const Main = () => (
         <Route  path="/autoridades" component={Authorities} />
         <Route  path="/actividad/:id" component={ViewBulletin} />
         <Route  path='/convocatorias' component={Calls}/>
-        <Route  path='/documentos'  component={Documents}/> 
+        <Route  path='/documentos'  component={Documents}/>
+        <Route  path='/servicios'  component={Services}/> 
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardActions, Grid, CardText,CardTitle, Cell, Button} from 'react-mdl';
-import autoridades from '../image/autoridades.jpg';
+import autoridades from '../image/autoridades-v2.jpg';
 import "./authorities.css";
 class Authorities extends Component {
   render() {

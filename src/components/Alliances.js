@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {ListItem, ListItemContent,ListItemAction, List, Button} from 'react-mdl';
-import alianzas from '../image/alianzas.jpg';
+import alianzas from '../image/alianzas-v2.jpg';
 class Alliances extends Component {
   render() {
     return(
