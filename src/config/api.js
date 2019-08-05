@@ -1,1 +1,1 @@
-export const  HOST = 'http://api3.uniq.edu.pe/public/api'
+export const  HOST = 'http://test1.uniq.edu.pe/public/api'
