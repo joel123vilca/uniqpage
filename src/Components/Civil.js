@@ -111,12 +111,10 @@ Para el caso de la formación del estudiante de ingeniería civil los egresados 
               <center>
                 <h2 className="career-title">Malla Curricular</h2>
               </center>
-              <img
-              className="d-block w-100 slider"
-              src={malla_ing_agronimica}
-              alt="malla"
-            />
-            </div>
+              <center>
+              <embed src="http://admisionapi.uniq.edu.pe/public/documentos/eprofesionales/malla_ing_civil.pdf" width="80%" height="375" />
+              </center>
+              </div>
         )
     }
 }

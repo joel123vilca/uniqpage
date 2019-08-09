@@ -1,13 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 class Chat extends Component {
     render() {
       return(
         <MessengerCustomerChat
-            pageId="<PAGE_ID>"
-            appId="<APP_ID>"
-            htmlRef="<REF_STRING>"
+            pageId="105953224092727"
+            appId="215971755540323"
         />
       );
     }

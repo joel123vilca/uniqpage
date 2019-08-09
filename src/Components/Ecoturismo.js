@@ -114,11 +114,9 @@ Conoce el quechua y las lenguas originarias amazónicas.
               <center>
                 <h2 className="career-title">Malla Curricular</h2>
               </center>
-              <img
-              className="d-block w-100 slider"
-              src={malla_ing_agronimica}
-              alt="malla"
-            />
+              <center>
+                <embed src="http://admisionapi.uniq.edu.pe/public/documentos/eprofesionales/malla_ecoturismo.pdf" width="80%" height="375" />
+              </center>
             </div>
         )
     } 

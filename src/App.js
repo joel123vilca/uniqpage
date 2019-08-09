@@ -7,6 +7,7 @@ import Main from './components/Main';
 import {Link} from 'react-router-dom';
 import Contact from './Contact';
 import logo from './image/nav.png'; 
+import Chat from './Chat';
 
 class App extends Component {
   render() {
@@ -157,6 +158,7 @@ class App extends Component {
                 <img src={logo}  alt="logo"  className="logo"/>
               </div>
               <Main />
+              <Chat></Chat>
               <Contact></Contact>
           </Content>
       </Layout>
