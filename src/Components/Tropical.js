@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import "./careers.css";
 import { Tab, Tabs,Grid,Cell} from 'react-mdl';
-import bannerAgronomica from '../image/escuela-agronomica.jpg'; 
-import malla_ing_agronimica from '../image/malla_ing_agronomica.png';
+import bannerAgronomica from '../image/escuela-agronomica.jpg';
 
 
 class Careers extends Component {

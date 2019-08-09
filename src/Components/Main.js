@@ -20,6 +20,9 @@ import Alimentaria from './Alimentaria';
 import Tropical from './Tropical';
 import Documents from './Documents';
 import Services from './Services';
+import Regulation from './Regulation';
+import Propertie from './Propertie';
+import CodeEthics from './CodeEthics';
 
 const Main = () => (
     <Switch>
@@ -44,6 +47,9 @@ const Main = () => (
         <Route  path='/convocatorias' component={Calls}/>
         <Route  path='/documentos'  component={Documents}/>
         <Route  path='/servicios'  component={Services}/> 
+        <Route  path='/reglamento' component={Regulation} />
+        <Route  path='/propiedad' component={Propertie} />
+        <Route  path='/codigo-de-etica' component={CodeEthics} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

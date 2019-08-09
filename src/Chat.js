@@ -4,10 +4,11 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 class Chat extends Component {
     render() {
       return(
-        <MessengerCustomerChat
+        <div class="fb-customerchat" page_id="105953224092727">
+          <MessengerCustomerChat
             pageId="105953224092727"
-            appId="215971755540323"
         />
+        </div>
       );
     }
   }

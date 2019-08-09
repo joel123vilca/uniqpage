@@ -9,12 +9,13 @@ import Contact from './Contact';
 import logo from './image/nav.png'; 
 import Chat from './Chat';
 
+
 class App extends Component {
   render() {
     return (
       <div>
         <Layout>
-        <Nav as="ul" className="pri-nav justify-content-end" >
+        <Nav as="ul" className="pri-nav justify-content-end">
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
           </Nav.Item>
@@ -30,8 +31,11 @@ class App extends Component {
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/galeria">Galeria de fotos</Nav.Link>
           </Nav.Item>
+          <Nav.Item as="li">
+            <Nav.Link  style={{ color:'white'}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</Nav.Link>
+          </Nav.Item>
         </Nav>
-          <Header className="header-color"   scroll>
+          <Header className="header-color"  scroll>
           <img src={logo}  alt="logo"  className="logo"/>
               <Navigation>
                 <Link to="/inicio" className="font-weight-bold" style={{ textDecoration: 'none' }} >Inicio</Link>
@@ -103,17 +107,17 @@ class App extends Component {
                         Lineas de Investigación
                       </MenuItem>
                   </Link>
-                  <Link to="/mision" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/reglamento">
                       <MenuItem>
                         Reglamento del Docente
                       </MenuItem>
                   </Link>
-                  <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/propiedad" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Reglamento de propiedad Intelectual
                       </MenuItem>
                   </Link>
-                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/codigo-de-etica" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Codigo de Etica
                       </MenuItem>
@@ -146,11 +150,15 @@ class App extends Component {
                     <MenuItem>Alianzas</MenuItem>
                   </Menu>
                 </Link>
-                <Link to="/Interculturalidad">Interculturalidad</Link>
-                <Link to="/Carreras">Escuelas</Link>
-                <Link to="/Investigación">Investigación</Link>
-                <Link to="/Servicios">Servicios</Link>
-                <Link to="/Adminsión">Admisión</Link>
+                <ul className="menu">
+    <li><a href="#">Templates</a>
+      <ul>
+        <li><a href="#">html</a></li>
+        <li><a href="#">css</a></li>
+        <li><a href="#">photoshop</a></li>
+      </ul>
+    </li>
+    </ul>
               </Navigation>
           </Drawer>
           <Content>

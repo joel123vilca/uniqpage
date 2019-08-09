@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import "./careers.css";
 import { Tab, Tabs,Grid,Cell} from 'react-mdl';
-import bannerCivil from '../image/escuela-civil.jpg'; 
-import malla_ing_agronimica from '../image/malla_ing_agronomica.png';
+import bannerCivil from '../image/escuela-civil.jpg';
 
 
 class Careers extends Component {
