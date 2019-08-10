@@ -172,10 +172,8 @@ padding: 1em;
   display: flex;
 }
 .slider{
-  top: 64px;
   height: 300px;
   width: 100%;
-  max-width: 100%;
 } 
 
 .pri-nav{
@@ -512,7 +510,6 @@ a.more-link {
   }
   .slider{
     height: 255px;
-    width: 600px;
-    max-width: 600px;
+    width: 30%;
   }
 } 
