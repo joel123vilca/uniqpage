@@ -5,6 +5,16 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import Typography from '@material-ui/core/Typography';
 
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import ListItemText from '@material-ui/core/ListItemText';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
+import FolderIcon from '@material-ui/icons/Folder';
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
@@ -41,8 +51,27 @@ export default function ExpandCall() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            cargando...
           </Typography>
+          <div className={classes.demo}>
+            <List>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <FolderIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary="ACTA DE RESULTADOS FINALES"
+                    secondary="10/10/2019"
+                  />
+                  <ListItemSecondaryAction>
+                    <IconButton edge="end" href="https://material-ui.com/es/components/lists/">
+                      <Icon color="primary">cloud_download</Icon>
+                    </IconButton>
+                  </ListItemSecondaryAction>
+                </ListItem>
+            </List>
+          </div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -54,8 +83,27 @@ export default function ExpandCall() {
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            cargando...
           </Typography>
+          <div className={classes.demo}>
+            <List>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <FolderIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary="ACTA DE RESULTADOS FINALES"
+                    secondary="10/10/2019"
+                  />
+                  <ListItemSecondaryAction>
+                    <IconButton edge="end" href="https://material-ui.com/es/components/lists/">
+                      <Icon color="primary">cloud_download</Icon>
+                    </IconButton>
+                  </ListItemSecondaryAction>
+                </ListItem>
+            </List>
+          </div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

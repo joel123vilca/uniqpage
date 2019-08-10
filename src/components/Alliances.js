@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {ListItem, ListItemContent,ListItemAction, List, Button} from 'react-mdl';
 import alianzas from '../image/alianzas-v2.jpg';
+import uniq from '../image/nav.png';
 class Alliances extends Component {
   render() {
     return(
@@ -36,17 +37,29 @@ class Alliances extends Component {
         </ListItem>
       </List>
       <h2 className="bulletin-title">Red de Universidades Interculturales</h2>
+      <div style={{background: 'green'}}>
       <img
-        src={alianzas}
-        style={{width: '30%'}}
+        src="https://www.carrerasadistancia.com.pe/logos/original/logo-universidad-nacional-intercultural-de-la-selva-central.png"
+        style={{width: '300px', height:'100px'}}
         alt="banner alianzas"
       />
       <img
-        src={alianzas}
-        style={{width: '30%'}}
+        src="http://unia.edu.pe/images/logo-unia.png"
+        style={{width: '300px', height:'100px'}}
+        alt="banner alianzas"
+      />
+      <img
+        src="https://unibagua.edu.pe/images/LOGO_OK.png"
+        style={{width: '300px', height:'100px'}}
+        alt="banner alianzas"
+      />
+      <img
+        src={uniq}
+        style={{width: '300px',height:'100px'}}
         alt="banner alianzas"
       />
       <br></br>
+      </div>
     </div>
     )
   }
