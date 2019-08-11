@@ -3,6 +3,7 @@ import { HOST } from '../config/api';
 export const SHOW_BANNERS = 'SHOW_BANNERS'
 export const SHOW_STORIES = 'SHOW_STORIES'
 export const VIEW_STORIE = 'VIEW_STORIE'
+export const SHOW_ALLIANCES = 'SHOW_ALLIANCES'
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -26,5 +27,14 @@ export function viewStorie(Id) {
             .then((response) => {
                 dispatch( { type: VIEW_STORIE, payload: response.data.data } ) 
             })
+    }
+}
+
+export function showAlliances() {
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/alliances`)
+            .then((response) => {
+                dispatch( { type: SHOW_ALLIANCES, payload: response.data.data } ) 
+            }) 
     }
 }

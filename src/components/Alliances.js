@@ -1,9 +1,37 @@
 import React, { Component } from 'react';
-import {ListItem, ListItemContent,ListItemAction, List, Button} from 'react-mdl';
+import { connect } from 'react-redux';
+import {ListItem, ListItemContent,ListItemAction, List, Button,} from 'react-mdl';
+import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
+import { showAlliances } from '../actions';
 import "./alliances.css"; 
 import alianzas from '../image/alianzas-v2.jpg';
 import uniq from '../image/alianzauniq.png';
+
 class Alliances extends Component {
+  componentWillMount() {
+    this.props.showAlliances()
+  }
+  renderAlliancesList() {
+    return this.props.alliances.map((alliance) => {
+      return (
+        <ListItem key={alliance.id}>
+          <img
+            src={alliance.image_path}
+            style={{width: '30%'}}
+            alt="banner alianzas"
+          />
+          
+          <ListItemContent style={{margin: '35px'}}>{alliance.title}</ListItemContent>
+          <ListItemAction>
+              <IconButton href={alliance.pdf_path} target="_blank"  edge="end">
+                <Icon style={{ fontSize: 50 , color: 'teal'}}>picture_as_pdf</Icon>
+              </IconButton>
+          </ListItemAction>
+        </ListItem>
+      )
+    })
+  }
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}}>
@@ -14,29 +42,7 @@ class Alliances extends Component {
       />
       <h2 className="bulletin-title">Convenios de la UNIQ con otras Instituciones</h2>
       <List style={{width: '90%'}}>
-        <ListItem>
-          <img
-            src={alianzas}
-            style={{width: '30%'}}
-            alt="banner alianzas"
-          />
-          
-          <ListItemContent style={{margin: '35px'}}> CONVENIO ESPECÍFICO DE COOPERACIÓN ENTRE LA UNIVERSIDAD NACIONAL DE SAN ANTONIO ABAD DEL CUSCO Y LA UNIVERSIDAD NACIONAL INTERCULTURAL DE QUILLABAMBA</ListItemContent>
-          <ListItemAction>
-            <Button raised colored ripple>Descargar</Button>
-          </ListItemAction>
-        </ListItem>
-        <ListItem>
-          <img
-            src={alianzas}
-            style={{width: '30%'}}
-            alt="banner alianzas"
-          />
-          <ListItemContent style={{margin: '35px'}}>MEMORANDUM DE ENTENDIMIENTO ENTRE LA UNIVERSIDAD NACIONAL INTERCULTURAL DE QUILLABAMBA, PERU Y LA UNIVERSIDAD DE MENDEL EN BRNO, REimgA CHECA (ESPAÑOL)</ListItemContent>
-          <ListItemAction>
-            <Button raised colored ripple>Descargar</Button>
-          </ListItemAction>
-        </ListItem>
+      { this.renderAlliancesList() } 
       </List>
       <div className="alliance--div">
             <h2 className="alliance-title">Red de Universidades Interculturales</h2>
@@ -96,4 +102,10 @@ class Alliances extends Component {
   }
 }
 
-export default Alliances;
+function mapStateToProps(state) {
+  return {
+    alliances: state.alliance.alliances
+  }
+}
+
+export default connect(mapStateToProps, { showAlliances })(Alliances)
