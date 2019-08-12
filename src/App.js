@@ -23,7 +23,7 @@ class App extends Component {
             <Nav.Link  style={{ color:'white'}} href="/resoluciones">Resoluciones</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="/biblioteca">Biblioteca</Nav.Link>
+            <Nav.Link  style={{ color:'white'}} href="http://181.224.238.130/">Biblioteca</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/trabajo">Bolsa de Trabajo</Nav.Link>
@@ -32,7 +32,7 @@ class App extends Component {
             <Nav.Link  style={{ color:'white'}} href="/galeria">Galeria de fotos</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</Nav.Link>
+            <Nav.Link  style={{ color:'white'}} href="http://181.224.238.134/">Repositorio Institucional</Nav.Link>
           </Nav.Item>
         </Nav>
           <Header className="header-color"  scroll>
@@ -151,11 +151,12 @@ class App extends Component {
                   </Menu>
                 </Link>
                 <ul className="menu">
-    <li><a href="#">Templates</a>
+    <li><a href="#">Escuelas</a>
       <ul>
-        <li><a href="#">html</a></li>
-        <li><a href="#">css</a></li>
-        <li><a href="#">photoshop</a></li>
+        <li><a href="/civil">Ingeniería Civil</a></li>
+        <li><a href="#">Ingeniería Agronómica Tropical</a></li>
+        <li><a href="#">Ecoturismo</a></li>
+        <li><a href="/alimentarias"> Ingeniería de Alimentos</a></li>
       </ul>
     </li>
     </ul>
