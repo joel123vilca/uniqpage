@@ -1,0 +1,26 @@
+.services--banner{
+    width: 100%;
+    height: 300px;
+}
+.services--content{
+    background: #1e5372;
+    color: white;
+}
+.services--title{
+    margin: 5%;
+}
+.services--description{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin: 5%;
+}
+.services--button{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .services--banner{
+        width: 30%;
+        height: 150px;
+    }
+  }
