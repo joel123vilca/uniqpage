@@ -27,16 +27,17 @@ class Slider extends Component {
     
     renderBannersList() {
       return this.props.banners.map((banner) => {
+        const id = '123'
         return (
           <Carousel.Item key={banner.id}>
           <img
             className="d-block w-100 slider"
             src={banner.image_path}
             alt="First slide"
-          />
-              <Carousel.Caption>
-              <Button  variant="info" href="http://test1.uniq.edu.pe/storage/app/public/documentos/Binder1.pdf" target="_blank" color="primary">RESULTADOS</Button>
-            </Carousel.Caption>
+          /> 
+            <Carousel.Caption>
+                <Button  variant="info" href="http://test1.uniq.edu.pe/storage/app/public/documentos/Binder1.pdf" target="_blank" color="primary">RESULTADOS</Button>
+              </Carousel.Caption>
           </Carousel.Item>
         )
       })
