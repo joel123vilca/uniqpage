@@ -1,0 +1,29 @@
+.culture--banner{
+    width: 100%;
+    height: 300px;
+}
+.culture--content {
+    background-image:url('../image/background.jpg');
+    color: #1c3643;
+  }
+.culture--title{
+    margin-left: 5%;
+}
+.culture--div{
+    background: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.culture--description{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+@media only screen and (max-width: 600px) {
+    .culture--banner{
+        width: 30%;
+        height: 150px;
+    }
+}

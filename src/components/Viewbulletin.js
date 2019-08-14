@@ -39,7 +39,6 @@ class ViewBulletin extends Component {
     }
 }
 function mapStateToProps(state) {
-    console.log(state.view.uno)
     return {
       storie: state.view.uno
     }
