@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import  Carousel from 'react-bootstrap/Carousel';
 import { connect } from 'react-redux';
 import { showBanners } from '../actions';
+import Button from 'react-bootstrap/Button'
 
 class Slider extends Component {
     constructor(props, context) {
@@ -33,7 +34,10 @@ class Slider extends Component {
             src={banner.image_path}
             alt="First slide"
           />
-        </Carousel.Item>
+              <Carousel.Caption>
+              <Button  variant="info" href="http://test1.uniq.edu.pe/storage/app/public/documentos/Binder1.pdf" target="_blank" color="primary">RESULTADOS</Button>
+            </Carousel.Caption>
+          </Carousel.Item>
         )
       })
     }
