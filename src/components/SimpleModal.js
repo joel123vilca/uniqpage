@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 
-import modaladmision from '../image/modaladmision.jpg';
+import cronograma from '../image/cronograma.png';
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -14,11 +14,11 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <Button href="http://admision.uniq.edu.pe/inicio">
+      <Button href="#">
         <img
           width="600"
           height="500"
-          src={modaladmision}
+          src={cronograma}
           alt="modaladmision"
         />
       </Button>
