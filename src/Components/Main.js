@@ -23,6 +23,7 @@ import Services from './Services';
 import Regulation from './Regulation';
 import Propertie from './Propertie';
 import CodeEthics from './CodeEthics';
+import News from './News';
 
 const Main = () => (
     <Switch>
@@ -50,6 +51,7 @@ const Main = () => (
         <Route  path='/reglamento' component={Regulation} />
         <Route  path='/propiedad' component={Propertie} />
         <Route  path='/codigo-de-etica' component={CodeEthics} />
+        <Route  path='/comunicados' component={News} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

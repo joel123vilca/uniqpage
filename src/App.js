@@ -17,7 +17,7 @@ class App extends Component {
         <Layout>
         <Nav as="ul" className="pri-nav justify-content-end">
           <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="/intranet">Intranet</Nav.Link>
+            <Nav.Link  style={{ color:'white'}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/resoluciones">Resoluciones</Nav.Link>
@@ -70,6 +70,11 @@ class App extends Component {
                   <Link to="/convocatorias" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Convocatorias
+                      </MenuItem>
+                  </Link>
+                  <Link to="/comunicados" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Comunicados
                       </MenuItem>
                   </Link>
                   </Menu>
