@@ -14,7 +14,7 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <Button href="#">
+      <Button href="http://bienestar.uniq.edu.pe/bienestar">
         <img
           width="600"
           height="500"
