@@ -20,6 +20,9 @@ class App extends Component {
             <Nav.Link  style={{ color:'white'}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
+            <Nav.Link  style={{ color:'white'}} href="/Transparencia">Transparencia</Nav.Link>
+          </Nav.Item>
+          <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/resoluciones">Resoluciones</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">

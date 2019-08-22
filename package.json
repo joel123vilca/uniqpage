@@ -17,6 +17,7 @@
     "@mobiscroll/react": "https://npm.mobiscroll.com/@mobiscroll/react-trial/-/react-trial-4.7.3.tgz",
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "google-map-react": "^1.1.4",
     "moment": "2.22.2",
     "moment-range": "4.0.1",
     "react": "^16.8.6",
