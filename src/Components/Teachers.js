@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import docentes from '../image/docentes.jpg';
 import "./teacher.css";
+import TeachersList from './TeacherList';
 
 class Teachers extends Component {
   render() {
@@ -11,6 +12,7 @@ class Teachers extends Component {
             src={docentes}
             alt="banner docentes"
           />
+          <TeachersList />
     </div>
     )
   }

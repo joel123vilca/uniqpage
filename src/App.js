@@ -26,7 +26,7 @@ class App extends Component {
             <Nav.Link  style={{ color:'white'}} href="/resoluciones">Resoluciones</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="http://181.224.238.130/">Biblioteca</Nav.Link>
+            <Nav.Link  style={{ color:'white'}} href="http://biblioteca.uniq.edu.pe/">Biblioteca</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
             <Nav.Link  style={{ color:'white'}} href="/trabajo">Bolsa de Trabajo</Nav.Link>
@@ -35,7 +35,7 @@ class App extends Component {
             <Nav.Link  style={{ color:'white'}} href="/galeria">Galeria de fotos</Nav.Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="http://181.224.238.134/">Repositorio Institucional</Nav.Link>
+            <Nav.Link  style={{ color:'white'}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</Nav.Link>
           </Nav.Item>
         </Nav>
           <Header className="header-color"  scroll>
@@ -130,14 +130,9 @@ class App extends Component {
                         Codigo de Etica
                       </MenuItem>
                   </Link>
-                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Docentes Investigadores
-                      </MenuItem>
-                  </Link>
-                  <Link to="/alianzas" style={{ textDecoration: 'none', display: 'block' }}>
-                      <MenuItem>
-                        Repositorio Institucional
                       </MenuItem>
                   </Link>
                   </Menu>
@@ -158,16 +153,16 @@ class App extends Component {
                     <MenuItem>Alianzas</MenuItem>
                   </Menu>
                 </Link>
-                <ul className="menu">
-    <li><a href="#">Escuelas</a>
-      <ul>
-        <li><a href="/civil">Ingeniería Civil</a></li>
-        <li><a href="#">Ingeniería Agronómica Tropical</a></li>
-        <li><a href="#">Ecoturismo</a></li>
-        <li><a href="/alimentarias"> Ingeniería de Alimentos</a></li>
-      </ul>
-    </li>
-    </ul>
+                <ul className="">
+                  <li><a href="#">Escuelas</a>
+                    <ul>
+                      <li><a href="/civil">Ingeniería Civil</a></li>
+                      <li><a href="/tropical">Ingeniería Agronómica Tropical</a></li>
+                      <li><a href="/ecoturismo">Ecoturismo</a></li>
+                      <li><a href="/alimentarias"> Ingeniería de Alimentos</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </Navigation>
           </Drawer>
           <Content>
