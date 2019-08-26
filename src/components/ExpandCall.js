@@ -34,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ExpandCall() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState('panel0');
 
   const handleChange = panel => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -42,6 +42,52 @@ export default function ExpandCall() {
 
   return (
     <div className={classes.root}>
+      <ExpansionPanel expanded={expanded === 'panel0'} onChange={handleChange('panel0')}>
+        <ExpansionPanelSummary
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
+        >
+          <Typography variant="h4"  gutterBottom>CONVOCATORIA PARA EL ARRENDAMIENTO DEL CAFETÍN </Typography>
+        </ExpansionPanelSummary>
+        <ExpansionPanelDetails>
+          <Typography>
+          </Typography>
+          <div className={classes.demo}>
+            <List>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <FolderIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary="BASES DE LA CONVOCATORIA"
+                  />
+                  <ListItemSecondaryAction>
+                    <IconButton edge="end" target="_blank" href="http://test1.uniq.edu.pe/public/storage/convocatoria/BASES%20CONVOCA.%20CFETIN_1.pdf">
+                      <Icon color="primary">cloud_download</Icon>
+                    </IconButton>
+                  </ListItemSecondaryAction>
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <FolderIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary="CRONOGRAMA DE LA CONVOCATORIA"
+                  />
+                  <ListItemSecondaryAction>
+                    <IconButton edge="end" target="_blank" href="http://test1.uniq.edu.pe/public/storage/convocatoria/PARA%20PUBLICACION%20CONVOCATORIA_1.pdf">
+                      <Icon color="primary">cloud_download</Icon>
+                    </IconButton>
+                  </ListItemSecondaryAction>
+                </ListItem>
+            </List>
+          </div>
+        </ExpansionPanelDetails>
+      </ExpansionPanel>
       <ExpansionPanel expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary
           aria-controls="panel1bh-content"

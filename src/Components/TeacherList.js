@@ -32,7 +32,7 @@ export default function TeacherList() {
   function FormRow() {
     return (
       <React.Fragment>
-        <Grid item xs={3} container justify="center" alignItems="center">
+        <Grid item xs={12} md={3}  container justify="center" alignItems="center">
             <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
             <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
                 AUGUSTO PUMACHAUCA PUMACHAUCALLA
@@ -41,7 +41,7 @@ export default function TeacherList() {
                 Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
             </Typography>
         </Grid>
-        <Grid item xs={3} container justify="center" alignItems="center">
+        <Grid item xs={12}  md={3} container justify="center" alignItems="center">
             <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
             <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
                 AUGUSTO PUMACHAUCA PUMACHAUCALLA
@@ -50,19 +50,19 @@ export default function TeacherList() {
                 Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
             </Typography>
         </Grid>
-        <Grid item xs={3} container justify="center" alignItems="center">
+        <Grid item xs={12}  md={3} container justify="center" alignItems="center">
             <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
             <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                AUGUSTO PUMACHAUCA PUMACHAUCALLA
+                ENRIQUE JOTADELO MAMANI
             </Typography>
             <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
                 Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
             </Typography>
         </Grid>
-        <Grid item xs={3} container justify="center" alignItems="center">
+        <Grid item xs={12}  md={3} container justify="center" alignItems="center">
             <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
             <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                AUGUSTO PUMACHAUCA PUMACHAUCALLA
+                FANNY ROSARIO MARQUEZ ROMERO
             </Typography>
             <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
                 Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
@@ -75,13 +75,13 @@ export default function TeacherList() {
   return (
     <div className={classes.root}>
       <Grid container spacing={2}>
-        <Grid container item xs={12} spacing={5}>
+        <Grid container item xs={12} md={12} spacing={5}>
           <FormRow />
         </Grid>
-        <Grid container item xs={12} spacing={5}>
+        <Grid container item xs={12} md={12} spacing={5}>
           <FormRow />
         </Grid>
-        <Grid container item xs={12} spacing={5}>
+        <Grid container item xs={12} md={12} spacing={5}>
           <FormRow />
         </Grid>
       </Grid>

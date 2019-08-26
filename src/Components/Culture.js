@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import interculturalidad from '../image/interculturalidad.jpg'; 
-import { Card, CardText, List, ListItem, ListItemContent} from 'react-mdl';
+import { Card, CardText} from 'react-mdl';
 import './culture.css';
 
 class Culture extends Component {
