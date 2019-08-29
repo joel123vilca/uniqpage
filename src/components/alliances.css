@@ -43,4 +43,12 @@
     .alliance--banner{
         width: 30%;
     }
+}
+
+@media only screen and (min-width:1200px)
+{
+  .alliance--banner{
+    height:100%;
+    width: 100%;
   }
+}

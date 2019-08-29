@@ -39,7 +39,7 @@ class App extends Component {
           </Nav.Item>
         </Nav>
           <Header className="header-color"  scroll>
-          <img src={logo}  alt="logo"  className="logo"/>
+            <img src={logo}  alt="logo"  className="logo"/>
               <Navigation>
                 <Link to="/inicio" className="font-weight-bold" style={{ textDecoration: 'none' }} >Inicio</Link>
                 <Link  className="font-weight-bold" id="demo-menu-lower-left"  style={{ textDecoration: 'none' }}>
@@ -141,7 +141,7 @@ class App extends Component {
                 <a  className="font-weight-bold" style={{ textDecoration: 'none' }} href="http://admision.uniq.edu.pe">Admisión</a>
               </Navigation>
           </Header>
-          <Drawer title="U N I Q" className="drawer">
+          <Drawer title="U N I Q" className="mdl-layout__drawer-button">
               <Navigation>
               <Link  className="font-weight-bold" id="demo-menu-lower-left" >
                   Nosotros

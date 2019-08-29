@@ -20,4 +20,11 @@
         width: 30%;
         height: 150px;
     }
+}
+@media only screen and (min-width:1200px)
+{
+  .investigation--banner{
+    height:100%;
+    width: 100%;
   }
+}
