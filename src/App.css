@@ -172,7 +172,7 @@ padding: 1em;
   display: flex;
 }
 .slider{
-  height: 300px;
+  height: 320px;
   width: 100%;
 } 
 
@@ -475,7 +475,6 @@ a.more-link {
   .container-body{
       flex-wrap: wrap;
   }
-  
   .colum1{
       max-width: 100%;
   }
@@ -509,7 +508,14 @@ a.more-link {
     align-content: center;
   }
   .slider{
-    height: 255px;
-    width: 30%;
+    height: 100%;
+    width: 100%;
   }
-} 
+}
+@media only screen and (min-width:1200px)
+{
+  .slider{
+    height:100%;
+    width: 100%;
+  }
+}

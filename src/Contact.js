@@ -7,6 +7,7 @@ import youtube from './image/youtube-ico.png';
 import directorio from './image/directorio.png';
 import facebook from './image/face-ico.png';
 import flickr from './image/flickr-ico.png';
+import TextField from '@material-ui/core/TextField';
 
 class Contact extends Component {
   render() {
@@ -17,27 +18,36 @@ class Contact extends Component {
                 <div className="colum1">
                     <h1>Universidad Nacional Intercultural de Quillabamba</h1>
                     <div className="row2">
-                        <img src={contact}  alt="contact"/>
-                        <label>info@uniq.edu.pe</label>
+                        <img src={contact}  style={{width: 25, height: 25}} alt="contact"/>
+                        <span>info@uniq.edu.pe</span>
                     </div>
                     <div className="row2">
-                        <img src={telefono} alt="telefono"/>
-                        <label>084 - 282728</label>
+                        <img src={telefono} style={{width: 25, height: 25}}  alt="telefono"/>
+                        <span>084 - 282728</span>
                     </div>
                     <div className="row2">
-                        <img src={ubicacion} alt="ubicacion"/>
-                         <label>El Arenal S/N - Quillabamba</label>
+                        <img src={ubicacion} style={{width: 25, height: 25}} alt="ubicacion"/>
+                         <span>El Arenal S/N - Quillabamba</span>
                     </div>
                     <div className="row2">
-                        <img src={directorio} alt="directorio"/>
-                         <a className="referencia" href="http://www.uniq.edu.pe/directorioelectronico" target="_bank"><label>Directorio Electrónico</label></a>
+                        <img src={directorio} style={{width: 25, height: 25}} alt="directorio"/>
+                         <a className="referencia" href="http://www.uniq.edu.pe/directorioelectronico" target="_bank"><span>Directorio Electrónico</span></a>
                     </div>
                     <div className="row2">
-                        <img src={institucional} alt="institucional"/>
-                        <a className="referencia" target="_bank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=uniq.edu.pe&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession"><label>Correo Institucional</label></a>
+                        <img src={institucional} style={{width: 25, height: 25}} alt="institucional"/>
+                        <a className="referencia" target="_bank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=uniq.edu.pe&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession"><span>Correo Institucional</span></a>
                     </div>
                 </div>
                 <div className="colum2">
+                <TextField
+        id="outlined-email-input"
+        label="Email"
+        type="email"
+        name="email"
+        autoComplete="email"
+        margin="normal"
+        variant="outlined"
+      />
                 </div>
                 <div className="colum3">
                     <h1>Redes sociales</h1>

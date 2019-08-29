@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardText} from 'react-mdl';
-import mision from '../image/mision-v2.jpg';
+import mision from '../image/n_mision_y_vision.jpg';
 class Mision extends Component {
   render() {
     return(

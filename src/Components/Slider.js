@@ -27,10 +27,10 @@ class Slider extends Component {
     renderBannersList() {
       return this.props.banners.map((banner) => {
         return (
-          <Carousel.Item key={banner.id}>
+            <Carousel.Item key={banner.id} className="slider">
             <a  href={banner.url} target="_blank" >
           <img
-            className="d-block w-100 slider"
+            className="d-block w-100"
             src={banner.image_path}
             alt="First slide"
           /> 
