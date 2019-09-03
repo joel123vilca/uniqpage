@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import './App.css';
-import {Layout, Header ,Navigation,Drawer,Content, Menu, MenuItem} from 'react-mdl';
+import {Layout, Header ,Navigation,Drawer,Content, Menu, MenuItem, HeaderRow} from 'react-mdl';
 import Nav from 'react-bootstrap/Nav'
 import Main from './components/Main';
 import {Link} from 'react-router-dom';
@@ -14,33 +14,22 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Layout>
-        <Nav as="ul" className="pri-nav justify-content-end">
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="/Transparencia">Transparencia</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="/resoluciones">Resoluciones</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="http://biblioteca.uniq.edu.pe/">Biblioteca</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="/trabajo">Bolsa de Trabajo</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="/galeria">Galeria de fotos</Nav.Link>
-          </Nav.Item>
-          <Nav.Item as="li">
-            <Nav.Link  style={{ color:'white'}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</Nav.Link>
-          </Nav.Item>
-        </Nav>
-          <Header className="header-color"  scroll>
-            <img src={logo}  alt="logo"  className="logo"/>
+      <Layout>
+        <Header waterfall hideTop>
+            <HeaderRow  className="pri-nav justify-content-end" style={{height: 45}}>
               <Navigation>
+                <a style={{fontSize: 11}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
+                <a style={{fontSize: 11}} href="/Transparencia">Transparencia</a>
+                <a style={{fontSize: 11}} href="/resoluciones">Resoluciones</a>
+                <a style={{fontSize: 11}} href="http://biblioteca.uniq.edu.pe/">Biblioteca</a>
+                <a style={{fontSize: 11}} href="/trabajo">Bolsa de Trabajo</a>
+                <a style={{fontSize: 11}} href="/galeria">Galeria de fotos</a>
+                <a style={{fontSize: 11}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</a>
+              </Navigation>
+            </HeaderRow>
+            <HeaderRow className="header-color">
+            <Navigation>
+                <img src={logo}  alt="logo"  className="logo"/>
                 <Link to="/inicio" className="font-weight-bold" style={{ textDecoration: 'none' }} >Inicio</Link>
                 <Link  className="font-weight-bold" id="demo-menu-lower-left"  style={{ textDecoration: 'none' }}>
                   Nosotros
@@ -140,8 +129,9 @@ class App extends Component {
                 <Link to="/Servicios" className="font-weight-bold" style={{ textDecoration: 'none' }}>Servicios</Link>
                 <a  className="font-weight-bold" style={{ textDecoration: 'none' }} href="http://admision.uniq.edu.pe">Admisión</a>
               </Navigation>
-          </Header>
-          <Drawer title="U N I Q" className="mdl-layout__drawer-button">
+            </HeaderRow>
+        </Header>
+        <Drawer>
               <Navigation>
               <Link  className="font-weight-bold" id="demo-menu-lower-left" >
                   Nosotros
@@ -164,16 +154,16 @@ class App extends Component {
                   </li>
                 </ul>
               </Navigation>
-          </Drawer>
-          <Content>
+        </Drawer>
+        <Content>
               <div className="page-content">
                 <img src={logo}  alt="logo"  className="logo"/>
               </div>
               <Main />
               <Chat></Chat>
               <Contact></Contact>
-          </Content>
-      </Layout>
+        </Content>
+    </Layout>
       </div>
     );
   }

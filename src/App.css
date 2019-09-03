@@ -3,10 +3,9 @@
   background: #376970; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right,#376970, #376970,#376970); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right,#376970, #376970,#376970); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  justify-content: flex-start;
 }
-.mdl-layout__drawer-button {
-  display: none;
-}
+
 .header--letter{
   font-family: 'Open Sans', bold;
   font-weight: 700;
@@ -180,6 +179,8 @@ padding: 1em;
 .pri-nav{
   background-color:#30393A;
   color: white;
+}
+.link-pri{
   font-size: 11px;
 }
 .page-content{
@@ -511,9 +512,6 @@ a.more-link {
   .slider{
     height: 100%;
     width: 100%;
-  }
-  .mdl-layout__drawer-button {
-    display: block;
   }
 }
 @media only screen and (min-width:1200px)

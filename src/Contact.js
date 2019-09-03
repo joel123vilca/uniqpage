@@ -7,7 +7,6 @@ import youtube from './image/youtube-ico.png';
 import directorio from './image/directorio.png';
 import facebook from './image/face-ico.png';
 import flickr from './image/flickr-ico.png';
-import TextField from '@material-ui/core/TextField';
 
 class Contact extends Component {
   render() {
@@ -39,15 +38,6 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="colum2">
-                <TextField
-        id="outlined-email-input"
-        label="Email"
-        type="email"
-        name="email"
-        autoComplete="email"
-        margin="normal"
-        variant="outlined"
-      />
                 </div>
                 <div className="colum3">
                     <h1>Redes sociales</h1>
