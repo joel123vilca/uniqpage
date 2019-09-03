@@ -5,6 +5,7 @@ export const SHOW_STORIES = 'SHOW_STORIES'
 export const VIEW_STORIE = 'VIEW_STORIE'
 export const SHOW_ALLIANCES = 'SHOW_ALLIANCES'
 export const SHOW_TEACHERS = 'SHOW_TEACHERS'
+export const SHOW_RESOLUTIONS = 'SHOW_RESOLUTIONS'
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -46,5 +47,14 @@ export function showTeachers() {
             .then((response) => {
                 dispatch( { type: SHOW_TEACHERS, payload: response.data.data } ) 
             }) 
+    }
+}
+
+export function showResolutions() {
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/resolutions`)
+        .then((response) => {
+            dispatch( { type: SHOW_RESOLUTIONS, payload: response.data.data } ) 
+        }) 
     }
 }

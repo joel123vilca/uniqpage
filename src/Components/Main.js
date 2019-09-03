@@ -26,6 +26,7 @@ import CodeEthics from './CodeEthics';
 import News from './News';
 import Transparenci from './Transparenci';
 import Home from './Home';
+import Resolutions from './Resolutions';
 
 const Main = () => (
     <Switch>
@@ -56,6 +57,7 @@ const Main = () => (
         <Route  path='/comunicados' component={News} />
         <Route  path='/transparencia' component={Transparenci}/>
         <Route  path='/datosuniq' component={Home} />
+        <Route  path='/resoluciones' component={Resolutions} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

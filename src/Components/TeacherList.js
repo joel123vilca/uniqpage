@@ -1,34 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { showTeachers } from '../actions';
-import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 import './teacherList.css';
-import image from '../image/fondo.jpeg';
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-    background: '#1c3643',
-    color: '#F8FAFF',
-  },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  bigAvatar: {
-    margin: 10,
-    width: 120,
-    height: 120,
-  },
-  teacherText:{
-    margin:10,
-    textAlign: 'center'
-  },
-}));
+import image from '../image/logo.jpeg';
 
 class  TeacherList extends Component {
   componentWillMount() {
@@ -36,6 +13,9 @@ class  TeacherList extends Component {
   }
   FormRow() {
     return this.props.teachers.map((teacher) => {
+      if(teacher.image_path === null){
+        teacher.image_path = image
+      }
       return (
         <Grid item xs={12} md={3} key={teacher.id}  container justify="center" alignItems="center">
             <Avatar alt="Remy Sharp"  style={{magin:20, width:140,height:140}} src={teacher.image_path}  />
