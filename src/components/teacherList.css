@@ -1,0 +1,19 @@
+.root{
+    flex-Grow: 1;
+    background: #1c3643;
+    color: #F8FAFF;
+}
+.paper{
+    padding: 20;
+    text-Align: 'center';
+    color: white;
+}
+.bigAvatar{
+    margin: 10;
+    width: 120;
+    height: 120;
+}
+.teacherText{
+    margin:10;
+    text-align: 'center';
+}

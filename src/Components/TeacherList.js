@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { showTeachers } from '../actions';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
+import './teacherList.css';
 import image from '../image/fondo.jpeg';
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -26,65 +30,44 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function TeacherList() {
-  const classes = useStyles();
-
-  function FormRow() {
-    return (
-      <React.Fragment>
-        <Grid item xs={12} md={3}  container justify="center" alignItems="center">
-            <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                AUGUSTO PUMACHAUCA PUMACHAUCALLA
-            </Typography>
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
-            </Typography>
-        </Grid>
-        <Grid item xs={12}  md={3} container justify="center" alignItems="center">
-            <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                AUGUSTO PUMACHAUCA PUMACHAUCALLA
-            </Typography>
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
-            </Typography>
-        </Grid>
-        <Grid item xs={12}  md={3} container justify="center" alignItems="center">
-            <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                ENRIQUE JOTADELO MAMANI
-            </Typography>
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
-            </Typography>
-        </Grid>
-        <Grid item xs={12}  md={3} container justify="center" alignItems="center">
-            <Avatar alt="Remy Sharp" src={image} className={classes.bigAvatar} />
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                FANNY ROSARIO MARQUEZ ROMERO
-            </Typography>
-            <Typography className={classes.teacherText} variant="subtitle1" gutterBottom>
-                Docente asociado Tiempo completo augusto.pumachauca@uniq.edu.pe
-            </Typography>
-        </Grid> 
-      </React.Fragment>
-    );
+class  TeacherList extends Component {
+  componentWillMount() {
+    this.props.showTeachers()
   }
-
-  return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid container item xs={12} md={12} spacing={5}>
-          <FormRow />
+  FormRow() {
+    return this.props.teachers.map((teacher) => {
+      return (
+        <Grid item xs={12} md={3} key={teacher.id}  container justify="center" alignItems="center">
+            <Avatar alt="Remy Sharp"  style={{magin:20, width:140,height:140}} src={teacher.image_path}  />
+            <Typography  variant="subtitle1" className="teacherText" gutterBottom>
+                {teacher.name} {teacher.last_name}
+            </Typography>
+            <Typography  variant="subtitle1" className="teacherText"  gutterBottom>
+                {teacher.email}
+            </Typography>
         </Grid>
+    )
+    })
+  }
+  render(){
+    return(
+      <div className="root">
+        <br></br>
+        <Grid container spacing={2}>
         <Grid container item xs={12} md={12} spacing={5}>
-          <FormRow />
+        <React.Fragment>
+          { this.FormRow()}
+        </React.Fragment>
         </Grid>
-        <Grid container item xs={12} md={12} spacing={5}>
-          <FormRow />
         </Grid>
-      </Grid>
-    </div>
-  );
+      </div>
+    )
+  }
 }
+function mapStateToProps(state) {
+  return {
+    teachers: state.teachers.teachers
+  }
+}
+
+export default connect(mapStateToProps, { showTeachers })(TeacherList)
