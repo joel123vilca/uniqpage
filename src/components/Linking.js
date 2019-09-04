@@ -7,6 +7,7 @@ import dina from '../image/dina.png';
 import municipalidad from '../image/municipalidad.png';
 import sunedu from '../image/sunedu.jpg';
 import universidades from '../image/universidades.jpg';
+import plataforma from '../image/plataforma.png';
 
 class Linking extends Component {
     render(){
@@ -31,6 +32,17 @@ class Linking extends Component {
                     <img 
                       className="linking--image"
                       src={sunedu}
+                      alt="imagen uno"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div className="linking--content">
+                <a  target="_blank" href="https://dji.pide.gob.pe/">
+                  <div className="linking--card">
+                    <img 
+                      className="linking--image"
+                      src={plataforma}
                       alt="imagen uno"
                     />
                   </div>

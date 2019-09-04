@@ -18,6 +18,7 @@ class App extends Component {
         <Header waterfall hideTop>
             <HeaderRow  className="pri-nav justify-content-end" style={{height: 45}}>
               <Navigation>
+              <a style={{fontSize: 11}} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
                 <a style={{fontSize: 11}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
                 <a style={{fontSize: 11}} href="/Transparencia">Transparencia</a>
                 <a style={{fontSize: 11}} href="/resoluciones">Resoluciones</a>

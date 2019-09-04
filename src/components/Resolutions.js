@@ -15,7 +15,7 @@ class Resolutions extends Component {
     return this.props.resolutions.map((resolution) => {
       return (
         <ListItem key={resolution.id}>
-          <ListItemContent style={{margin: '35px'}}>{resolution.title}</ListItemContent>
+          <h5>{resolution.title}</h5>
           <p>{resolution.description}</p>
           <ListItemAction>
               <IconButton href={resolution.pdf_path} target="_blank"  edge="end">
@@ -34,7 +34,7 @@ class Resolutions extends Component {
         src={resolutions}
         alt="banner resoluciones"
       />
-      <h2 className="bulletin-title">Resoluciones</h2>
+      <h2 className="bulletin-title">Resoluciones - U N I Q</h2>
       <List style={{width: '90%'}}>
       { this.renderResolutionList() } 
       </List>

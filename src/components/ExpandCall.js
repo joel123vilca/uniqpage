@@ -84,6 +84,21 @@ export default function ExpandCall() {
                     </IconButton>
                   </ListItemSecondaryAction>
                 </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <FolderIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary="RESULTADOS DE LA CONVOCATORIA"
+                  />
+                  <ListItemSecondaryAction>
+                    <IconButton edge="end" target="_blank" href="http://test1.uniq.edu.pe/public/storage/convocatoria/RESULTADOS%20CAFETIN.PDF">
+                      <Icon color="primary">cloud_download</Icon>
+                    </IconButton>
+                  </ListItemSecondaryAction>
+                </ListItem>
             </List>
           </div>
         </ExpansionPanelDetails>
