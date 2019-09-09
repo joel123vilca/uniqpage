@@ -33,7 +33,7 @@ SimpleDialog.propTypes = {
 };
 
 export default function SimpleModal() {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const handleClose = () => {
     setOpen(false);

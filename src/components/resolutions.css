@@ -1,0 +1,66 @@
+.alliance--banner{
+    width: 100%;
+}
+.alliance-title{
+    background-color:#F8FAFF;
+    color:#376970;
+    font-size: 30px;
+    font-family: 'Open Sans', bold;
+    font-weight: 700;
+    text-align: center;
+  }
+  .alliance--div{
+    background-color:#F8FAFF;
+    height: 100px;
+  }
+  .alliance {
+    background-color:#F8FAFF;
+    display: flex;
+    min-width: 100%;
+    height: 100px;
+    overflow-x: auto;
+  }
+  .alliance::-webkit-scrollbar {
+    display: none;
+  }
+  .alliance--content {
+    background-color: #F8FAFF;
+    min-width: 300px;
+    height: 100px;
+    margin: 5px;
+    box-shadow: 3px 5px rgba(255,255,255,0.05);
+  }
+  .alliance--card {
+      position:relative;
+      width: 300px;
+      height: 100px;
+  }
+  .alliance--image{
+    width: 300px;
+    height: 100px;
+  }
+  .Search-input {
+    background: #f2f2f2;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial;
+    width: 80%;
+    border-radius: 10px;
+    border:none;
+    outline: 0;
+    transition: .2s;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+  }
+  @media only screen and (max-width: 600px) {
+    .alliance--banner{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width:1200px)
+{
+  .alliance--banner{
+    height:100%;
+    width: 100%;
+  }
+}
