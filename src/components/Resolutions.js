@@ -6,22 +6,29 @@ import Icon from '@material-ui/core/Icon';
 import { showResolutions, searchResolutions} from '../actions';
 import "./resolutions.css"; 
 import resolutions from '../image/resolutions.jpg';
+import Search from './SearchResolution';
 
 class Resolutions extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      searchResolution: 'ESTABLECER el funcionamiento del Repositorio Institucional de la Universidad Nacional Intercultural de Quillabamba'
+      value: ""
     }
   }
   componentWillMount() {
-    const description = this.state.searchResolution
     this.props.showResolutions()
-    this.props.searchResolutions(description)
+    this.props.searchResolutions(this.state.value)
   }
+  handleChange = (e) => {
+    this.setState({
+      value: e.target.value
+    })
+    this.props.onChange(event.target.value)
+  }
+ 
   renderResolutionList() {
     return this.props.resolutions
-    .filter(resolution  => `${resolution.description}`.toUpperCase().indexOf(this.state.searchResolution.toUpperCase()) >=0)
+    .filter(resolution  => `${resolution.description}`.toUpperCase().indexOf(this.state.value.toUpperCase()) >=0)
     .map((resolution) => {
       return (
         <ListItem key={resolution.id}>
@@ -63,11 +70,12 @@ class Resolutions extends Component {
       />
       <h2 className="bulletin-title">Resoluciones - U N I Q</h2>
       <input
-        type="text"
-        placeholder="Buscar Resoluciones"
         className="Search-input"
-        name="searchResolution"
-      />
+        placeholder="busca "
+        type="text"
+        name="search"
+        value={this.state.value} 
+        onChange={this.handleChange}/>
       <List>
       { this.renderResultResolutions()}
       </List>
