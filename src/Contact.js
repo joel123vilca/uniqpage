@@ -7,8 +7,10 @@ import youtube from './image/youtube-ico.png';
 import directorio from './image/directorio.png';
 import facebook from './image/face-ico.png';
 import flickr from './image/flickr-ico.png';
+import CreatePost from './containers/CreatePost';
 
 class Contact extends Component {
+    
   render() {
     return(
         <div className="footer">
@@ -38,6 +40,7 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="colum2">
+                <CreatePost />
                 </div>
                 <div className="colum3">
                     <h1>Redes sociales</h1>
@@ -60,4 +63,6 @@ class Contact extends Component {
     );
   }
 }
+
+
 export default Contact;

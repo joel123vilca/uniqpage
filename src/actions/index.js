@@ -7,6 +7,7 @@ export const SHOW_ALLIANCES = 'SHOW_ALLIANCES'
 export const SHOW_TEACHERS = 'SHOW_TEACHERS'
 export const SHOW_RESOLUTIONS = 'SHOW_RESOLUTIONS'
 export const SEARCH_RESOLUTIONS = 'SEARCH_RESOLUTIONS'
+export const ADD_POST = 'ADD_POST';
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -60,7 +61,6 @@ export function showResolutions() {
     }
 }
 export function searchResolutions(description){
-    console.log(description);
     return (dispatch, getState) => {
         axios.get(`${HOST}/resolutions/search?description=${description}`)
         .then((response) => {
@@ -68,3 +68,27 @@ export function searchResolutions(description){
         }) 
     }
 }
+
+export const createPost = ({ full_name, email, comment, topic_id}) => {
+    return (dispatch) => {
+      return axios.post(`${HOST}/contacts`, {full_name, email,comment,topic_id})
+        .then(response => {
+          dispatch(createPostSuccess(response.data))
+        })
+        .catch(error => {
+          throw(error);
+        });
+    };
+  };
+  
+export const createPostSuccess =  (data) => {
+    return {
+      type: ADD_POST,
+      payload: {
+        full_name: data.full_name,
+        email: data.email,
+        comment: data.comment,
+        topic_id: data.topic_id
+      }
+    }
+  };

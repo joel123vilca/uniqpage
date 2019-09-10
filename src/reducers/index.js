@@ -4,6 +4,7 @@ import { showStories, viewStorie } from './stories';
 import { showAlliances } from './alliances';
 import {showTeachers} from './teachers';
 import {showResolutions, searchResolutions} from './resolutions';
+import {postsReducer} from './contact';
 
 const rootReducer = combineReducers({
   banner: showBanners,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   alliance: showAlliances,
   teachers: showTeachers,
   resolutions: showResolutions,
-  resultResolutions: searchResolutions
+  resultResolutions: searchResolutions,
+  posts: postsReducer
 });
 
 export default rootReducer;
