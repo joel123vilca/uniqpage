@@ -6,6 +6,7 @@ import {showTeachers} from './teachers';
 import {showResolutions, searchResolutions} from './resolutions';
 import {postsReducer} from './contact';
 import {showCalls} from './calls';
+import {showNews} from './news';
 
 const rootReducer = combineReducers({
   banner: showBanners,
@@ -16,7 +17,8 @@ const rootReducer = combineReducers({
   resolutions: showResolutions,
   resultResolutions: searchResolutions,
   posts: postsReducer,
-  calls: showCalls
+  calls: showCalls,
+  news: showNews
 });
 
 export default rootReducer;

@@ -7,6 +7,6 @@ export function showBanners() {
         axios.get(`${HOST}/banners`)
             .then((response) => {
                 dispatch( { type: SHOW_BANNERS, payload: response.data.data } ) 
-            }) 
+        }) 
     }
 }

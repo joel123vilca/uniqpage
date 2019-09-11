@@ -1,9 +1,10 @@
 .root{
-    width: 100%;
+    width: 25%;
     text-align: 'center';
+    padding: 2%;
 }
 .heading{
-    font-Size: 15;
+    font-Size: 20;
     flex-Basis: 33.33%;
     flex-Shrink: 0;
     text-Align: 'center';

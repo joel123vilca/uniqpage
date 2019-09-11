@@ -9,6 +9,7 @@ export const SHOW_RESOLUTIONS = 'SHOW_RESOLUTIONS';
 export const SEARCH_RESOLUTIONS = 'SEARCH_RESOLUTIONS';
 export const ADD_POST = 'ADD_POST';
 export const SHOW_CALLS = 'SHOW_CALLS';
+export const SHOW_NEWS = 'SHOW_NEWS';
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -94,11 +95,20 @@ export const createPostSuccess =  (data) => {
     }
   };
 
-  export function showCalls(description){
+  export function showCalls(){
     return (dispatch, getState) => {
         axios.get(`${HOST}/announcements`)
         .then((response) => {
             dispatch( { type:  SHOW_CALLS, payload: response.data.data } ) 
-        }) 
+        })
     }
-}
+  };
+
+  export function showNews(){
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/releases`)
+        .then((response) => {
+            dispatch( { type:  SHOW_NEWS, payload: response.data.data } ) 
+        })
+    }
+  };
