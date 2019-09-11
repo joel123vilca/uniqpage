@@ -1,0 +1,14 @@
+.root{
+    width: 100%;
+    text-align: 'center';
+}
+.heading{
+    font-Size: 15;
+    flex-Basis: 33.33%;
+    flex-Shrink: 0;
+    text-Align: 'center';
+}
+.secondaryHeading{
+    font-Size: 15;
+    color: black;
+}

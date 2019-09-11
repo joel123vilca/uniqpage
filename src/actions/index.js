@@ -1,13 +1,14 @@
 import axios from 'axios'
 import { HOST } from '../config/api';
-export const SHOW_BANNERS = 'SHOW_BANNERS'
-export const SHOW_STORIES = 'SHOW_STORIES'
-export const VIEW_STORIE = 'VIEW_STORIE'
-export const SHOW_ALLIANCES = 'SHOW_ALLIANCES'
-export const SHOW_TEACHERS = 'SHOW_TEACHERS'
-export const SHOW_RESOLUTIONS = 'SHOW_RESOLUTIONS'
-export const SEARCH_RESOLUTIONS = 'SEARCH_RESOLUTIONS'
+export const SHOW_BANNERS = 'SHOW_BANNERS';
+export const SHOW_STORIES = 'SHOW_STORIES';
+export const VIEW_STORIE = 'VIEW_STORIE';
+export const SHOW_ALLIANCES = 'SHOW_ALLIANCES';
+export const SHOW_TEACHERS = 'SHOW_TEACHERS';
+export const SHOW_RESOLUTIONS = 'SHOW_RESOLUTIONS';
+export const SEARCH_RESOLUTIONS = 'SEARCH_RESOLUTIONS';
 export const ADD_POST = 'ADD_POST';
+export const SHOW_CALLS = 'SHOW_CALLS';
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -92,3 +93,12 @@ export const createPostSuccess =  (data) => {
       }
     }
   };
+
+  export function showCalls(description){
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/announcements`)
+        .then((response) => {
+            dispatch( { type:  SHOW_CALLS, payload: response.data.data } ) 
+        }) 
+    }
+}
