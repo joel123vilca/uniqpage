@@ -13,7 +13,7 @@ class Resolutions extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      value: ""
+      value: ''
     }
   }
   componentWillMount() {

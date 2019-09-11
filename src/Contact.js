@@ -40,6 +40,8 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="colum2">
+                <h1>Contactanos</h1>
+                <br></br>
                 <CreatePost />
                 </div>
                 <div className="colum3">
