@@ -31,7 +31,7 @@ class  TeacherList extends Component {
   }
   render(){
     return(
-      <div className="root">
+      <div className="teacher--root">
         <br></br>
         <Grid container spacing={2}>
         <Grid container item xs={12} md={12} spacing={5}>
