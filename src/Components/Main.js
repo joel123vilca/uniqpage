@@ -27,6 +27,7 @@ import News from './News';
 import Transparenci from './Transparenci';
 import Home from './Home';
 import Resolutions from './Resolutions';
+import Bulletins from './Bulletins';
 
 const Main = () => (
     <Switch>
@@ -58,6 +59,7 @@ const Main = () => (
         <Route  path='/transparencia' component={Transparenci}/>
         <Route  path='/datosuniq' component={Home} />
         <Route  path='/resoluciones' component={Resolutions} />
+        <Route  path='/boletines'  component={Bulletins} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

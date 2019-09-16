@@ -40,7 +40,7 @@ class Contact extends Component {
                     </div>
                 </div>
                 <div className="colum2">
-                <h1>Contactanos</h1>
+                <h1>Contáctanos</h1>
                 <br></br>
                 <CreatePost />
                 </div>
