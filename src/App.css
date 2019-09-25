@@ -510,6 +510,13 @@ a.more-link {
     height: 45px;
     align-content: center;
   }
+  .transparencia{
+    margin-left :20%; 
+    margin-right : 5px; 
+    width: 240px;
+    height: 45px;
+    align-content: center;
+  }
   .slider{
     height: 100%;
     width: 100%;

@@ -37,7 +37,7 @@ export default function Home() {
           CORREO ELECTRONICO: info@uniq.edu.pe
         </Typography>
         <Typography variant="h5" component="h2">
-          RUC: 205643325741
+          RUC: 20564325741
         </Typography>
       </CardContent>
     </Card>

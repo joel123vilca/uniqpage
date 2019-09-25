@@ -26,7 +26,7 @@ class Authorities extends Component {
         <Grid className="demo-grid-1">
           <Cell col={4}>
             <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-              <img class="autoridad" src="http://uniq.edu.pe/public/img/imagenes/comision_organizadora/dr_Roosevelt_Benel_Villalobos_Diaz.jpeg" alt="Mountains"/>
+              <img class="autoridad" src="http://test1.uniq.edu.pe/public/img/imagenes/comision_organizadora/dr_Roosevelt_Benel_Villalobos_Diaz.jpeg" alt="Mountains"/>
               <CardTitle style={{color: '#fff',background: '#61BD99', textAlign: 'center'}}>Vicepresidente Académico de la Comisión Organizadora de la UNIQ</CardTitle>
               <CardActions border>
               <Button colored>Dr. Roosevelt Benel Villalobos Diaz</Button>
@@ -38,7 +38,7 @@ class Authorities extends Component {
           </Cell>
           <Cell col={4}>
             <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-              <img class="autoridad" src="http://uniq.edu.pe/public/img/imagenes/comision_organizadora/dr_Oswaldo_Luizar_Obregon.jpeg" alt="Mountains"/>
+              <img class="autoridad" src="http://test1.uniq.edu.pe/public/img/imagenes/comision_organizadora/dr_Oswaldo_Luizar_Obregon.jpeg" alt="Mountains"/>
               <CardTitle style={{color: '#fff',background: '#61BD99', textAlign: 'center'}}>Presidente de la Comisión Organizadora de la UNIQ</CardTitle>
               <CardActions border>
               <Button colored>Dr. Oswaldo Luizar Obregon</Button>
@@ -50,7 +50,7 @@ class Authorities extends Component {
           </Cell>
           <Cell col={4}>
             <Card shadow={0} style={{width: '300px', margin: 'auto'}}>
-              <img class="autoridad" src="http://uniq.edu.pe/public/img/imagenes/comision_organizadora/dr_Manuel_Antonio_Canto_Saenz.jpeg" alt="Mountains"/>
+              <img class="autoridad" src="http://test1.uniq.edu.pe/public/img/imagenes/comision_organizadora/dr_Manuel_Antonio_Canto_Saenz.jpeg" alt="Mountains"/>
               <CardTitle style={{color: '#fff',background: '#61BD99', textAlign: 'center'}}>Vicepresidente de Investigación de la Comisión Organizadora de la UNIQ</CardTitle>
               <CardActions border>
               <Button colored>Dr. Manuel Antonio Canto Saenz</Button>

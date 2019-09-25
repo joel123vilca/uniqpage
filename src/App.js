@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Layout, Header ,Navigation,Drawer,Content, Menu, MenuItem, HeaderRow} from 'react-mdl';
-import Nav from 'react-bootstrap/Nav'
 import Main from './components/Main';
 import {Link} from 'react-router-dom';
 import Contact from './Contact';
-import logo from './image/nav.png'; 
+import logo from './image/nav.png';
+import trasparencia from './image/pte_logo2.jpg';
 import Chat from './Chat';
 
 
@@ -20,13 +20,13 @@ class App extends Component {
               <Navigation>
               <a style={{fontSize: 11}} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
               <a style={{fontSize: 11}} href="http://admision.uniq.edu.pe/cepre">PREINSCRIPCIÓN CEPRE</a>
-                <a style={{fontSize: 11}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
-                <a style={{fontSize: 11}} href="/Transparencia">Transparencia</a>
-                <a style={{fontSize: 11}} href="/resoluciones">Resoluciones</a>
-                <a style={{fontSize: 11}} href="http://biblioteca.uniq.edu.pe/">Biblioteca</a>
-                <a style={{fontSize: 11}} href="/trabajo">Bolsa de Trabajo</a>
-                <a style={{fontSize: 11}} href="/galeria">Galeria de fotos</a>
-                <a style={{fontSize: 11}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</a>
+              <a style={{fontSize: 11}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
+              <a style={{fontSize: 11}} href="/resoluciones">Resoluciones</a>
+              <a style={{fontSize: 11}} href="http://biblioteca.uniq.edu.pe/">Biblioteca</a>
+              <a style={{fontSize: 11}} href="/trabajo">Bolsa de Trabajo</a>
+              <a style={{fontSize: 11}} href="/galeria">Galeria de fotos</a>
+              <a style={{fontSize: 11}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</a>
+              <a href="/Transparencia"><img src={trasparencia}  alt="transparencia"  style={{width: '200px', height: '35px'}}/></a>
               </Navigation>
             </HeaderRow>
             <HeaderRow className="header-color">
