@@ -28,6 +28,7 @@ import Transparenci from './Transparenci';
 import Home from './Home';
 import Resolutions from './Resolutions';
 import Bulletins from './Bulletins';
+import ListDocuments from './ListDocuments';
 
 const Main = () => (
     <Switch>
@@ -60,6 +61,7 @@ const Main = () => (
         <Route  path='/datosuniq' component={Home} />
         <Route  path='/resoluciones' component={Resolutions} />
         <Route  path='/boletines'  component={Bulletins} />
+        <Route  path='/gestion-academica' component={ListDocuments} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

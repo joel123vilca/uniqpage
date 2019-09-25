@@ -26,7 +26,7 @@ class App extends Component {
               <a style={{fontSize: 11}} href="/trabajo">Bolsa de Trabajo</a>
               <a style={{fontSize: 11}} href="/galeria">Galeria de fotos</a>
               <a style={{fontSize: 11}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</a>
-              <a href="/Transparencia"><img src={trasparencia}  alt="transparencia"  style={{width: '200px', height: '35px'}}/></a>
+              <a href="/Transparencia"><img src={trasparencia}  alt="transparencia"  style={{width: '150px', height: '45px'}}/></a>
               </Navigation>
             </HeaderRow>
             <HeaderRow className="header-color">
@@ -44,6 +44,11 @@ class App extends Component {
                   <Link to="/mision" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Misión y Visión
+                      </MenuItem>
+                  </Link>
+                  <Link to="/gestion-academica" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Documentos de Gestion Académica
                       </MenuItem>
                   </Link>
                   <Link to="/autoridades" style={{ textDecoration: 'none', display: 'block' }}>
