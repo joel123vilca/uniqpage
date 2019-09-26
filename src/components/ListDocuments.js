@@ -6,6 +6,8 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import InfoIcon from '@material-ui/icons/Info';
 import documentos from '../image/documentos-v2.jpg';
+import Button from '@material-ui/core/Button';
+import fondo from '../image/img_documentos.jpg';
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
@@ -13,14 +15,21 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(4),
   },
   gridList: {
     width: 1200,
-    height: 250,
+    height: '100%',
+  },
+  gridListTile: {
+    background: 'rgba(0,0,0,.5)'
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',
   },
+  titleBar: {
+    background: 'rgba(0,0,0,0)'
+  }
 }));
 
 
@@ -36,217 +45,247 @@ export default function ListDocuments() {
       />
       <br></br>
     <div className={classes.root}>
-      <GridList  className={classes.gridList} cols={4}>
+      <GridList  className={classes.gridList} cols={3}>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/estatuto.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
         />
         <GridListTileBar
-              style={{width:'100'}}
-              title="Estatuto"
+              title="Estatuto UNIQ"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/datosgenerales/estatuto.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}}  href="http://test1.uniq.edu.pe/public/transparencia/datosgenerales/estatuto.pdf" target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_estudiantes.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
         />
         <GridListTileBar
-              style={{width:'100'}}
               title="Reglamento de estudiantes"
-              actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_estudiantes.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
-              }
-        />
-        </GridListTile>
-        <GridListTile>
-        <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_gestion_academico.png"
-            alt="status"
-            width="100"
-            height="250"
+              titlePosition="top"
         />
         <GridListTileBar
-              style={{width:'100'}}
-              title="Reglamento de gestion academica"
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_gestion_academico.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_estudiantes.pdf" target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_admision.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250"  
+        />
+        <GridListTileBar
+              title="Reglamento de gestion académica"
+              titlePosition="top"
+        />
+        <GridListTileBar
+              actionIcon={
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_gestion_academico.pdf" target="_blank">
+                    Ver más
+                  </Button>
+              }
+              actionPosition="center"
+              className={classes.titleBar}
+        />
+        </GridListTile>
+        <GridListTile>
+        <img 
+            src={fondo}
+            alt="status"
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Reglamento de admisión"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_admision.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_admision.pdf" target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
-      </GridList>
-      <GridList  className={classes.gridList} cols={4}>
       <GridListTile>
-        <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_bienestar_universitario.png"
+      <img 
+            src={fondo}
             alt="status"
-            width="100"
-            height="250"  
-        />
+      />
         <GridListTileBar
               style={{width:'100'}}
               title="Reglamento de bienestar universitario"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_bienestar_universitario.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_bienestar_universitario.pdf" target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglmento_de_deporte_recreacion.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Reglamento de deporte y recreación"
-              actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglmento_de_deporte_recreacion.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
-              }
-        />
-        </GridListTile>
-        <GridListTile>
-        <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/politicas_planes_adecuacion.png"
-            alt="status"
-            width="100"
-            height="250" 
+              titlePosition="top"
         />
         <GridListTileBar
-              style={{width:'100'}}
-              title="Politicas planes adecuación"
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/politicas_planes_adecuacion.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglmento_de_deporte_recreacion.pdf" target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_investigacion.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
+        />
+        <GridListTileBar
+              style={{fontSize:'3em'}}
+              title="Politicas planes adecuación"
+              titlePosition="top"
+        />
+        <GridListTileBar
+              actionIcon={
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/politicas_planes_adecuacion.pdf"  target="_blank">
+                    Ver más
+                  </Button>
+              }
+              actionPosition="center"
+              className={classes.titleBar}
+        />
+        </GridListTile>
+        <GridListTile>
+        <img 
+            src={fondo}
+            alt="status"
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Reglamento de investigación"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_investigacion.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_investigacion.pdf"  target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
-      </GridList>
-      <GridList  className={classes.gridList} cols={4}>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/codigo_de_etica_de_investigacion.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Codigo de etica de investigación"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/codigo_de_etica_de_investigacion.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/codigo_de_etica_de_investigacion.pdf"  target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_seleccion_evaluacion_docente.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250"  
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Reglamento de selección docente"
+              titlePosition="top"
+        />
+         <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_selección_evaluacion_docente.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_selección_evaluacion_docente.pdf"  target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/plan_capacitacion_docente.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Plan de capacitación docente"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/plan_capacitacion_docente.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/plan_capacitacion_docente.pdf"  target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
         <GridListTile>
         <img 
-            src="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_propiedad_intelectual.png"
+            src={fondo}
             alt="status"
-            width="100"
-            height="250" 
         />
         <GridListTileBar
               style={{width:'100'}}
               title="Reglamento de propiedad intelectual"
+              titlePosition="top"
+        />
+        <GridListTileBar
               actionIcon={
-                <IconButton aria-label={`info about`}  href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_propiedad_intelectual.pdf"  target="_blank" className={classes.icon}>
-                  <InfoIcon />
-                </IconButton>
+                  <Button variant="outlined" style={{color: 'white', background: 'gray'}} href="http://test1.uniq.edu.pe/public/transparencia/documentosgestionacademica/reglamento_de_propiedad_intelectual.pdf"  target="_blank">
+                    Ver más
+                  </Button>
               }
+              actionPosition="center"
+              className={classes.titleBar}
         />
         </GridListTile>
       </GridList>
     </div>
+    <br></br>
     </div>
   );
 }
