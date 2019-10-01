@@ -29,6 +29,7 @@ import Home from './Home';
 import Resolutions from './Resolutions';
 import Bulletins from './Bulletins';
 import ListDocuments from './ListDocuments';
+import Oci from './Oci';
 
 const Main = () => (
     <Switch>
@@ -62,6 +63,7 @@ const Main = () => (
         <Route  path='/resoluciones' component={Resolutions} />
         <Route  path='/boletines'  component={Bulletins} />
         <Route  path='/gestion-academica' component={ListDocuments} />
+        <Route  path='/oci' component={Oci} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

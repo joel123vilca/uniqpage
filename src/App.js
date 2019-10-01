@@ -138,29 +138,23 @@ class App extends Component {
               </Navigation>
             </HeaderRow>
         </Header>
-        <Drawer>
-              <Navigation>
-              <Link  className="font-weight-bold" id="demo-menu-lower-left" >
-                  Nosotros
-                  <Menu target="demo-menu-lower-left">
-                    <MenuItem as={Link} to='/home'>Universidad</MenuItem>
-                    <MenuItem>mision y vision</MenuItem>
-                    <MenuItem as={Link} to="/autoridades">Nuestras Autoridades</MenuItem>
-                    <MenuItem>Docentes</MenuItem>
-                    <MenuItem>Alianzas</MenuItem>
-                  </Menu>
-                </Link>
-                <ul className="">
-                  <li><a href="#">Escuelas</a>
-                    <ul>
-                      <li><a href="/civil">Ingeniería Civil</a></li>
-                      <li><a href="/tropical">Ingeniería Agronómica Tropical</a></li>
-                      <li><a href="/ecoturismo">Ecoturismo</a></li>
-                      <li><a href="/alimentarias"> Ingeniería de Alimentos</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </Navigation>
+        <Drawer title="UNIQ" style={{background:'#376970'}}>
+          <Navigation>
+            <a style={{fontSize: 14, color:'white'}} href="/inicio">Inicio</a>
+            <a style={{fontSize: 14, color:'white'}} href="/universidad">Universidad</a>
+            <a style={{fontSize: 14, color:'white'}} href="/mision">Misión y visión</a>
+            <a style={{fontSize: 14, color:'white'}} href="/autoridades">Nuestras Autoridades</a>
+            <a style={{fontSize: 14, color:'white'}} href="/convocatorias">Convocatorias</a>
+            <a style={{fontSize: 14, color:'white'}} href="/ecoturismo">Ecoturismo</a>
+            <a style={{fontSize: 14, color:'white'}} href="/tropical">Ingenieria Agronomica Tropical</a>
+            <a style={{fontSize: 14, color:'white'}} href="/civil">Ingenieria Civil</a>
+            <a style={{fontSize: 14, color:'white'}} href="/alimentarias">Ingenieria de Alimentos</a>
+            <a style={{fontSize: 14, color:'white'}} href="/Interculturalidad">Interculturalidad</a>
+            <a style={{fontSize: 14, color:'white'}} href="/lineas-investigacion">Lineas de Investigación</a>
+            <a style={{fontSize: 14, color:'white'}} href="/docentes">Docentes</a>
+            <a style={{fontSize: 14, color:'white'}} href="/Servicios">Servicios</a>
+
+          </Navigation>
         </Drawer>
         <Content>
               <div className="page-content">
