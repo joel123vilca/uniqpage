@@ -34,6 +34,94 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const ocis = [ 
+  { id:1,title:'ACCION SIMULTANEA', data:[
+    {
+      id:1,
+      title:'Acción simultanea 1',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ACCION%20SIMULTANEA/AS-001.pdf'
+    },
+    {
+      id:2,
+      title:'Acción simultanea 2',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ACCION%20SIMULTANEA/AS-002.pdf'
+    },
+    {
+      id:3,
+      title:'Acción simultanea 3',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ACCION%20SIMULTANEA/AS-003.pdf'
+    }
+  ]},
+  { id:2,title:'ORIENTACION DE OFICIO', data:[
+  {
+    id:1,
+    title:'Orientación de oficio 1',
+    file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O_1.pdf'
+    },
+    {
+      id:2,
+      title:'Orientación de oficio 2',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/OO_2.pdf'
+    },
+    {
+      id:3,
+      title:'Orientación de oficio 3',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/OO_3.pdf'
+    },
+    {
+      id:4,
+      title:'Orientación de oficio 4',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O_4.pdf'
+    },
+    {
+      id:5,
+      title:'Orientación de oficio 5',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O_5.pdf'
+    },
+    {
+      id:6,
+      title:'Orientación de oficio 6',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O_6.pdf'
+    },
+    {
+      id:7,
+      title:'Orientación de oficio 7',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O_7.pdf'
+    },
+    {
+      id:8,
+      title:'Orientación de oficio 8',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O.8.PDF'
+    },
+    {
+      id:9,
+      title:'Orientación de oficio 9',
+      file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/ORIENTACION%20DE%20OFICIO/O.O.9.PDF'
+    },
+]},
+{ id:3,title:'VISITA DE CONTROL', data:[
+  {
+    id:1,
+    title:'Visita de control 1',
+    file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/VISITA%20DE%20CONTROL/VC_1.pdf'
+  },
+  {
+    id:2,
+    title:'Visita de control 2',
+    file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/VISITA%20DE%20CONTROL/VC_2.pdf'
+  },
+  {
+    id:3,
+    title:'Visita de control 3',
+    file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/VISITA%20DE%20CONTROL/VC_3.pdf'
+  },
+  {
+    id:4,
+    title:'Visita de control 4',
+    file_path:'http://test1.uniq.edu.pe/public/SCANER%20SER.CONTROL%20SIMULTANEO-2018/VISITA%20DE%20CONTROL/VC_4.pdf'
+  }
+]}
+]
 
 class Oci extends Component {
   state = {
@@ -48,7 +136,7 @@ class Oci extends Component {
    });
  };
  renderCallList (){
-  return this.props.calls.map((call) => {
+  return ocis.map((call) => {
     return (
       <ExpansionPanel 
           key={call.id}
@@ -66,7 +154,7 @@ class Oci extends Component {
             <div className={classes.demo}>
               <List>
                 {
-                  call.callDocuments.map((document)=>{
+                  call.data.map((document)=>{
                     return(
                       <ListItem key={document.id}>
                         <ListItemAvatar>
