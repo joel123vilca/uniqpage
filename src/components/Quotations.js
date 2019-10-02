@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import DoneIcon from '@material-ui/icons/Done';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-
+import Paper from '@material-ui/core/Paper';
 
 class Quotations extends Component {
   componentWillMount() {
@@ -28,14 +28,14 @@ class Quotations extends Component {
          <CardContent>
              <div>
              <Typography  gutterBottom variant="h6" style={{textAlign: 'justify'}}>
-            Nº: {quotation.number} 
+            Nº: {quotation.number} - {quotation.year}
            </Typography>
            <Typography  variant="body1" style={{textAlign: 'justify'}}>
             Fecha de Publicación: {quotation.publication_date} 
            </Typography>
              </div>
            <br></br>
-            <Typography variant="h5" component="h3" style={{textAlign: 'justify'}}>
+            <Typography variant="h4" component="h3" style={{textAlign: 'justify'}}>
                 {quotation.title}
             </Typography>
             <br></br>
@@ -69,15 +69,6 @@ class Quotations extends Component {
                 <CloudDownloadIcon />
                 Solicitud
             </Button>
-            <Button 
-                variant="contained" 
-                style={{color:'white',background:'#376970'}}
-                target="_blank" 
-                href={quotation.term_file_path}
-            >
-                <CloudDownloadIcon />
-                TDR
-            </Button>
         </CardActions>
        </Card>
         <br></br>
@@ -90,6 +81,16 @@ class Quotations extends Component {
       <div style={{width: '100%', margin: 'auto'}}>
       <h2 className="bulletin-title">Convocatorias de cotización</h2>
       <center>
+      <Paper style={{textAlign: 'justify', width: '50%', color:'white', background:'#376970'}}>
+        <Typography component="p">
+        "LAS COTIZACIONES SON VALIDAS DENTRO DE LOS 3 DIAS HÁBILES CONTADOS A PARTIR DEL DIA SIGUIENTE DE SU PUBLICACIÓN.
+        </Typography>
+        <Typography component="p">
+        LA COTIZACIONES 
+        SERÁN RECIBIDAS A TRAVÉS DE MESA DE PARTES - UNIQ O AL CORREO ELECTRONICO abastecimientos@uniq.edu.pe".
+        </Typography>
+      </Paper>
+      <br></br>
       <div style={{width: '50%'}}>
         { this.renderAlliancesList() } 
       </div>
