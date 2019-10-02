@@ -7,6 +7,7 @@ import {showResolutions, searchResolutions} from './resolutions';
 import {postsReducer} from './contact';
 import {showCalls} from './calls';
 import {showNews} from './news';
+import {showQuotations} from './quotations';
 
 const rootReducer = combineReducers({
   banner: showBanners,
@@ -18,7 +19,8 @@ const rootReducer = combineReducers({
   resultResolutions: searchResolutions,
   posts: postsReducer,
   calls: showCalls,
-  news: showNews
+  news: showNews,
+  quotations: showQuotations
 });
 
 export default rootReducer;

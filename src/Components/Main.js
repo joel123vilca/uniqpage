@@ -30,6 +30,7 @@ import Resolutions from './Resolutions';
 import Bulletins from './Bulletins';
 import ListDocuments from './ListDocuments';
 import Oci from './Oci';
+import Quotations from './Quotations';
 
 const Main = () => (
     <Switch>
@@ -64,6 +65,7 @@ const Main = () => (
         <Route  path='/boletines'  component={Bulletins} />
         <Route  path='/gestion-academica' component={ListDocuments} />
         <Route  path='/oci' component={Oci} />
+        <Route  path='/abastecimientos' component={Quotations} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )

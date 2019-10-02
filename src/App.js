@@ -18,14 +18,14 @@ class App extends Component {
         <Header waterfall hideTop>
             <HeaderRow  className="pri-nav justify-content-end" style={{height: 45}}>
               <Navigation>
-              <a style={{fontSize: 11}} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
-              <a style={{fontSize: 11}} href="http://admision.uniq.edu.pe/cepre">PREINSCRIPCIÓN CEPRE</a>
-              <a style={{fontSize: 11}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
-              <a style={{fontSize: 11}} href="/resoluciones">Resoluciones</a>
-              <a style={{fontSize: 11}} href="http://biblioteca.uniq.edu.pe/">Biblioteca</a>
-              <a style={{fontSize: 11}} href="/trabajo">Bolsa de Trabajo</a>
-              <a style={{fontSize: 11}} href="/galeria">Galeria de fotos</a>
-              <a style={{fontSize: 11}} href="http://repositorio.uniq.edu.pe/">Repositorio Institucional</a>
+              <a style={{fontSize: 12}} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
+              <a style={{fontSize: 12}} href="http://admision.uniq.edu.pe/cepre">PREINSCRIPCIÓN CEPRE</a>
+              <a style={{fontSize: 12}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
+              <a style={{fontSize: 12}} href="/resoluciones">RESOLUCIONES</a>
+              <a style={{fontSize: 12}} href="http://biblioteca.uniq.edu.pe/">BIBLIOTECA</a>
+              <a style={{fontSize: 12}} href="/convocatorias">CONVOCATORIAS</a>
+              <a style={{fontSize: 12}} href="/galeria">GALERIAS DE FOTO</a>
+              <a style={{fontSize: 12}} href="http://repositorio.uniq.edu.pe/">REPOSITORIO INSTITUCIONAL</a>
               <a href="/Transparencia"><img src={trasparencia}  alt="transparencia"  style={{width: '150px', height: '45px'}}/></a>
               </Navigation>
             </HeaderRow>

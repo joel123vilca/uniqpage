@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 
-import cronograma from '../image/cronograma.png';
+import cronograma from '../image/popup_cas.jpg';
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -14,7 +14,7 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <Button href="http://bienestar.uniq.edu.pe/bienestar">
+      <Button href="http://uniq.edu.pe/convocatorias">
         <img
           width="600"
           height="500"
@@ -33,7 +33,7 @@ SimpleDialog.propTypes = {
 };
 
 export default function SimpleModal() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
 
   const handleClose = () => {
     setOpen(false);
