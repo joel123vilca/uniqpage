@@ -14,6 +14,8 @@ class LandingPage extends Component {
           <Bulletin/>
           <br></br>
           <Activities />
+          <br></br>
+          <br></br>
           <Linking></Linking>
           <br></br>
         </div>

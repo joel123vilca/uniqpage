@@ -8,6 +8,7 @@ import {postsReducer} from './contact';
 import {showCalls} from './calls';
 import {showNews} from './news';
 import {showQuotations} from './quotations';
+import {showActivities} from './activities';
 
 const rootReducer = combineReducers({
   banner: showBanners,
@@ -20,7 +21,8 @@ const rootReducer = combineReducers({
   posts: postsReducer,
   calls: showCalls,
   news: showNews,
-  quotations: showQuotations
+  quotations: showQuotations,
+  activities: showActivities
 });
 
 export default rootReducer;

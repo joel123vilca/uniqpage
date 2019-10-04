@@ -10,7 +10,8 @@ export const SEARCH_RESOLUTIONS = 'SEARCH_RESOLUTIONS';
 export const ADD_POST = 'ADD_POST';
 export const SHOW_CALLS = 'SHOW_CALLS';
 export const SHOW_NEWS = 'SHOW_NEWS';
-export const SHOW_QUOTATIONS = 'SHOW_QUOTATIONS'
+export const SHOW_QUOTATIONS = 'SHOW_QUOTATIONS';
+export const SHOW_ACTIVITIES ='SHOW_ACTIVITIES';
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -119,6 +120,15 @@ export const createPostSuccess =  (data) => {
         axios.get(`${HOST}/call-quotations`)
             .then((response) => {
                 dispatch( { type: SHOW_QUOTATIONS, payload: response.data.data } ) 
+            }) 
+    }
+}
+
+export function showActivities() {
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/activities`)
+            .then((response) => {
+                dispatch( { type: SHOW_ACTIVITIES, payload: response.data.data } ) 
             }) 
     }
 }

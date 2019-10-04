@@ -1,0 +1,52 @@
+.activities-title{
+    color:#376970;
+    font-size: 30px;
+    font-family: 'Open Sans', bold;
+    font-weight: 700;
+    text-align: center;
+  }
+  .activities--div{
+    background-image:url('../image/background.jpg');
+    height: 200px;
+    margin: 15px;
+  }
+  .activities {
+    background-color:#F8FAFF;
+    display: flex;
+    min-width: 100%;
+    min-height: 200px;
+    overflow-x: auto;
+  }
+  .activities::-webkit-scrollbar {
+    display: none;
+  }
+  .activities--content {
+    background-color: #e74c3c;
+    min-width: 256px;
+    height: 130px;
+    margin: 30px;
+    box-shadow: 3px 5px rgba(255,255,255,0.05);
+  }
+  .activities--card {
+      position:relative;
+  }
+  .activities--fecha{
+    position: absolute;
+    height: 70px;
+    width: 110px;
+    padding: 5px;
+    margin-top: 130px;
+    left:0px;
+    background: #2c3e50;
+    color: #fff;
+    font-Size: 24px;
+    font-Weight: 500;
+    text-Align:center;
+  }
+  .activities--detail{
+    margin-top: -1px;
+    height: 180px;
+  }
+  .activities--action{
+    margin-top: 1px;
+  }
