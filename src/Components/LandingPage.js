@@ -3,6 +3,7 @@ import Slider from './Slider'
 import Bulletin from './Bulletin';
 import Linking from './Linking';
 import SimpleModal from './SimpleModal';
+import Activities from './Activities';
 
 class LandingPage extends Component {
   render() {
@@ -12,6 +13,7 @@ class LandingPage extends Component {
           <Slider></Slider>
           <Bulletin/>
           <br></br>
+          <Activities />
           <Linking></Linking>
           <br></br>
         </div>

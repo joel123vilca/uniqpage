@@ -1,35 +1,38 @@
-import React, { Component} from 'react';
-import mobiscroll from '@mobiscroll/react';
-import '@mobiscroll/react/dist/css/mobiscroll.min.css';
+import React, { Component } from 'react';
+import {Card, CardText, CardActions, Icon} from 'react-mdl';
 
 class Activities extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            myEvents: []
-        };
-        
-        mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', (events) => {
-            this.setState({ myEvents: events});
-        }, 'jsonp');
-    }
-    render() {
+    render(){
         return (
-            <div>
-                <h2 className="bulletin-title">Eventos</h2>
-                <mobiscroll.Eventcalendar
-                lang="es"
-                theme="ios"
-                display="inline"
-                view={{
-                    calendar: { type: 'week' },
-                    eventList: { type: 'day' }
-                }}
-            />
-            </div>
+            <section className="bulletin">
+                <Card shadow={0} style={{width: '256px', height: '130px'}}>
+                <CardText expand style={{textAlign: 'justify', color: 'black'}}>
+                    <h5 style={{marginTop: '1px'}}>
+                        Convocatoria | Bolsa de Prácticas del Consejo Empresarial de la Alianza del Pacífico.
+                    </h5>
+                </CardText>
+                <br></br>
+                <CardActions border style={{borderColor: 'rgba(255, 255, 255, 0.2)', display: 'flex', boxSizing: 'border-box', alignItems: 'center', color: '#fff', background:'green'}}>
+                    May 24, 2016
+                <div className="mdl-layout-spacer"></div>
+                <Icon name="event" />
+                </CardActions>
+                </Card>
+                <Card shadow={0} style={{width: '256px', height: '130px'}}>
+                <CardText expand style={{textAlign: 'justify', color: 'black'}}>
+                    <h5 style={{marginTop: '1px'}}>
+                        Convocatoria | Bolsa de Prácticas del Consejo Empresarial de la Alianza del Pacífico.
+                    </h5>
+                </CardText>
+                <br></br>
+                <CardActions border style={{borderColor: 'rgba(255, 255, 255, 0.2)', display: 'flex', boxSizing: 'border-box', alignItems: 'center', color: '#fff', background:'green'}}>
+                    May 24, 2016
+                <div className="mdl-layout-spacer"></div>
+                <Icon name="event" />
+                </CardActions>
+                </Card>
+            </section>
         );
-    }    
+    }
 }
-
 export default Activities;
