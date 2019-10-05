@@ -30,6 +30,8 @@ class Resolutions extends Component {
   renderResolutionList() {
     return this.props.resolutions
     .filter(resolution  => `${resolution.description}`.toUpperCase().indexOf(this.state.value.toUpperCase()) >=0)
+    //.filter(resolution  =>`${resolution.year}`.indexOf('2018') >= 0)
+    //.filter(resolution  =>`${resolution.number}`.indexOf('24') >= 0)
     .map((resolution) => {
       return (
         <Grid item xs={12} sm={6}>

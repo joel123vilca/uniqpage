@@ -4,7 +4,7 @@ import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-import cronograma from '../image/popup_cas.jpg';
+import cronograma from '../image/modaluniq.jpeg';
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -15,17 +15,12 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <IconButton aria-label="close"  style={{position: 'relative'}} onClick={handleClose}>
-          <CloseIcon />
-        </IconButton>
-      <Button href="http://uniq.edu.pe/convocatorias">
         <img
           width="600"
           height="500"
           src={cronograma}
           alt="modaladmision"
         />
-      </Button>
     </Dialog>
   );
 }
