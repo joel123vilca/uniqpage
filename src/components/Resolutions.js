@@ -13,7 +13,9 @@ class Resolutions extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      value: ''
+      value: '',
+      number:'',
+      year:''
     }
   }
   componentWillMount() {
@@ -22,16 +24,27 @@ class Resolutions extends Component {
   }
   handleChange = (e) => {
     this.setState({
-      value: e.target.value
+      value: e.target.value,
     })
     this.props.onChange(event.target.value)
   }
- 
+  handleNumberChange = (e) => {
+    this.setState({
+      number: e.target.value,
+    })
+    this.props.onChange(event.target.value)
+  }
+  handleYearChange = (e) => {
+    this.setState({
+      year: e.target.value,
+    })
+    this.props.onChange(event.target.value)
+  }
   renderResolutionList() {
     return this.props.resolutions
     .filter(resolution  => `${resolution.description}`.toUpperCase().indexOf(this.state.value.toUpperCase()) >=0)
-    //.filter(resolution  =>`${resolution.year}`.indexOf('2018') >= 0)
-    //.filter(resolution  =>`${resolution.number}`.indexOf('24') >= 0)
+    .filter(resolution  =>`${resolution.year}`.indexOf(this.state.year) >= 0)
+    .filter(resolution  =>`${resolution.number}`.indexOf(this.state.number) >= 0)
     .map((resolution) => {
       return (
         <Grid item xs={12} sm={6}>
@@ -76,7 +89,6 @@ class Resolutions extends Component {
         alt="banner resoluciones"
       />
       <h2 className="bulletin-title">Resoluciones - U N I Q</h2>
-      <center>
       <input
         className="Search-input"
         placeholder="buscar resolución "
@@ -84,7 +96,20 @@ class Resolutions extends Component {
         name="search"
         value={this.state.value} 
         onChange={this.handleChange}/>
-      </center>
+      <input
+        className="Number-input"
+        placeholder="Número de resolución "
+        type="number"
+        name="number"
+        value={this.state.number} 
+        onChange={this.handleNumberChange}/>
+      <input
+        className="Year-input"
+        placeholder="Año de la resolución "
+        type="number"
+        name="year"
+        value={this.state.year} 
+        onChange={this.handleYearChange}/>
       <List>
       { this.renderResultResolutions()}
       </List>
