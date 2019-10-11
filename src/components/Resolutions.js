@@ -101,6 +101,8 @@ class Resolutions extends Component {
         placeholder="Número de resolución "
         type="number"
         name="number"
+        min="1" 
+        pattern="[0-9]+"
         value={this.state.number} 
         onChange={this.handleNumberChange}/>
       <input
@@ -108,6 +110,7 @@ class Resolutions extends Component {
         placeholder="Año de la resolución "
         type="number"
         name="year"
+        min="2012" 
         value={this.state.year} 
         onChange={this.handleYearChange}/>
       <List>
