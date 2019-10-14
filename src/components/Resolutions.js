@@ -102,7 +102,6 @@ class Resolutions extends Component {
         type="number"
         name="number"
         min="1" 
-        pattern="[0-9]+"
         value={this.state.number} 
         onChange={this.handleNumberChange}/>
       <input

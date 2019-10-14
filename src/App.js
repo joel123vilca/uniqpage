@@ -56,6 +56,11 @@ class App extends Component {
                         Nuestras Autoridades
                       </MenuItem>
                   </Link>
+                  <Link to="/directorio-institucional" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Directorio Intitucional
+                      </MenuItem>
+                  </Link>
                   <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Docentes
