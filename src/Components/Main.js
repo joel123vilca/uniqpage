@@ -67,7 +67,7 @@ const Main = () => (
         <Route  path='/gestion-academica' component={ListDocuments} />
         <Route  path='/oci' component={Oci} />
         <Route  path='/abastecimientos' component={Quotations} />
-        <Route  path='/directorio-institucional' component={Directory} />
+        <Route  path='/directorioelectronico' component={Directory} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )
