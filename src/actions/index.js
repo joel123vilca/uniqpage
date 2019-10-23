@@ -12,6 +12,7 @@ export const SHOW_CALLS = 'SHOW_CALLS';
 export const SHOW_NEWS = 'SHOW_NEWS';
 export const SHOW_QUOTATIONS = 'SHOW_QUOTATIONS';
 export const SHOW_ACTIVITIES ='SHOW_ACTIVITIES';
+export const SHOW_RESPONSIBILITIES = 'SHOW_RESPONSIBILITIES';
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -129,6 +130,14 @@ export function showActivities() {
         axios.get(`${HOST}/activities`)
             .then((response) => {
                 dispatch( { type: SHOW_ACTIVITIES, payload: response.data.data } ) 
+            }) 
+    }
+}
+export function showResponsibilities() {
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/responsibilities`)
+            .then((response) => {
+                dispatch( { type: SHOW_RESPONSIBILITIES, payload: response.data.data } ) 
             }) 
     }
 }
