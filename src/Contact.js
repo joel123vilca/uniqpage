@@ -47,15 +47,15 @@ class Contact extends Component {
                 <div className="colum3">
                     <h1>Redes sociales</h1>
                     <div className="row">
-                        <img src={facebook} alt="facebook"/>
+                        <img src={facebook} style={{width: 25, height: 25}} alt="facebook"/>
                         <a className="referencia" target="_bank" href="https://www.facebook.com/uniqquillabamba"><label>Siguenos en Facebook</label></a>
                     </div>
                     <div className="row">
-                        <img src={youtube} alt="youtube"/>
+                        <img src={youtube} style={{width: 25, height: 25}} alt="youtube"/>
                         <label>Siguenos en Youtube</label>
                     </div>
                     <div className="row">
-                        <img src={flickr} alt="photos"/>
+                        <img src={flickr} style={{width: 25, height: 25}} alt="photos"/>
                         <a className="referencia" target="_bank" href="https://www.flickr.com/photos/155194300@N05/albums"><label>Siguenos en Flicker</label></a>
                     </div>
                 </div>

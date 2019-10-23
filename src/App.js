@@ -8,7 +8,7 @@ import Contact from './Contact';
 import logo from './image/nav.png';
 import trasparencia from './image/pte_logo2.jpg';
 import Chat from './Chat';
-
+import Container from '@material-ui/core/Container';
 
 class App extends Component {
   render() {
@@ -56,7 +56,7 @@ class App extends Component {
                         Nuestras Autoridades
                       </MenuItem>
                   </Link>
-                  <Link to="/directorio-institucional" style={{ textDecoration: 'none', display: 'block' }}>
+                  <Link to="/directorioelectronico" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
                         Directorio Intitucional
                       </MenuItem>
@@ -161,7 +161,7 @@ class App extends Component {
 
           </Navigation>
         </Drawer>
-        <Content>
+        <Content className="mdl-layout__content">
               <div className="page-content">
                 <img src={logo}  alt="logo"  className="logo"/>
               </div>

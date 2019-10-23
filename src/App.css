@@ -195,7 +195,10 @@ padding: 1em;
   width: 300px;
   height: 70px;
 }
-
+.mdl-layout__content{
+  width: 1000px;
+  align-self: center;
+}
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
@@ -408,6 +411,7 @@ a.more-link {
 }
 
 .row{
+  margin-left: 5px;
   margin-top: 20px;
   display: flex;
 }
@@ -419,7 +423,7 @@ a.more-link {
 
 .row label{
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   color: #C7C7C7;
 }
 
@@ -513,6 +517,10 @@ a.more-link {
   .slider{
     height: 100%;
     width: 100%;
+  }
+  .mdl-layout__content{
+    width: 400px;
+    align-self: center;
   }
 }
 @media only screen and (min-width:1200px)
