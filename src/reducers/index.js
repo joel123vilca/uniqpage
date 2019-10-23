@@ -9,6 +9,7 @@ import {showCalls} from './calls';
 import {showNews} from './news';
 import {showQuotations} from './quotations';
 import {showActivities} from './activities';
+import {showResponsibilities} from './responsibilities';
 
 const rootReducer = combineReducers({
   banner: showBanners,
@@ -22,7 +23,8 @@ const rootReducer = combineReducers({
   calls: showCalls,
   news: showNews,
   quotations: showQuotations,
-  activities: showActivities
+  activities: showActivities,
+  responsibilities: showResponsibilities
 });
 
 export default rootReducer;
