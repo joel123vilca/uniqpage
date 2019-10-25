@@ -13,7 +13,6 @@ export function showResolutions(state = initialState, action) {
     }
 }
 export function searchResolutions(state = initialState, action) {
-    console.log(action.payload);
     switch (action.type) {
         case SEARCH_RESOLUTIONS:
             return Object.assign({}, state, {resultResolutions: action.payload})
