@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './pagination.css';
 
 const propTypes = {
     items: PropTypes.array.isRequired,
@@ -106,32 +107,20 @@ class Pagination extends React.Component {
 
     render() {
         var pager = this.state.pager;
-
         if (!pager.pages || pager.pages.length <= 1) {
-            // don't display pager if there is only 1 page
             return null;
         }
 
         return (
-            <ul className="pagination">
-                <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-                    <a onClick={() => this.setPage(1)}>First</a>
-                </li>
-                <li className={pager.currentPage === 1 ? 'disabled' : ''}>
-                    <a onClick={() => this.setPage(pager.currentPage - 1)}>Previous</a>
-                </li>
+            <div className="pagination">
+                <a className={pager.currentPage === 1 ? 'disabled' : ''} onClick={() => this.setPage(1)}>&#8249;</a>
+                <a className={pager.currentPage === 1 ? 'disabled' : ''} onClick={() => this.setPage(pager.currentPage - 1)}>&laquo;</a>
                 {pager.pages.map((page, index) =>
-                    <li key={index} className={pager.currentPage === page ? 'active' : ''}>
-                        <a onClick={() => this.setPage(page)}>{page}</a>
-                    </li>
+                    <a className={pager.currentPage === page ? 'active' : ''} key={index} onClick={() => this.setPage(page)}>{page}</a>
                 )}
-                <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
-                    <a onClick={() => this.setPage(pager.currentPage + 1)}>Next</a>
-                </li>
-                <li className={pager.currentPage === pager.totalPages ? 'disabled' : ''}>
-                    <a onClick={() => this.setPage(pager.totalPages)}>Last</a>
-                </li>
-            </ul>
+                <a className={pager.currentPage === pager.totalPages ? 'disabled' : ''} onClick={() => this.setPage(pager.currentPage + 1)}>&raquo;</a>
+                <a className={pager.currentPage === pager.totalPages ? 'disabled' : ''} onClick={() => this.setPage(pager.totalPages)}>&#8250;</a>
+            </div>
         );
     }
 }

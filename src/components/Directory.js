@@ -88,10 +88,10 @@ class Directory extends Component {
         <TableHead>
           <TableRow>
             <TableCell style={{background:'#376970', color:'white', fontSize: '15px'}}>DEPENDENCIA</TableCell>
-            <TableCell style={{background:'#376970', fontSize: '15px'}} >CARGO</TableCell>
-            <TableCell style={{background:'#376970', fontSize: '15px'}} >CORREO ELECTRONICO DEL AREA</TableCell>
-            <TableCell style={{background:'#376970', fontSize: '15px'}} >RESPONSABLE</TableCell>
-            <TableCell style={{background:'#376970', fontSize: '15px'}}>CORREO ELECTRONICO DEL RESPONSABLE</TableCell>
+            <TableCell style={{background:'#376970', color:'white', fontSize: '15px'}} >CARGO</TableCell>
+            <TableCell style={{background:'#376970', color:'white', fontSize: '15px'}} >CORREO ELECTRONICO DEL AREA</TableCell>
+            <TableCell style={{background:'#376970', color:'white', fontSize: '15px'}} >RESPONSABLE</TableCell>
+            <TableCell style={{background:'#376970', color:'white', fontSize: '15px'}}>CORREO ELECTRONICO DEL RESPONSABLE</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -100,20 +100,21 @@ class Directory extends Component {
               <TableCell style={{color:'#376970'}}  component="th" scope="row">
                 {row.person_in_charge}
               </TableCell>
-              <TableCell style={{color:'#376970'}} align="right">{row.email}</TableCell>
-              <TableCell style={{color:'#376970'}} align="right">hola</TableCell>
-              <TableCell style={{color:'#376970'}} align="right">hola</TableCell>
-              <TableCell style={{color:'#376970'}} align="right">hola</TableCell>
+              <TableCell style={{color:'#376970'}}>{row.email}</TableCell>
+              <TableCell style={{color:'#376970'}}>hola</TableCell>
+              <TableCell style={{color:'#376970'}}>hola</TableCell>
+              <TableCell style={{color:'#376970'}}>hola</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
     </Paper>
-                </center>
+                
                 {this.state.pageOfItems.map(item =>
                             <div key={item.id}>{item.email}</div>
                         )}
                 <Pagination items={this.state.exampleItems} onChangePage={this.onChangePage} />
+                </center>
             </div>
         )
     }
