@@ -16,20 +16,19 @@ class App extends Component {
       <div>
       <Layout>
         <Header waterfall hideTop>
-            <HeaderRow  className="pri-nav justify-content-end" style={{height: 45}}>
+            <HeaderRow  className="pri-nav justify-content-center" style={{height: '45px'}}>
               <Navigation>
-              <a style={{fontSize: 12}} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
-              <a style={{fontSize: 12}} href="http://admision.uniq.edu.pe/cepre">PREINSCRIPCIÓN CEPRE</a>
-              <a style={{fontSize: 12}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
-              <a style={{fontSize: 12}} href="/resoluciones">RESOLUCIONES</a>
-              <a style={{fontSize: 12}} href="http://biblioteca.uniq.edu.pe/">BIBLIOTECA</a>
-              <a style={{fontSize: 12}} href="/convocatorias">CONVOCATORIAS</a>
-              <a style={{fontSize: 12}} href="/abastecimientos">ABASTECIMIENTOS</a>
-              <a style={{fontSize: 12}} href="http://repositorio.uniq.edu.pe/">REPOSITORIO INSTITUCIONAL</a>
+              <a style={{fontSize: 10, padding: '0 10px' }} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
+              <a style={{fontSize: 10, padding: '0 10px'}} href="http://bienestar.uniq.edu.pe/bienestar">BIENESTAR UNIQ</a>
+              <a style={{fontSize: 10, padding: '0 10px'}} href="/resoluciones">RESOLUCIONES</a>
+              <a style={{fontSize: 10,padding: '0 10px'}} href="http://biblioteca.uniq.edu.pe/">BIBLIOTECA</a>
+              <a style={{fontSize: 10, padding: '0 10px'}} href="/convocatorias">CONVOCATORIAS</a>
+              <a style={{fontSize: 10, padding: '0 10px'}} href="/abastecimientos">ABASTECIMIENTOS</a>
+              <a style={{fontSize: 10, padding: '0 10px'}} href="http://repositorio.uniq.edu.pe/">REPOSITORIO INSTITUCIONAL</a>
               <a href="/Transparencia"><img src={trasparencia}  alt="transparencia"  style={{width: '150px', height: '45px'}}/></a>
               </Navigation>
             </HeaderRow>
-            <HeaderRow className="header-color">
+            <HeaderRow className="header-color justify-content-center">
             <Navigation>
                 <img src={logo}  alt="logo"  className="logo"/>
                 <Link to="/inicio" className="font-weight-bold" style={{ textDecoration: 'none' }} >Inicio</Link>
@@ -161,12 +160,19 @@ class App extends Component {
 
           </Navigation>
         </Drawer>
-        <Content className="mdl-layout__content">
+        <Content>
               <div className="page-content">
                 <img src={logo}  alt="logo"  className="logo"/>
               </div>
-              <Main />
+              <center>
+              <div className="container-uniq">
+                <Main/>
+              </div>
+              </center>
               <Chat></Chat>
+              <br></br>
+              <br></br>
+              <br></br>
               <Contact></Contact>
         </Content>
     </Layout>

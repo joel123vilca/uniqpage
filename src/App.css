@@ -5,7 +5,9 @@
   background: linear-gradient(to right,#376970, #376970,#376970); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   justify-content: flex-start;
 }
-
+.container-uniq{
+  width: 1250px;
+}
 .header--letter{
   font-family: 'Open Sans', bold;
   font-weight: 700;
@@ -195,10 +197,9 @@ padding: 1em;
   width: 300px;
   height: 70px;
 }
-.mdl-layout__content{
-  width: 1250px;
+/* .mdl-layout__content{
   align-self: center;
-}
+} */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
@@ -518,9 +519,8 @@ a.more-link {
     height: 100%;
     width: 100%;
   }
-  .mdl-layout__content{
-    width: 400px;
-    align-self: center;
+  .container-uniq{
+    width: 410px;
   }
 }
 @media only screen and (min-width:1200px)
