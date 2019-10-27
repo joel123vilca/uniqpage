@@ -14,14 +14,14 @@ class Culture extends Component {
         />
         <Card shadow={0} style={{width: '100%', margin: 'auto'}}>
         <h2 className="bulletin-title">Interculturalidad</h2>
-        <CardText style={{ textIndent: '50px', textAlign: 'justify',letterSpacing: '1px', alignItems:'center'}}>
+        <p className="culture--description" >
         “La interculturalidad toma como punto de partida, los elementos propios de cada cultura, para una relación de integridad cultural con otros grupos humanos; permitirá la apropiación de ciertos elementos culturales para un grupo étnico, armonizando su cultura,
          el cual, servirá para interactuar con otros grupos humanos que entran en contacto con él” (CAPELLA, Jorge, 1993, pp.16-17)
-        </CardText>
-        <CardText style={{ textIndent: '50px', textAlign: 'justify',letterSpacing: '1px', alignItems:'center'}}>
+        </p>
+        <p className="culture--description" >
         La interculturalidad es la relación que se establece entre los distintos grupos humanos por su diversidad étnica, social, cultural, lingüística y biológica que se expresa en distintos modos de hablar,
          de pensar, de razonar en cada grupo étnico de nuestra sociedad multilingüe y pluricultural.
-        </CardText>
+        </p>
         </Card>
         <div className="culture--content">
           <h2 className="bulletin-title">LINEAMIENTOS DE INTERCULTURALIDAD</h2>

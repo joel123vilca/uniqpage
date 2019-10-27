@@ -97,6 +97,8 @@ class Alliances extends Component {
             </section>
           </div>
           <br></br>
+          <br></br>
+          <br></br>
         </div>
     )
   }

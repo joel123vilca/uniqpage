@@ -7,8 +7,6 @@ import {Link} from 'react-router-dom';
 import Contact from './Contact';
 import logo from './image/nav.png';
 import trasparencia from './image/pte_logo2.jpg';
-import Chat from './Chat';
-import Container from '@material-ui/core/Container';
 
 class App extends Component {
   render() {
@@ -169,7 +167,6 @@ class App extends Component {
                 <Main/>
               </div>
               </center>
-              <Chat></Chat>
               <br></br>
               <br></br>
               <br></br>
