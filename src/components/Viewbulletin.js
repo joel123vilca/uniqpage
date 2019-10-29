@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { viewStorie } from '../actions'
-
+import Button from '@material-ui/core/Button';
 import "./viewbulletin.css";
 
 class ViewBulletin extends Component {
@@ -21,6 +21,13 @@ class ViewBulletin extends Component {
               </p>
               </center>
             </div>
+            <br></br>
+            <div>
+            <Button variant="outlined" href={this.props.storie.file_path} color="primary"  size="large" className="button-download">
+                Descargar Nota de Prensa
+            </Button>
+            </div>
+            <br></br>
             <center>
             {   
                 this.props.storie.images.map((image) => {
