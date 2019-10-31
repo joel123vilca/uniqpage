@@ -35,7 +35,7 @@ class Quotations extends Component {
            </Typography>
              </div>
            <br></br>
-            <Typography variant="h4" component="h3" style={{textAlign: 'justify'}}>
+            <Typography  component="h3" style={{textAlign: 'justify',fontSize: '1.125rem'}}>
                 {quotation.title}
             </Typography>
             <br></br>
