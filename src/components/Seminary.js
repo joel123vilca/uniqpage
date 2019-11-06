@@ -18,7 +18,7 @@ import pont15 from '../image/pont15.png';
 import peru from '../image/peru.png';
 import mexico from '../image/mexico.png';
 import canada from '../image/canada.png';
-import belga from '../image/belga.png';
+import francia from '../image/francia.png';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -144,11 +144,11 @@ class Seminary extends Component {
             />
             <CardContent style={{height:'320px'}}>
                 <img 
-                  src={belga}
+                  src={francia}
                   alt="banner docentes"
                   style={{width:'60px',height:'40px'}}
                 ></img>
-                <span> | Belgica</span>
+                <span> | Francia</span>
                 <hr/>
                 <Typography gutterBottom variant="h5" component="h2">
                   Lic. CHRISTOPHE DANIEL TERNAY
