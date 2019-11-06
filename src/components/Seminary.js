@@ -37,7 +37,7 @@ class Seminary extends Component {
         imagen:logo3
       }
     ]
-    const galleryItems= auspiciadores.map((i) => <img src={i.imagen} key={i} style={{width:'230px'}} />);
+    const galleryItems= auspiciadores.map((i) => <img src={i.imagen} key={i} className="carousel-imagen" />);
 
     const stagePadding = {
       paddingLeft: 15,     // in pixels
