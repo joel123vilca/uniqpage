@@ -25,6 +25,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import './seminary.css';
 
 class Seminary extends Component {
   render() {
@@ -495,7 +497,15 @@ class Seminary extends Component {
             </Card>
           </Grid>
         </Grid>
-        
+        <br></br>
+        <div className="precios">
+          <h2 className="precios-title">INVERSIÓN</h2>
+          <hr style={{borderColor:'white',width:'60%'}}/>
+            <h3 className="precios-subtitulo">Costo para estudiante de la UNIQ y UAC S/. 20.00</h3>
+            <h3 className="precios-subtitulo2">Costo para publico en general S/. 35.00</h3>
+          <hr style={{borderColor:'white',width:'60%'}}/>
+          <br></br>
+        </div>
     </div>
     )
   }
