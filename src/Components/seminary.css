@@ -1,0 +1,10 @@
+.franja-informativa{
+    padding-top: 2%;
+    margin-top:2%;
+    color:white;
+    background:linear-gradient(90deg, rgba(54,54,59,1) 0%, rgba(55,105,112,1) 26%, rgba(34,149,172,1) 100%);
+}
+
+.titulo-franja{
+    margin-bottom: 0px;
+}

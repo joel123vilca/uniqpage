@@ -1,14 +1,52 @@
 import React, { Component } from 'react';
 import docentes from '../image/docentes.jpg';
+import logo1 from '../image/auspiciadores/images (1).jpg';
+import logo2 from '../image/auspiciadores/images (2).jpg';
+import logo3 from '../image/auspiciadores/images.jpg';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-
+import './seminary.css'
+import ubicacion from '../image/placeholder-on-map-paper-in-perspective (1).png'
+import "react-alice-carousel/lib/alice-carousel.css";
+import AliceCarousel from 'react-alice-carousel'
 class Seminary extends Component {
   render() {
+    const handleOnDragStart = (e) => e.preventDefault()
+    
+    const auspiciadores=[
+      {
+        imagen:logo1
+      },
+      {
+        imagen:logo2
+      },
+      {
+        imagen:logo3
+      },
+      {
+        imagen:logo1
+      },
+      {
+        imagen:logo2
+      },
+      {
+        imagen:logo3
+      }
+    ]
+    const galleryItems= auspiciadores.map((i) => <img src={i.imagen} key={i} style={{width:'230px'}} />);
+
+    const stagePadding = {
+      paddingLeft: 15,     // in pixels
+      paddingRight: 15
+  }
+    const responsive = {
+      0: { items: 1 },
+      1024: { items: 5 },
+    }
     return(
       <div style={{width: '100%', margin: 'auto'}}>
         <img
@@ -17,6 +55,88 @@ class Seminary extends Component {
             alt="banner docentes"
         />
         <br></br>
+        <h2 className="bulletin-title">CONOCE A NUESTROS AUSPICIADORES</h2>
+        <AliceCarousel 
+          items={galleryItems}
+        mouseTrackingEnabled 
+        responsive={responsive}
+          autoPlay={true}
+          stagePadding={stagePadding}
+        >
+        {/* <img src={docentes} onDragStart={handleOnDragStart} className="yours-custom-class" /> */}
+        {/* <img src={docentes} onDragStart={handleOnDragStart} className="yours-custom-class" /> */}
+        {/* <img src={docentes} onDragStart={handleOnDragStart} className="yours-custom-class" /> */}
+        {/* <img src={docentes} onDragStart={handleOnDragStart} className="yours-custom-class" /> */}
+        {/* <img src={docentes} onDragStart={handleOnDragStart} className="yours-custom-class" /> */}
+      </AliceCarousel>
+        <Grid container spacing={4} className="franja-informativa">
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src="http://ciistacna.com/2018/src/2018/assets/images/calendario.png">
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Fecha
+                </p>
+                <p>
+                  del 27 al 28 de noviembre
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={0}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src="http://ciistacna.com/2018/src/2018/assets/images/reloj(1).png">
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Horario
+                </p>
+                <p>
+                  8:00 am a 7:00 pm 
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={0}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src="http://ciistacna.com/2018/src/2018/assets/images/ponente-en-una-conferencia(1).png">
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Ponentes
+                </p>
+                <p>
+                  Nacionales e Internacionales
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={0}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src={ubicacion}>
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Lugar
+                </p>
+                <p>
+                  Teatro Municipal de Quillabamba
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          
+        </Grid>
+        
         <h2 className="bulletin-title">CONOCE A NUESTROS PONENTES</h2>
         <hr />
         <Grid container spacing={2}>
