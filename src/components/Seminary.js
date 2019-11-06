@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 // import docentes from '../image/docentes.jpg';
-import logo1 from '../image/auspiciadores/images (1).jpg';
-import logo2 from '../image/auspiciadores/images (2).jpg';
-import logo3 from '../image/auspiciadores/images.jpg';
-import logo4 from '../image/auspiciadores/logoUAC_2.png';
-import logo5 from '../image/auspiciadores/images (3).jpg';
+import logo1 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.00.jpeg';
+import logo2 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.01.jpeg';
+import logo3 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03 (1).jpeg';
+import logo4 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03.jpeg';
+import logo5 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.04 (1).jpeg';
+import logo6 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.04 (2).jpeg';
+import logo7 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.04.jpeg';
+import logo8 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.05 (1).jpeg';
+import logo9 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.05 (2).jpeg';
+import logo10 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.05.jpeg';
+import logo11 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.06 (1).jpeg';
+import logo12 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.06.jpeg';
+import logo13 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03 (2).jpeg';
+import logo14 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.02.jpeg';
 import docentes from '../image/pont1.png';
 import seminario from '../image/seminario.jpeg';
 import pont2 from '../image/pont2.png';
@@ -59,7 +68,31 @@ class Seminary extends Component {
         imagen:logo5
       },
       {
-        imagen:logo3
+        imagen:logo6
+      },
+      {
+        imagen:logo7
+      },
+      {
+        imagen:logo8
+      },
+      {
+        imagen:logo9
+      },
+      {
+        imagen:logo10
+      },
+      {
+        imagen:logo11
+      },
+      {
+        imagen:logo12
+      },
+      {
+        imagen:logo13
+      },
+      {
+        imagen:logo14
       }
     ]
     const galleryItems= auspiciadores.map((i) => <img src={i.imagen} key={i} className="carousel-imagen" />);
