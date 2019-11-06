@@ -44,11 +44,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={docentes}
+              style={{height:'280px', width:'350px'}}
+              src={docentes}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -75,11 +75,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont2}
+              style={{height:'280px', width:'350px'}}
+              src={pont2}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -106,11 +106,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont3}
+              style={{height:'280px', width:'350px'}}
+              src={pont3}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -135,11 +135,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont4}
+              style={{height:'280px', width:'350px'}}
+              src={pont4}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -163,11 +163,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont5}
+              style={{height:'280px', width:'350px'}}
+              src={pont5}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -192,11 +192,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont6}
+              style={{height:'280px', width:'350px'}}
+              src={pont6}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -226,11 +226,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont7}
+              style={{height:'280px', width:'350px'}}
+              src={pont7}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -257,11 +257,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont8}
+              style={{height:'280px', width:'350px'}}
+              src={pont8}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -287,11 +287,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont9}
+              style={{height:'280px', width:'350px'}}
+              src={pont9}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -319,11 +319,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont10}
+              style={{height:'280px', width:'350px'}}
+              src={pont10}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -350,11 +350,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont11}
+              style={{height:'280px', width:'350px'}}
+              src={pont11}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -380,11 +380,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont12}
+              style={{height:'280px', width:'350px'}}
+              src={pont12}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -410,11 +410,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont13}
+              style={{height:'280px', width:'350px'}}
+              src={pont13}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -439,11 +439,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont14}
+              style={{height:'280px', width:'350px'}}
+              src={pont14}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
@@ -468,11 +468,11 @@ class Seminary extends Component {
           <Grid item xs={12} sm={4}>
             <Card style={{maxWidth:'350px'}}>
             <CardActionArea>
-            <CardMedia
+            <img
               component="img"
               alt="Contemplative Reptile"
-              height="320"
-              image={pont15}
+              style={{height:'280px', width:'350px'}}
+              src={pont15}
               title="Contemplative Reptile"
             />
             <CardContent style={{height:'320px'}}>
