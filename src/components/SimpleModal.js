@@ -4,7 +4,7 @@ import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-import cronograma from '../image/modaluniq.jpeg';
+import cronograma from '../image/turismopopup.jpg';
 
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
