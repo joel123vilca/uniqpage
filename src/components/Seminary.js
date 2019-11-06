@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import logo1 from '../image/auspiciadores/images (1).jpg';
 import logo2 from '../image/auspiciadores/images (2).jpg';
 import logo3 from '../image/auspiciadores/images.jpg';
+import logo4 from '../image/auspiciadores/logoUAC_2.png';
+import logo5 from '../image/auspiciadores/images (3).jpg';
 import docentes from '../image/pont1.png';
 import seminario from '../image/seminario.jpeg';
 import pont2 from '../image/pont2.png';
@@ -33,6 +35,9 @@ import './seminary.css'
 import ubicacion from '../image/placeholder-on-map-paper-in-perspective (1).png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel'
+import Paper from '@material-ui/core/Paper';
+// import './seminary.css';
+
 class Seminary extends Component {
   render() {
     const handleOnDragStart = (e) => e.preventDefault()
@@ -48,10 +53,10 @@ class Seminary extends Component {
         imagen:logo3
       },
       {
-        imagen:logo1
+        imagen:logo4
       },
       {
-        imagen:logo2
+        imagen:logo5
       },
       {
         imagen:logo3
@@ -65,7 +70,7 @@ class Seminary extends Component {
   }
     const responsive = {
       0: { items: 1 },
-      1024: { items: 5 },
+      1024: { items: 6 },
     }
     return(
       <div style={{width: '100%', margin: 'auto'}}>
@@ -113,7 +118,7 @@ class Seminary extends Component {
                   Horario
                 </p>
                 <p>
-                  8:00 am a 7:00 pm 
+                  8:00 am a 8:00 pm 
                 </p>
               </Grid>
             </Grid>
@@ -145,7 +150,7 @@ class Seminary extends Component {
                   Lugar
                 </p>
                 <p>
-                  Teatro Municipal de Quillabamba
+                  Teatro Municipal la Convencion
                 </p>
               </Grid>
             </Grid>
@@ -631,9 +636,19 @@ class Seminary extends Component {
         responsive={responsive}
           autoPlay={true}
           stagePadding={stagePadding}
+          autoPlayInterval={1000}
         >
       </AliceCarousel>
       </div>
+        <br></br>
+        <div className="precios">
+          <h2 className="precios-title">INVERSIÓN</h2>
+          <hr style={{borderColor:'white',width:'60%'}}/>
+            <h3 className="precios-subtitulo">Costo para estudiante de la UNIQ y UAC S/. 20.00</h3>
+            <h3 className="precios-subtitulo2">Costo para publico en general S/. 35.00</h3>
+          <hr style={{borderColor:'white',width:'60%'}}/>
+          <br></br>
+        </div>
     </div>
     )
   }
