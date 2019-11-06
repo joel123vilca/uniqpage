@@ -1,0 +1,53 @@
+.franja-informativa{
+    padding-top: 2%;
+    margin-top:10%;
+    color:white;
+    background:linear-gradient(90deg, rgba(54,54,59,1) 0%, rgba(55,105,112,1) 26%, rgba(34,149,172,1) 100%);
+}
+
+.titulo-franja{
+    margin-bottom: 0px;
+}
+
+.carousel-imagen{
+    width:190px;
+    height:140px;
+}
+
+.margenes-texto-franja{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.texto-informativo{
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 18px;
+}
+
+.precios{
+    /* background: linear-gradient(to right, #355C7D 0%, #6C5B7B 50%, #C06C84 100%); */
+    background:linear-gradient(90deg, rgba(54,54,59,1) 0%, rgba(55,105,112,1) 26%, rgba(34,149,172,1) 100%);
+}
+
+.precios-title{
+    color:#FFFF;
+    font-size: 30px;
+    font-family: 'Open Sans', bold;
+    font-weight: 700;
+    text-align: center;
+}
+
+.precios-subtitulo{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Raleway, 'Helvetica Neue', sans-serif;
+    color:#FFFF;
+}
+.precios-subtitulo2{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Raleway, 'Helvetica Neue', sans-serif;
+    color:#FFFF;
+    margin-top: -20px;
+    margin-right: 100px;
+}

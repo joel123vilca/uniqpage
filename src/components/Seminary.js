@@ -1,4 +1,19 @@
 import React, { Component } from 'react';
+// import docentes from '../image/docentes.jpg';
+import logo1 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.00.jpeg';
+import logo2 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.01.jpeg';
+import logo3 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03 (1).jpeg';
+import logo4 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03.jpeg';
+import logo5 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.04 (1).jpeg';
+import logo6 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.04 (2).jpeg';
+import logo7 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.04.jpeg';
+import logo8 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.05 (1).jpeg';
+import logo9 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.05 (2).jpeg';
+import logo10 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.05.jpeg';
+import logo11 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.06 (1).jpeg';
+import logo12 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.06.jpeg';
+import logo13 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03 (2).jpeg';
+import logo14 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.02.jpeg';
 import docentes from '../image/pont1.png';
 import seminario from '../image/seminario.jpeg';
 import pont2 from '../image/pont2.png';
@@ -25,11 +40,71 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import './seminary.css'
+import ubicacion from '../image/placeholder-on-map-paper-in-perspective (1).png'
+import "react-alice-carousel/lib/alice-carousel.css";
+import AliceCarousel from 'react-alice-carousel'
 import Paper from '@material-ui/core/Paper';
-import './seminary.css';
+// import './seminary.css';
 
 class Seminary extends Component {
   render() {
+    const handleOnDragStart = (e) => e.preventDefault()
+    
+    const auspiciadores=[
+      {
+        imagen:logo1
+      },
+      {
+        imagen:logo2
+      },
+      {
+        imagen:logo3
+      },
+      {
+        imagen:logo4
+      },
+      {
+        imagen:logo5
+      },
+      {
+        imagen:logo6
+      },
+      {
+        imagen:logo7
+      },
+      {
+        imagen:logo8
+      },
+      {
+        imagen:logo9
+      },
+      {
+        imagen:logo10
+      },
+      {
+        imagen:logo11
+      },
+      {
+        imagen:logo12
+      },
+      {
+        imagen:logo13
+      },
+      {
+        imagen:logo14
+      }
+    ]
+    const galleryItems= auspiciadores.map((i) => <img src={i.imagen} key={i} className="carousel-imagen" />);
+
+    const stagePadding = {
+      paddingLeft: 15,     // in pixels
+      paddingRight: 15
+  }
+    const responsive = {
+      0: { items: 1 },
+      1024: { items: 6 },
+    }
     return(
       <div style={{width: '100%', margin: 'auto'}}>
         <img
@@ -38,7 +113,85 @@ class Seminary extends Component {
             alt="banner docentes"
         />
         <br></br>
-        <h2 className="bulletin-title">CONOCE A NUESTROS PONENTES</h2>
+        
+        <Grid container spacing={0} className="margenes-texto-franja">
+        <Grid item  xs={12} sm={6}>
+          <p className="bulletin-title">Inscripciones en: </p>
+        </Grid>
+        <Grid item xs={12} sm={6} style={{textAlign:'center'}}>
+          <p className="texto-informativo">UNIQ y Cámara de comercio de turismo de la municipalidad de La Convencion</p>
+        </Grid>
+      </Grid>
+      
+        <Grid container spacing={4} className="franja-informativa">
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src="http://ciistacna.com/2018/src/2018/assets/images/calendario.png">
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Fecha
+                </p>
+                <p>
+                  del 27 al 28 de noviembre
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={0}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src="http://ciistacna.com/2018/src/2018/assets/images/reloj(1).png">
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Horario
+                </p>
+                <p>
+                  8:00 am a 8:00 pm 
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={0}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src="http://ciistacna.com/2018/src/2018/assets/images/ponente-en-una-conferencia(1).png">
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Ponentes
+                </p>
+                <p>
+                  Nacionales e Internacionales
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Grid container spacing={0}>
+              <Grid item xs={12} sm={3}>
+                  <img style={{width:'50px'}} src={ubicacion}>
+                  </img>
+              </Grid>
+              <Grid item xs={12} sm={9}>
+                <p className="titulo-franja">
+                  Lugar
+                </p>
+                <p>
+                  Teatro Municipal la Convencion
+                </p>
+              </Grid>
+            </Grid>
+          </Grid>
+          
+        </Grid>
+        
+        <h2 className="bulletin-title">Conoce a nuestros ponentes</h2>
         <hr />
         <Grid container spacing={2}>
           <Grid item xs={12} sm={4}>
@@ -497,6 +650,29 @@ class Seminary extends Component {
             </Card>
           </Grid>
         </Grid>
+        <Grid container spacing={0} className="margenes-texto-franja">
+        <Grid item xs={12} style={{textAlign:'center'}}>
+          <p className="bulletin-title">Para más información puedes escribir a los correos</p>
+          <div style={{paddingTop:'15px'}}>
+            <p className="texto-informativo">gia.silvass@gmail.com</p>
+            <p className="texto-informativo">giovana.serna@uniq.edu.pe</p>
+          </div>          
+        </Grid>
+      </Grid>
+
+        <h2 className="bulletin-title">Conoce a nuestros auspiciadores</h2>
+        <div style={{marginBottom:'10px'}}>
+        <AliceCarousel 
+        buttonsDisabled={true}
+          items={galleryItems}
+        mouseTrackingEnabled 
+        responsive={responsive}
+          autoPlay={true}
+          stagePadding={stagePadding}
+          autoPlayInterval={1000}
+        >
+      </AliceCarousel>
+      </div>
         <br></br>
         <div className="precios">
           <h2 className="precios-title">INVERSIÓN</h2>
