@@ -33,7 +33,9 @@ import pont15 from '../image/pont15.png';
 import peru from '../image/peru.png';
 import mexico from '../image/mexico.png';
 import canada from '../image/canada.png';
-import belga from '../image/belga.png';
+import francia from '../image/francia.png';
+import adriana from '../image/adriana.png';
+import brasil from '../image/brasil.png';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -116,10 +118,14 @@ class Seminary extends Component {
         
         <Grid container spacing={0} className="margenes-texto-franja">
         <Grid item  xs={12} sm={6}>
-          <p className="bulletin-title">Inscripciones en: </p>
+          <p className="bulletin-title">INFORMES E INSCRIPCIONES: </p>
         </Grid>
         <Grid item xs={12} sm={6} style={{textAlign:'center'}}>
-          <p className="texto-informativo">UNIQ y Cámara de comercio de turismo de la municipalidad de La Convencion</p>
+          <p className="texto-informativo">OFICINA DEL CENTRO PREUNIVERSITARIO DE LA UNIQ. El Arenal s/n Pabellón 7.</p>
+          <p className="texto-informativo">UNIVERSIDAD ANDINA DEL CUSCO Filial Quillabamba.</p>
+          <p className="texto-informativo">AGENCIA DE VIAJES MEGANTONI TRAVEL. Frente a la Plaza de Armas de Quillabamba.</p>
+          <p className="texto-informativo">OFICINA DE LA DIRECCIÓN DE TURISMO DE LA MUNICIPALIDAD PROVINCIAL DE LA CONVENCIÓN.</p>
+
         </Grid>
       </Grid>
       
@@ -193,18 +199,18 @@ class Seminary extends Component {
         
         <h2 className="bulletin-title">Conoce a nuestros ponentes</h2>
         <hr />
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+        <Grid container spacing={1}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={docentes}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src='https://www.comprarbanderas.es/images/banderas/400/1075-espana-escudo-ii-republica_400px.jpg'
                   alt="banner docentes"
@@ -212,8 +218,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | España</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Dr. JOAN LARA AMAT Y LEÓN
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "TURISMO, CIUDADANIA Y DESARROLLO RETOS DE UN TURISMO SOSTENIBLE, PARA UN MUNDO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                 Investigador en Filosofía Política, Ciencia Política y Relaciones Internacionales.
@@ -225,17 +234,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont2}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src='https://www.comprarbanderas.es/images/banderas/400/1075-espana-escudo-ii-republica_400px.jpg'
                   alt="banner docentes"
@@ -243,30 +252,32 @@ class Seminary extends Component {
                 ></img>
                 <span> | España</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Mgt. CARLOS GANOZA TOKASHIKI
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "DESARROLLO DEL TURISMO MUNDIAL: GENERADOR DE RIQUEZA Y OPORTUNIDADES PARA EMPRENDER RETOS Y SOSTENIBILIDAD"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Master in Business Administration (MBA) – Escuela Superior de Administración y Dirección de Empresas (ESADE) – Barcelona – España.
                   Auditor Contable – Price Waterhouse Coopers (PwC) – Barcelona – España.
-                  Regional Manager para Oriente Medio y Norte de África – Industrias Ópticas (Indo) – España.
                   Industria Química del Norte – Empresa dedicada a la distribución y comercialización de material químico – Gerente General.
                 </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont3}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={mexico}
                   alt="banner docentes"
@@ -274,8 +285,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Mexico</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Dra. Luisa Sterponi
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "LA TECNOLOGIA GEOMÁTICA APLICADA AL TURISMO: CONOCIMIENTO Y MODELAMIENTO ESPECIAL DEL TERRITORIO PARA UN DESARROLLO TURISTICO EFICAZ Y SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                 Pertenece al equipo científico del Laboratorio GIS, GPS e Cartografía Automática del Departamento de Ciencias de la Università Degli Studi Roma Tre.
@@ -285,26 +299,29 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont4}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'350px'}}>
                 <img 
-                  src={belga}
+                  src={francia}
                   alt="banner docentes"
                   style={{width:'60px',height:'40px'}}
                 ></img>
-                <span> | Belgica</span>
+                <span> | Francia</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Lic. CHRISTOPHE DANIEL TERNAY
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "EMPRENDIMIENTOS ONLINE: DE SUEÑOS A REALIDAD"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Coach para emprendedores. Especialista en comercio internacional Marketing y gestión de personal
@@ -313,17 +330,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont5}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={canada}
                   alt="banner docentes"
@@ -331,8 +348,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Canada</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   M. Sc. RACHELLE PUGET
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "LAS MUJERES EN EL MERCADO LABORAL Y LOS RETOS PARA ALCANZAR IGUALDAD DE GENERO"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                 Canadiense colaborando con Ayni Desarrollo, una ONG que se dedica a promover los derechos humanos, contribuir al mejoramiento de la calidad de vida y el bienestar social de la población en situación de pobreza y al fortalecimiento de los valores democráticos.
@@ -342,17 +362,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont6}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -360,8 +380,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                 Dr. MIGUEL ÁNGEL CAPUÑAY REATEGUI
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "EL COMERCIO EXTERIOR DE SERVICIOS TURISTICOS EN EL PERU, PESPECTIVAS Y TENDENCIAS"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Jurista en Derecho Internacional y Master of Law por la Universidad de Kiev, Ucrania.
@@ -376,17 +399,50 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
+              src={adriana}
+              title="Contemplative Reptile"
+            />
+            <CardContent style={{height:'380px'}}>
+                <img 
+                  src={brasil}
+                  alt="banner docentes"
+                  style={{width:'60px',height:'40px'}}
+                ></img>
+                <span> | Brasil</span>
+                <hr/>
+                <Typography variant="subtitle1" gutterBottom>
+                Dra.  ADRIANA AGUIAR PÉREZ
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
+                </Typography>
+                <Typography variant="body2" color="textSecondary" component="p">
+                Investigadora dedicada al canon minero y petrolero, fondos públicos, políticas púbicas y sociales y conflictos socioambientales. 
+Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UNMSM; Magíster en Trabajo Social - UERJ; Licenciada en Trabajo Social - UFF. 
+                </Typography>
+                
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
+            <CardActionArea>
+            <img
+              component="img"
+              alt="Contemplative Reptile"
+              style={{height:'240px', width:'250px'}}
               src={pont7}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src='https://www.comprarbanderas.es/images/banderas/400/1075-espana-escudo-ii-republica_400px.jpg'
                   alt="banner docentes"
@@ -394,8 +450,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | España</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Lic. ROCÍO ROJAS
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "DESARROLLO DEL GEOTURISMO EN EL CONTEXTO DE INNOVACIÓN EN LA ZONA DE QUILLABAMBA"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Experta en tecnologías aplicadas al turismo, organización de eventos de Investigación, creación y gestión del conocimiento.
@@ -407,17 +466,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont8}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -425,8 +484,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Lic. ELENA GONZALES
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "¿COMO GESTIONAMOS LA CALIDAD DE LOS SERVICIOS PRESTADOS PARA LA INNOVACION Y SOSTENIBILIDAD EN EL SECTOR TURISTICO?"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Gerente de Operaciones de Empresa Andean Explorer’s Cusco (Operador de Turismo con 19 años en el mercado Certificada con ISO 9001-14001 y Tourcert).
@@ -437,17 +499,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont9}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -455,8 +517,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                 Lic. ROBERTO ALARCÓN RODRÍGUEZ
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Lic. en Turismo y Ciencias Administrativas, Universidad San Antonio Abad del Cusco.
@@ -469,17 +534,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont10}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -487,8 +552,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Dra. VIVIANETT SERNA
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "EL EMPRENDIMIENTO FEMENINO PERUANO Y LA NECESIDAD DE REGULACION NORMATIVA"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Directora de la Filial de la Universidad Andina del Cusco. Especialista en materia de Familia y Contrataciones,
@@ -500,17 +568,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont11}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -518,8 +586,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                 Mgt. HEBER PAZ SALAZAR
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "PLANIFICACION Y GESTION TURISTICA"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Director de planificación de la Dirección Regional de Comercio Exterior y Turismo Gobierno Regional Cusco.
@@ -530,17 +601,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont12}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -548,8 +619,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Mgt. CARLOS A. HUAMANTICA
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Mgt. en Contabilidad-Mención en Auditoria (En Curso) Universidad Nacional San Antonio Abad de Cusco.
@@ -560,17 +634,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont13}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -578,8 +652,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Bach. LUDGARDO PIMENTEL
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Gestor Comercial En Copaivl.
@@ -589,17 +666,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont14}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -607,8 +684,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Mgt. FRANCISCO CURRO
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "LA INTELIGENCIA ARTIFICIAL Y EL TURISMO"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Ing. Estadístico e informático
@@ -618,17 +698,17 @@ class Seminary extends Component {
               </CardActionArea>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4}>
-            <Card style={{maxWidth:'350px'}}>
+          <Grid item xs={12} sm={3}>
+            <Card style={{maxWidth:'280px'}}>
             <CardActionArea>
             <img
               component="img"
               alt="Contemplative Reptile"
-              style={{height:'280px', width:'350px'}}
+              style={{height:'240px', width:'250px'}}
               src={pont15}
               title="Contemplative Reptile"
             />
-            <CardContent style={{height:'320px'}}>
+            <CardContent style={{height:'380px'}}>
                 <img 
                   src={peru}
                   alt="banner docentes"
@@ -636,8 +716,11 @@ class Seminary extends Component {
                 ></img>
                 <span> | Peru</span>
                 <hr/>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography variant="subtitle1" gutterBottom>
                   Dra. GIOVANNA SERNA
+                </Typography>
+                <Typography style={{background:'#376970',color:'white'}}>
+                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Directora de la E.P. de Ecoturismo de la Universidad Nacional Intercultural de Quillabamba.
