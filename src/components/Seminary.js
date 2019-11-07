@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import docentes from '../image/docentes.jpg';
+import ReactPlayer from 'react-player'
 import logo1 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.00.jpeg';
 import logo2 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.01.jpeg';
 import logo3 from '../image/auspiciadores/WhatsApp Image 2019-11-06 at 16.02.03 (1).jpeg';
@@ -42,7 +43,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import './seminary.css'
+import './seminary1.css'
 import ubicacion from '../image/placeholder-on-map-paper-in-perspective (1).png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel'
@@ -117,18 +118,17 @@ class Seminary extends Component {
         <br></br>
         
         <Grid container spacing={0} className="margenes-texto-franja">
-        <Grid item  xs={12} sm={6}>
+        <Grid item  xs={12} sm={6} style={{paddingTop:'6%'}}>
           <p className="bulletin-title">INFORMES E INSCRIPCIONES: </p>
         </Grid>
-        <Grid item xs={12} sm={6} style={{textAlign:'center'}}>
+        <Grid item xs={12} sm={6} style={{textAlign:'left'}}>
           <p className="texto-informativo">OFICINA DEL CENTRO PREUNIVERSITARIO DE LA UNIQ. El Arenal s/n Pabellón 7.</p>
           <p className="texto-informativo">UNIVERSIDAD ANDINA DEL CUSCO Filial Quillabamba.</p>
           <p className="texto-informativo">AGENCIA DE VIAJES MEGANTONI TRAVEL. Frente a la Plaza de Armas de Quillabamba.</p>
           <p className="texto-informativo">OFICINA DE LA DIRECCIÓN DE TURISMO DE LA MUNICIPALIDAD PROVINCIAL DE LA CONVENCIÓN.</p>
-
         </Grid>
       </Grid>
-      
+
         <Grid container spacing={4} className="franja-informativa">
           <Grid item xs={12} sm={3}>
             <Grid container spacing={2}>
@@ -189,7 +189,7 @@ class Seminary extends Component {
                   Lugar
                 </p>
                 <p>
-                  Teatro Municipal la Convencion
+                  Teatro Municipal de Quillabamba
                 </p>
               </Grid>
             </Grid>
@@ -765,6 +765,16 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
           <hr style={{borderColor:'white',width:'60%'}}/>
           <br></br>
         </div>
+
+        <Grid container spacing={0} >
+        <Grid item  xs={12} sm={12} style={{marginBottom:'50px'}}>
+         <h2 className="bulletin-title">Conoce Quillabamba</h2>
+          <ReactPlayer
+            className="player-container"
+            url='https://www.youtube.com/watch?v=J3aOEvtwVoA' 
+           />
+        </Grid>
+        </Grid>
     </div>
     )
   }
