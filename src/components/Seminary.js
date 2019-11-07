@@ -118,10 +118,14 @@ class Seminary extends Component {
         
         <Grid container spacing={0} className="margenes-texto-franja">
         <Grid item  xs={12} sm={6}>
-          <p className="bulletin-title">Inscripciones en: </p>
+          <p className="bulletin-title">INFORMES E INSCRIPCIONES: </p>
         </Grid>
         <Grid item xs={12} sm={6} style={{textAlign:'center'}}>
-          <p className="texto-informativo">UNIQ y Cámara de comercio de turismo de la municipalidad de La Convencion</p>
+          <p className="texto-informativo">OFICINA DEL CENTRO PREUNIVERSITARIO DE LA UNIQ. El Arenal s/n Pabellón 7.</p>
+          <p className="texto-informativo">UNIVERSIDAD ANDINA DEL CUSCO Filial Quillabamba.</p>
+          <p className="texto-informativo">AGENCIA DE VIAJES MEGANTONI TRAVEL. Frente a la Plaza de Armas de Quillabamba.</p>
+          <p className="texto-informativo">OFICINA DE LA DIRECCIÓN DE TURISMO DE LA MUNICIPALIDAD PROVINCIAL DE LA CONVENCIÓN.</p>
+
         </Grid>
       </Grid>
       
@@ -217,7 +221,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                   Dr. JOAN LARA AMAT Y LEÓN
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "TURISMO, CIUDADANIA Y DESARROLLO RETOS DE UN TURISMO SOSTENIBLE, PARA UN MUNDO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -251,7 +255,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                   Mgt. CARLOS GANOZA TOKASHIKI
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "DESARROLLO DEL TURISMO MUNDIAL: GENERADOR DE RIQUEZA Y OPORTUNIDADES PARA EMPRENDER RETOS Y SOSTENIBILIDAD"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -284,7 +288,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                   Dra. Luisa Sterponi
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "LA TECNOLOGIA GEOMÁTICA APLICADA AL TURISMO: CONOCIMIENTO Y MODELAMIENTO ESPECIAL DEL TERRITORIO PARA UN DESARROLLO TURISTICO EFICAZ Y SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -316,7 +320,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                   Lic. CHRISTOPHE DANIEL TERNAY
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "EMPRENDIMIENTOS ONLINE: DE SUEÑOS A REALIDAD"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -347,7 +351,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                   M. Sc. RACHELLE PUGET
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "LAS MUJERES EN EL MERCADO LABORAL Y LOS RETOS PARA ALCANZAR IGUALDAD DE GENERO"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -379,7 +383,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                 Dr. MIGUEL ÁNGEL CAPUÑAY REATEGUI
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "EL COMERCIO EXTERIOR DE SERVICIOS TURISTICOS EN EL PERU, PESPECTIVAS Y TENDENCIAS"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -416,7 +420,7 @@ class Seminary extends Component {
                 <Typography variant="subtitle1" gutterBottom>
                 Dra.  ADRIANA AGUIAR PÉREZ
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -449,7 +453,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Lic. ROCÍO ROJAS
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "DESARROLLO DEL GEOTURISMO EN EL CONTEXTO DE INNOVACIÓN EN LA ZONA DE QUILLABAMBA"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -483,7 +487,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Lic. ELENA GONZALES
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "¿COMO GESTIONAMOS LA CALIDAD DE LOS SERVICIOS PRESTADOS PARA LA INNOVACION Y SOSTENIBILIDAD EN EL SECTOR TURISTICO?"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -516,7 +520,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                 Lic. ROBERTO ALARCÓN RODRÍGUEZ
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -551,7 +555,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Dra. VIVIANETT SERNA
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "EL EMPRENDIMIENTO FEMENINO PERUANO Y LA NECESIDAD DE REGULACION NORMATIVA"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -585,7 +589,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                 Mgt. HEBER PAZ SALAZAR
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "PLANIFICACION Y GESTION TURISTICA"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -618,7 +622,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Mgt. CARLOS A. HUAMANTICA
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -651,7 +655,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Bach. LUDGARDO PIMENTEL
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -683,7 +687,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Mgt. FRANCISCO CURRO
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "LA INTELIGENCIA ARTIFICIAL Y EL TURISMO"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
@@ -715,7 +719,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 <Typography variant="subtitle1" gutterBottom>
                   Dra. GIOVANNA SERNA
                 </Typography>
-                <Typography style={{background:'green',color:'white'}}>
+                <Typography style={{background:'#376970',color:'white'}}>
                   TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">

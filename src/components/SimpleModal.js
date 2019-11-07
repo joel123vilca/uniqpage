@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import cronograma from '../image/turismopopup.jpg';
-
+import './modal.css';
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
 
@@ -16,8 +16,7 @@ function SimpleDialog(props) {
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
         <img
-          width="600"
-          height="500"
+          className="imagen-modal"
           src={cronograma}
           alt="modaladmision"
         />
