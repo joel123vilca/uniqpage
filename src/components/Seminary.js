@@ -121,7 +121,7 @@ class Seminary extends Component {
         <Grid item  xs={12} sm={6} style={{paddingTop:'6%'}}>
           <p className="bulletin-title">INFORMES E INSCRIPCIONES: </p>
         </Grid>
-        <Grid item xs={12} sm={6} style={{textAlign:'left',paddingLeft:'10%',paddingRight:'10%'}}>
+        <Grid item xs={12} sm={6} style={{textAlign:'left',paddingLeft:'6%',paddingRight:'18%'}}>
           <p className="texto-informativo">OFICINA DEL CENTRO PREUNIVERSITARIO DE LA UNIQ. El Arenal s/n Pabellón 7.</p>
           <p className="texto-informativo">UNIVERSIDAD ANDINA DEL CUSCO Filial Quillabamba.</p>
           <p className="texto-informativo">AGENCIA DE VIAJES MEGANTONI TRAVEL. Frente a la Plaza de Armas de Quillabamba.</p>

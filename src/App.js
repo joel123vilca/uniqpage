@@ -95,7 +95,7 @@ class App extends Component {
                   </Link>
                   <Link to="/civil" style={{ textDecoration: 'none', display: 'block' }}>
                       <MenuItem>
-                      Ingeniería civil
+                      Ingeniería Civil
                       </MenuItem>
                   </Link>
                   <Link to="/alimentarias" style={{ textDecoration: 'none', display: 'block' }}>
