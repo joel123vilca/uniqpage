@@ -3,6 +3,40 @@ import "./careers.css";
 import { Tab, Tabs,Grid,Cell} from 'react-mdl';
 import bannerAgronomica from '../image/escuela-agronomica.jpg';
 
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import ListItemText from '@material-ui/core/ListItemText';
+import Avatar from '@material-ui/core/Avatar';
+import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
+import FolderIcon from '@material-ui/icons/Folder';
+import './ecoturismo.css';
+
+
+const Silabos=[
+  {
+    title:'Sílabo de Ecología y Medioambiente',
+    file_path:'http://test1.uniq.edu.pe/public/silabos/Sílabo%20de%20Ecología%20y%20Medioambiente-Escuela%20Profesional%20de%20Ingeniería%20Agronómica%20Tropical.PDF'
+  },
+  {
+    title:'Sílabo de Etnología',
+    file_path:'http://test1.uniq.edu.pe/public/silabos/Sílabo%20de%20Etnología-Escuela%20Profesional%20de%20Ingeniería%20Agronómica%20Tropical.PDF'
+  },
+  {
+    title:'Sílabo de Interculturalidad y Desarrollo',
+    file_path:'http://test1.uniq.edu.pe/public/silabos/Sílabo%20de%20Interculturalidad%20y%20Desarrollo-Escuela%20Profesional%20de%20Ingeniería%20Agronómica%20Tropical.PDF'
+  },
+  {
+    title:'Sílabo de Matemática I',
+    file_path:'http://test1.uniq.edu.pe/public/silabos/Sílabo%20de%20Matemática%20I-Escuela%20Profesional%20de%20Ingeniería%20Agronómica%20Tropical.PDF'
+  },
+  {
+    title:'Sílabo de Métodos y Técnicas de Estudio',
+    file_path:'http://test1.uniq.edu.pe/public/silabos/Sílabo%20de%20Métodos%20y%20Técnicas%20de%20Estudio-Escuela%20Profesional%20de%20Ingeniería%20Agronómica%20Tropical.PDF'
+  }
+]
 
 class Careers extends Component {
   constructor(props) {
@@ -119,7 +153,47 @@ Trabaja colaborativamente en equipos disciplinarios y multidisciplinarios.
               </center>
             </div>
         )
-    } 
+    }
+    else if(this.state.activeTab === 4){
+      return(
+          <div>
+            <center>
+              <h2 className="career-title">I Semestre</h2>
+            </center>
+            <List className="contenedor-silabo">
+                {
+                  Silabos.map((document,i)=>{
+                    return(
+                      <ListItem key={i}>
+                        <ListItemAvatar>
+                          <Avatar>
+                            <FolderIcon />
+                         </Avatar>
+                        </ListItemAvatar>
+                        {/* <p></p> */}
+                        <ListItemText
+                          primary={document.title}
+                          style={{width:'50%'}}
+                          
+                        />
+                        {/* <ListItemSecondaryAction> */}
+                          <IconButton edge="end" target="_blank" href={document.file_path}>
+                            <Icon 
+                            // color="secondary" 
+                            style={{color:'white'}}>cloud_download</Icon>
+                          </IconButton>
+                        {/* </ListItemSecondaryAction> */}
+                      </ListItem>
+                    )
+                  }) 
+                }
+              </List>
+            {/* <center> */}
+              {/* <embed src="http://admisionapi.uniq.edu.pe/public/documentos/eprofesionales/malla_ecoturismo.pdf" width="80%" height="375" /> */}
+            {/* </center> */}
+          </div>
+      )
+  } 
 }
   render() {
     return(
@@ -136,6 +210,7 @@ Trabaja colaborativamente en equipos disciplinarios y multidisciplinarios.
               <Tab>Perfil Profesional</Tab>
               <Tab>Grado - Titulo - Modalidad</Tab>
               <Tab>Malla Curricular</Tab>
+              <Tab>Sílabos</Tab>
           </Tabs>
           <section>
                 <div className="career-content">{this.toggleCategories()}</div>
