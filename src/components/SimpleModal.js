@@ -15,11 +15,13 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
+      <a href="/seminario">
         <img
           className="imagen-modal"
           src={cronograma}
           alt="modaladmision"
         />
+      </a>
     </Dialog>
   );
 }
