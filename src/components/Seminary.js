@@ -32,11 +32,12 @@ import pont13 from '../image/pont13.png';
 import pont14 from '../image/pont14.png';
 import pont15 from '../image/pont15.png';
 import peru from '../image/peru.png';
-import mexico from '../image/mexico.png';
+import mexico from '../image/italia.png';
 import canada from '../image/canada.png';
 import francia from '../image/francia.png';
 import adriana from '../image/adriana.png';
 import brasil from '../image/brasil.png';
+import cronograma from '../image/cronogramaseminario.png';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -47,7 +48,6 @@ import './seminary1.css'
 import ubicacion from '../image/placeholder-on-map-paper-in-perspective (1).png'
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel'
-import Paper from '@material-ui/core/Paper';
 // import './seminary.css';
 
 class Seminary extends Component {
@@ -283,7 +283,7 @@ class Seminary extends Component {
                   alt="banner docentes"
                   style={{width:'60px',height:'40px'}}
                 ></img>
-                <span> | Mexico</span>
+                <span> | Italia</span>
                 <hr/>
                 <Typography variant="subtitle1" gutterBottom>
                   Dra. Luisa Sterponi
@@ -521,7 +521,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                 Lic. ROBERTO ALARCÓN RODRÍGUEZ
                 </Typography>
                 <Typography style={{background:'#376970',color:'white'}}>
-                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
+                  TEMA : "GESTION DE DESTINOS TURISTICOS: QUILLABAMBA Y SUS POSIBILIDADES DE DESARROLLO"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Lic. en Turismo y Ciencias Administrativas, Universidad San Antonio Abad del Cusco.
@@ -623,7 +623,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                   Mgt. CARLOS A. HUAMANTICA
                 </Typography>
                 <Typography style={{background:'#376970',color:'white'}}>
-                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
+                  TEMA : "10 CONSEJOS PARA EXPORTAR CON EFICACIA Y EXPORTA FACIL"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Mgt. en Contabilidad-Mención en Auditoria (En Curso) Universidad Nacional San Antonio Abad de Cusco.
@@ -656,7 +656,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                   Bach. LUDGARDO PIMENTEL
                 </Typography>
                 <Typography style={{background:'#376970',color:'white'}}>
-                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
+                  TEMA : "GESTION EMPRESARIAL COMO ALTERNATIVA SOSTENIBLE EN EL DESARROLLO DE LAS ACTIVIDADES COMERCIALES DE LOS EMPRENDEDORES"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Gestor Comercial En Copaivl.
@@ -755,6 +755,14 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
           autoPlayInterval={1000}
         >
       </AliceCarousel>
+      </div>
+      <h2 className="bulletin-title">Cronograma</h2>
+        <div style={{marginBottom:'10px'}}>
+         <img 
+          src={cronograma}
+          alt="cronograma"
+          className="seminary--cronograma"
+        ></img>
       </div>
         <br></br>
         <div className="precios">

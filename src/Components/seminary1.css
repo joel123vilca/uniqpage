@@ -51,7 +51,10 @@
     margin-top: -20px;
     margin-right: 100px;
 }
-
+.seminary--cronograma{
+    width:800px;
+    height:800px;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -59,5 +62,9 @@
         width:100% !important;
         height:100% !important;
         /* margin-bottom:10%; */
+    }
+    .seminary--cronograma{
+        width:400px;
+        height:500px;
     }
 }
