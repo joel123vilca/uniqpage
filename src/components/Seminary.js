@@ -720,7 +720,7 @@ Doctorado en Trabajo Social - UFRJ; Doctorado en Gestión Económica Global - UN
                   Dra. GIOVANNA SERNA
                 </Typography>
                 <Typography style={{background:'#376970',color:'white'}}>
-                  TEMA : "ÉTICA EN LOS EMPRENDIMIENTOS PARA EL TURISMO SOSTENIBLE"
+                  TEMA : "INNOVACION + DISRUPCIÓN: GENERA SOSTENIBILIDAD EN EL SECTOR EMPRESARIAL TURISTICO"
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
                   Directora de la E.P. de Ecoturismo de la Universidad Nacional Intercultural de Quillabamba.
