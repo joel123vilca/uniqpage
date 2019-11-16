@@ -4,7 +4,7 @@ import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
-import cronograma from '../image/turismopopup.jpg';
+import cronograma from '../image/evento.jpg';
 import './modal.css';
 function SimpleDialog(props) {
   const { onClose, selectedValue, open } = props;
@@ -15,7 +15,7 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <a href="/seminario">
+      <a target="_blank" href="http://test1.uniq.edu.pe/public/PROGRAMA%20DE%20EVENTO%20DE%20ENCUENTRO%20DE%20UNIVERSIDADES%20INTERCULTURALES.pdf">
         <img
           className="imagen-modal"
           src={cronograma}
