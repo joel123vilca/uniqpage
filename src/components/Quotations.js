@@ -58,10 +58,14 @@ class Quotations extends Component {
                 variant="outlined"
             />
             } 
+            <Typography  variant="body1" style={{textAlign: 'justify', color:'red', fontStyle: 'oblique'}}>
+            {quotation.observation} 
+           </Typography>
          </CardContent>
          <CardActions>
+         { quotation.state === 'Abierto' &&
             <Button 
-                variant="contained" 
+                variant="contained"
                 style={{color:'white', background:'#376970'}}
                 target="_blank" 
                 href={quotation.request_file_path}
@@ -69,6 +73,13 @@ class Quotations extends Component {
                 <CloudDownloadIcon />
                 Solicitud
             </Button>
+          }
+          { quotation.state === 'Cerrado' &&
+            <Button variant="contained" color="secondary" disabled >
+            <CloudDownloadIcon />
+              Solicitud
+            </Button>
+          }
         </CardActions>
        </Card>
         <br></br>
