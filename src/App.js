@@ -136,7 +136,20 @@ class App extends Component {
                   </Menu>
                 </Link>
                 <Link to="/Servicios" className="font-weight-bold" style={{ textDecoration: 'none' }}>Servicios</Link>
-                <a  className="font-weight-bold" style={{ textDecoration: 'none' }} href="http://admision.uniq.edu.pe">Admisión</a>
+                <a className="font-weight-bold" style={{ textDecoration: 'none' }} id="admision" >Admisión
+                <Menu target="admision">
+                <Link to="/cepre" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Cepre
+                      </MenuItem>
+                  </Link>
+                  <a href="http://admision.uniq.edu.pe" style={{ textDecoration: 'none', display: 'block' }}>
+                      <MenuItem>
+                        Admisión
+                      </MenuItem>
+                  </a>
+                  </Menu>
+                  </a>
               </Navigation>
             </HeaderRow>
         </Header>
