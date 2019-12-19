@@ -13,6 +13,7 @@ export const SHOW_NEWS = 'SHOW_NEWS';
 export const SHOW_QUOTATIONS = 'SHOW_QUOTATIONS';
 export const SHOW_ACTIVITIES ='SHOW_ACTIVITIES';
 export const SHOW_RESPONSIBILITIES = 'SHOW_RESPONSIBILITIES';
+export const CONFIGURATION = 'CONFIGURATION';
 
 export function showBanners() {
     return (dispatch, getState) => {
@@ -139,5 +140,15 @@ export function showResponsibilities() {
             .then((response) => {
                 dispatch( { type: SHOW_RESPONSIBILITIES, payload: response.data.data } ) 
             }) 
+    }
+}
+
+export function configuration(){
+    const banner=true;
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/configurations/general?banner=${banner}`)
+        .then((response) => {
+            dispatch( { type:  CONFIGURATION, payload: response.data.data } ) 
+        }) 
     }
 }

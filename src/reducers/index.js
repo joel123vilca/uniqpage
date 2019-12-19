@@ -10,7 +10,7 @@ import {showNews} from './news';
 import {showQuotations} from './quotations';
 import {showActivities} from './activities';
 import {showResponsibilities} from './responsibilities';
-
+import {configuration} from './configuration';
 const rootReducer = combineReducers({
   banner: showBanners,
   storie: showStories,
@@ -24,7 +24,8 @@ const rootReducer = combineReducers({
   news: showNews,
   quotations: showQuotations,
   activities: showActivities,
-  responsibilities: showResponsibilities
+  responsibilities: showResponsibilities,
+  configuration:configuration
 });
 
 export default rootReducer;
