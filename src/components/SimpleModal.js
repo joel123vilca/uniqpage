@@ -15,7 +15,7 @@ function SimpleDialog(props) {
 
   return (
     <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open}>
-      <a target="_blank" href="http://admisionapi.uniq.edu.pe/public/documentos/Reporte_Cepre.pdf">
+      <a target="_blank" href="http://test1.uniq.edu.pe/public/storage/documentos/UNIQ_MODELO_EDUCATIVO_2019.pdf">
         <img
           className="imagen-modal"
           src={cronograma}
