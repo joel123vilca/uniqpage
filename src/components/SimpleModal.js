@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React , {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
@@ -8,7 +8,6 @@ import cronograma from '../image/popup_ranking.jpg';
 import './modal.css';
 function SimpleDialog(props) {
   const { onClose, open, imagen ,url } = props;
-  console.log(props);
   function handleClose() {
     onClose(false);
   }
@@ -33,21 +32,25 @@ SimpleDialog.propTypes = {
 };
 
 export default function SimpleModal() {
-  const [open, setOpen] = React.useState();
-  const [imagen, setImagen] = React.useState();
-  const [url, setUrl] = React.useState();
+  const initialOpenState = false;
+  const [open, setOpen] = useState(initialOpenState);
+  const [imagen, setImagen] = useState();
+  const [url, setUrl] = useState();
+
   const handleClose = () => {
     setOpen(false);
   };
+
+  const fetchModal = async () => {
+    const apiCall = await fetch(`http://test1.uniq.edu.pe/public/api/configurations/general?banner=${true}`,{method:"GET"});
+    const modal = await apiCall.json();
+    setOpen(modal.popup_status);
+    setImagen(modal.image_path);
+    setUrl(modal.url);
+  }
   useEffect(()=>{
-    fetch(`http://test1.uniq.edu.pe/public/api/configurations/general?banner=${true}`,{method:"GET"})
-    .then(res => res.json())
-    .then(response => {
-      setOpen(response.popup_status);
-      setImagen(response.image_path);
-      setUrl(response.url);
-    })
-  })
+    fetchModal();
+  },[])
 
   return (
     <div>
