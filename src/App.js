@@ -24,6 +24,7 @@ class App extends Component {
               <a style={{fontSize: 10, padding: '0 10px'}} href="/abastecimientos">ABASTECIMIENTOS</a>
               <a style={{fontSize: 10, padding: '0 10px'}} href="http://uniq.edu.pe/aula/">AULA</a>
               <a style={{fontSize: 10, padding: '0 10px'}} href="http://repositorio.uniq.edu.pe/">REPOSITORIO INSTITUCIONAL</a>
+              <a style={{fontSize: 10, padding: '0 10px'}} href="/disposiciones-cuarentena">DISPOSICIONES CUARENTENA</a>
               <a href="/Transparencia"><img src={trasparencia}  alt="transparencia"  style={{width: '150px', height: '45px'}}/></a>
               </Navigation>
             </HeaderRow>

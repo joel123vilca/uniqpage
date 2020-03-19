@@ -34,6 +34,7 @@ import Quotations from './Quotations';
 import Directory from './Directory';
 import Seminary from './Seminary';
 import Cepre from './Cepre';
+import Corona from './corona';
 
 const Main = () => (
     <Switch>
@@ -72,6 +73,7 @@ const Main = () => (
         <Route  path='/directorioelectronico' component={Directory} />
         <Route  path='/seminario' component={Seminary} />
         <Route  path='/cepre' component={Cepre} />
+        <Route  path='/disposiciones-cuarentena' component={Corona} />
         <Route  path="*" component={Notfound}/>
     </Switch>
 )
