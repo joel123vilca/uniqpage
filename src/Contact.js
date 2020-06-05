@@ -23,6 +23,11 @@ class Contact extends Component {
                         <span>info@uniq.edu.pe</span>
                     </div>
                     <div className="row2">
+                        <img src={contact}  style={{width: 25, height: 25}} alt="contact"/>
+                        <span> tramitedocumentario@uniq.edu.pe</span>
+                    </div>
+
+                    <div className="row2">
                         <img src={telefono} style={{width: 25, height: 25}}  alt="telefono"/>
                         <span>084 - 282728</span>
                     </div>
