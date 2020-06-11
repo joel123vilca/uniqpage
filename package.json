@@ -2,15 +2,6 @@
   "name": "uniq",
   "version": "0.1.0",
   "private": true,
-  "style": "dist/css/mobiscroll.min.css",
-  "files": [
-    "dist/js/mobiscroll.javascript.js",
-    "dist/js/mobiscroll.javascript.min.js",
-    "dist/css/mobiscroll.css",
-    "dist/css/mobiscroll.min.css",
-    "dist/css/icons_mobiscroll.ttf",
-    "dist/css/icons_mobiscroll.woff"
-  ],
   "dependencies": {
     "@material-ui/core": "^4.3.1",
     "@material-ui/icons": "^4.2.1",
