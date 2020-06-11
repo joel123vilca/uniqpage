@@ -44,6 +44,7 @@ export default function SimpleModal() {
   const fetchModal = async () => {
     const apiCall = await fetch(`http://test1.uniq.edu.pe/public/api/configurations/general?banner=${true}`,{method:"GET"});
     const modal = await apiCall.json();
+    console.log(modal);
     if(modal.popup_status == 0){
       modal.popup_status = false;
     }else {
