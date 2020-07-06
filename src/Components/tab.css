@@ -1,0 +1,30 @@
+.tab-list {
+  border-bottom: 1px solid rgb(175, 53, 53);
+	padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border:solid rgb(175, 53, 53);
+  border-width: 3px 3px 0 3px;
+}
+
+.call-number{
+  margin-left: -10px;
+  color:rgb(175, 53, 53);
+  padding-bottom: 5px;
+  display: inline;
+}
+.call-state{
+  margin-left: 850px;
+  padding-bottom: 5px;
+  color:rgb(175, 53, 53);
+  display: inline;
+}

@@ -101,7 +101,7 @@ export const createPostSuccess =  (data) => {
 
   export function showCalls(){
     return (dispatch, getState) => {
-        axios.get(`${HOST}/announcements`)
+        axios.get(`${HOST}/announcements?year=${2019}`)
         .then((response) => {
             dispatch( { type:  SHOW_CALLS, payload: response.data.data } ) 
         })
