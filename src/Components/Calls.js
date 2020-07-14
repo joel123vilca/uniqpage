@@ -33,9 +33,11 @@ class Calls extends Component {
           button
         >
           <ListItemIcon>
+            <a href="http://convocatorias.uniq.edu.pe" target="_blank" style={{color:'blue'}}>
             <CheckCircleSharpIcon  />
+            </a>
           </ListItemIcon>
-          <ListItemText primary="INGRESO AL SISTEMA DE POSTULACIÒN CAS" />
+          <ListItemText primary="INGRESO AL SISTEMA DE POSTULACIÓN CAS" />
         </ListItem>
         <ListItem
           button
@@ -43,7 +45,7 @@ class Calls extends Component {
           <ListItemIcon>
             <PictureAsPdfIcon />
           </ListItemIcon>
-          <ListItemText primary="Bases Generales Convocatoria Publica CAS 2019" />
+          <ListItemText primary="Bases Generales de Convocatoria CAS" />
         </ListItem>
         <ListItem
           button
@@ -51,7 +53,7 @@ class Calls extends Component {
           <ListItemIcon>
           <PictureAsPdfIcon />
           </ListItemIcon>
-          <ListItemText primary="Resolución que rectifica la denominación del comite de calificación" />
+          <ListItemText primary="Reglamento CAS" />
         </ListItem>
         <ListItem
           button
@@ -59,7 +61,7 @@ class Calls extends Component {
           <ListItemIcon>
           <PictureAsPdfIcon />
           </ListItemIcon>
-          <ListItemText primary="Bases Generales - CARTILLA" />
+          <ListItemText primary="Anexo Cumplimiento de Requisitos" />
         </ListItem>
         <ListItem
           button
@@ -67,32 +69,20 @@ class Calls extends Component {
           <ListItemIcon>
             <PictureAsPdfIcon  />
           </ListItemIcon>
-          <ListItemText primary="Anexo 3B" />
+          <ListItemText primary="Documentos a presentar por los ganadores
+-" />
         </ListItem>
         <ListItem
           button
         >
           <ListItemIcon>
-            <PictureAsPdfIcon  />
+          <a href="http://convocatorias.uniq.edu.pe" target="_blank" style={{color:'blue'}}>
+            <CheckCircleSharpIcon  />
+            </a>
           </ListItemIcon>
-          <ListItemText primary="Documentos a presentar por los ganadores" />
+          <ListItemText primary="Ficha del postulante" />
         </ListItem>
-        <ListItem
-          button
-        >
-          <ListItemIcon>
-            <CheckCircleSharpIcon />
-          </ListItemIcon>
-          <ListItemText primary="Ficha del Postulante" />
-        </ListItem>
-        <ListItem
-          button
-        >
-          <ListItemIcon>
-            <CheckCircleSharpIcon />
-          </ListItemIcon>
-          <ListItemText primary="Comunicados" />
-        </ListItem>
+        
       </List>
             <br></br>
             <TabsConvocatoria />
