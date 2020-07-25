@@ -1,0 +1,14 @@
+.buscado--content{
+	background-color: #376970;
+	color:white;
+	margin-top: 310px;
+}
+.buscado--image{
+	width: 60px;
+	height: 60px;
+}
+.buscado--links {
+  display: grid;
+	grid-template-columns: 245px 245px 245px 245px 245px;
+	grid-template-rows: 100px 100px 100px  ;
+}

@@ -7,13 +7,37 @@ import {Link} from 'react-router-dom';
 import Contact from './Contact';
 import logo from './image/nav.png';
 import trasparencia from './image/pte_logo2.jpg';
+import imagen from './image/logo.jpeg';
 
 class App extends Component {
   render() {
     return (
       <div>
       <Layout>
-        <Header waterfall hideTop>
+      <nav>
+        <ul>
+          <img src={imagen}  alt="logo"  className="logo-menu"/>
+          <p className="menu--title">Universidad Nacional</p>
+          <p className="menu--title--two">Intercultural de Quillabamba</p>
+          <p className="menu--subtitle-one">POSTULANTES</p>
+          <p className="menu--subtitle-two">ESTUDIANTES</p>
+          <p className="menu--subtitle-tree">DOCENTES</p>
+          <p className="menu--subtitle-four">GESTION</p>
+          <p className="menu--subtitle-five">COVID-19</p>
+          <a href="/Transparencia"><img src="https://www.perupetro.com.pe/wps/wcm/connect/corporativo/d4b79498-17ec-42ac-b109-8f6adf4dba60/Transparencia.png?MOD=AJPERES"  className="portal-transparencia" alt="transparencia"  style={{width: '150px', height: '50px'}}/></a>
+        </ul>
+      </nav>
+      <nav className="menu--principal">
+        <ul>
+          <li className="menu-link-first"><a className="menu-link" href="#">Nosotros</a></li>
+          <li><a className="menu-link" href="#">Admisión</a></li>
+          <li><a className="menu-link" href="#">Pregrado</a></li>
+          <li><a className="menu-link" href="#">Investigación</a></li>
+          <li><a className="menu-link" href="#">Academico</a></li>
+          <li><a className="menu-link" href="#">Administracion</a></li>
+        </ul>
+      </nav>
+        {/* <Header waterfall hideTop>
             <HeaderRow  className="pri-nav justify-content-center" style={{height: '45px'}}>
               <Navigation>
               <a style={{fontSize: 10, padding: '0 10px' }} href="http://181.224.238.133">SISTEMA ACADEMICO</a>
@@ -107,36 +131,7 @@ class App extends Component {
                   </Link>
                   </Menu>
                 </Link>
-                <Link  className="font-weight-bold" id="inv" >
-                  Investigación
-                  <Menu target="inv">
-                  <Link to="/lineas-investigacion" style={{ textDecoration: 'none', display: 'block' }}>
-                      <MenuItem>
-                        Lineas de Investigación
-                      </MenuItem>
-                  </Link>
-                  <Link to="/reglamento">
-                      <MenuItem>
-                        Reglamento del Docente
-                      </MenuItem>
-                  </Link>
-                  <Link to="/propiedad" style={{ textDecoration: 'none', display: 'block' }}>
-                      <MenuItem>
-                        Reglamento de propiedad Intelectual
-                      </MenuItem>
-                  </Link>
-                  <Link to="/codigo-de-etica" style={{ textDecoration: 'none', display: 'block' }}>
-                      <MenuItem>
-                        Codigo de Etica
-                      </MenuItem>
-                  </Link>
-                  <Link to="/docentes" style={{ textDecoration: 'none', display: 'block' }}>
-                      <MenuItem>
-                        Docentes Investigadores
-                      </MenuItem>
-                  </Link>
-                  </Menu>
-                </Link>
+                  <a href="http://investigacion.uniq.edu.pe/"  className="font-weight-bold"> Investigación</a>
                 <Link to="/Servicios" className="font-weight-bold" style={{ textDecoration: 'none' }}>Servicios</Link>
                 <a className="font-weight-bold" style={{ textDecoration: 'none' }} id="admision" >Admisión
                 <Menu target="admision">
@@ -155,6 +150,7 @@ class App extends Component {
               </Navigation>
             </HeaderRow>
         </Header>
+         */}
         <Drawer title="UNIQ" style={{background:'#376970'}}>
           <Navigation>
             <a style={{fontSize: 14, color:'white'}} href="/inicio">Inicio</a>
@@ -170,7 +166,6 @@ class App extends Component {
             <a style={{fontSize: 14, color:'white'}} href="/lineas-investigacion">Lineas de Investigación</a>
             <a style={{fontSize: 14, color:'white'}} href="/docentes">Docentes</a>
             <a style={{fontSize: 14, color:'white'}} href="/Servicios">Servicios</a>
-
           </Navigation>
         </Drawer>
         <Content>

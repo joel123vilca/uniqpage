@@ -478,6 +478,116 @@ a.more-link {
   text-decoration: none;
   text-align: center;
 }
+
+.logo-menu{
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  margin-left:45px;
+  position:relative;
+}
+.portal-transparencia{
+  position: absolute;
+  margin-left: 1010px;
+}
+.menu--title{
+  color:#376970;
+  font-size: 30px;
+  font-family: 'Open Sans', bold;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 170px;
+  position: absolute;
+  margin-top: -90px;
+}
+.menu--title--two{
+  color:#376970;
+  font-size: 30px;
+  font-family: 'Open Sans', bold;
+  font-weight: 700;
+  text-align: left;
+  position: absolute;
+  margin-left: 170px;
+  margin-top: -65px;
+}
+.menu--subtitle-one{
+  color:black;
+  font-size: 15px;
+  font-family: 'Open Sans', bold;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  margin-left: 850px;
+  margin-top: -65px;
+}
+.menu--subtitle-two{
+  color:black;
+  font-size: 15px;
+  font-family: 'Open Sans', bold;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  margin-left: 970px;
+  margin-top: -65px;
+}
+.menu--subtitle-tree{
+  color:black;
+  font-size: 15px;
+  font-family: 'Open Sans', bold;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  margin-left: 1080px;
+  margin-top: -65px;
+}
+.menu--subtitle-four{
+  color:black;
+  font-size: 15px;
+  font-family: 'Open Sans', bold;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  margin-left: 1165px;
+  margin-top: -65px;
+}
+.menu--subtitle-five{
+  color:black;
+  font-size: 15px;
+  font-family: 'Open Sans', bold;
+  font-weight: 500;
+  text-align: left;
+  position: absolute;
+  margin-left: 1235px;
+  margin-top: -65px;
+}
+.menu--principal{
+  position: absolute;
+  margin-left: 555px;
+  margin-top: 105px;
+  width: 800px;
+}
+.menu--principal .menu-link{
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+  font-weight: 700;
+  } 
+  .menu--principal .menu-link-first{
+    border-radius: 15px 0px 0px 15px;
+    } 
+  .menu--principal li{
+    display:inline-block;
+    width:125px;
+    padding:5px 10px;
+    background-color:#376970;
+    text-align:center;
+    color:#fff;
+    height: 45px;
+  }
+  .menu--principal li:hover{
+  background-color:#fff;
+  color:#000;
+  }
 @media screen and (max-width: 1100px){
   
   .container-body{

@@ -11,6 +11,9 @@ import {showQuotations} from './quotations';
 import {showActivities} from './activities';
 import {showResponsibilities} from './responsibilities';
 import {configuration} from './configuration';
+import {showEvents} from './events';
+import {showNovelties} from './novelties';
+
 const rootReducer = combineReducers({
   banner: showBanners,
   storie: showStories,
@@ -25,7 +28,9 @@ const rootReducer = combineReducers({
   quotations: showQuotations,
   activities: showActivities,
   responsibilities: showResponsibilities,
-  configuration:configuration
+  configuration:configuration,
+  events:showEvents,
+  novelties:showNovelties
 });
 
 export default rootReducer;

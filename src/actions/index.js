@@ -14,12 +14,30 @@ export const SHOW_QUOTATIONS = 'SHOW_QUOTATIONS';
 export const SHOW_ACTIVITIES ='SHOW_ACTIVITIES';
 export const SHOW_RESPONSIBILITIES = 'SHOW_RESPONSIBILITIES';
 export const CONFIGURATION = 'CONFIGURATION';
+export const SHOW_EVENTS = 'SHOW_EVENTS';
+export const SHOW_NOVELTIES = 'SHOW_NOVELTIES';
 
 export function showBanners() {
     return (dispatch, getState) => {
         axios.get(`${HOST}/banners`)
             .then((response) => {
                 dispatch( { type: SHOW_BANNERS, payload: response.data.data } ) 
+            }) 
+    }
+}
+export function showEvents() {
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/events`)
+            .then((response) => {
+                dispatch( { type: SHOW_EVENTS, payload: response.data.data } ) 
+            }) 
+    }
+}
+export function showNovelties() {
+    return (dispatch, getState) => {
+        axios.get(`${HOST}/novelties`)
+            .then((response) => {
+                dispatch( { type: SHOW_NOVELTIES, payload: response.data.data } ) 
             }) 
     }
 }
