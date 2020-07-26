@@ -14,29 +14,32 @@ class App extends Component {
     return (
       <div>
       <Layout>
-      <nav>
+        <center>
+          
+      <nav className="container-menu">
         <ul>
           <img src={imagen}  alt="logo"  className="logo-menu"/>
           <p className="menu--title">Universidad Nacional</p>
           <p className="menu--title--two">Intercultural de Quillabamba</p>
-          <p className="menu--subtitle-one">POSTULANTES</p>
-          <p className="menu--subtitle-two">ESTUDIANTES</p>
-          <p className="menu--subtitle-tree">DOCENTES</p>
-          <p className="menu--subtitle-four">GESTION</p>
-          <p className="menu--subtitle-five">COVID-19</p>
+          <p className="menu--subtitle-one"><a className="link-one" href="#">POSTULANTES</a></p>
+          <p className="menu--subtitle-two"><a className="link-one" href="#">ESTUDIANTES</a></p>
+          <p className="menu--subtitle-tree"><a className="link-one" href="#">DOCENTES</a></p>
+          <p className="menu--subtitle-four"><a className="link-one" href="#">GESTIÓN</a></p>
+          <p className="menu--subtitle-five"><a className="link-one"  href="#">COVID-19</a></p>
           <a href="/Transparencia"><img src="https://www.perupetro.com.pe/wps/wcm/connect/corporativo/d4b79498-17ec-42ac-b109-8f6adf4dba60/Transparencia.png?MOD=AJPERES"  className="portal-transparencia" alt="transparencia"  style={{width: '150px', height: '50px'}}/></a>
         </ul>
       </nav>
       <nav className="menu--principal">
         <ul>
-          <li className="menu-link-first"><a className="menu-link" href="#">Nosotros</a></li>
-          <li><a className="menu-link" href="#">Admisión</a></li>
+          <li className="menu-link-first"><a className="menu-link" href="/">Nosotros</a></li>
+          <li><a className="menu-link" href="http://admision.uniq.edu.pe">Admisión</a></li>
           <li><a className="menu-link" href="#">Pregrado</a></li>
-          <li><a className="menu-link" href="#">Investigación</a></li>
-          <li><a className="menu-link" href="#">Academico</a></li>
-          <li><a className="menu-link" href="#">Administracion</a></li>
+          <li><a className="menu-link" href="http://investigacion.uniq.edu.pe/">Investigación</a></li>
+          <li><a className="menu-link" href="http://181.224.238.133">Académico</a></li>
+          <li><a className="menu-link" href="#">Administración</a></li>
         </ul>
       </nav>
+      </center>
         {/* <Header waterfall hideTop>
             <HeaderRow  className="pri-nav justify-content-center" style={{height: '45px'}}>
               <Navigation>
