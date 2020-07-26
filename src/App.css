@@ -639,6 +639,12 @@ a.more-link {
   .container-uniq{
     width: 410px;
   }
+  .container-menu{
+    display: none;
+  }
+  .menu--principal{
+    display: none;
+  }
 }
 @media only screen and (max-width:1200px)
 {
